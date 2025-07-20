@@ -9,8 +9,8 @@ import { navbar } from './navbar';
 import { sidebar } from './sidebar';
 
 export default defineUserConfig({
-    lang: 'en-US',
-    title: 'rzem.guru',
+    lang: 'en-AU',
+    title: 'rzem.ai',
     description: '',
 
     bundler: viteBundler(),
