@@ -31,11 +31,7 @@ export default defineUserConfig({
         ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/favicons/logo-32.png' }],
         ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/favicons/logo-16.png' }],
         ['link', { rel: 'manifest', href: '/assets/favicons/site.webmanifest' }],
-        //['link', { rel: "mask-icon", href: "/assets/favicons/safari-pinned-tab.svg", color: "#3a0839"}],
         ['link', { rel: 'shortcut icon', href: '/assets/favicons/logo-24.ico' }],
-        //['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
-        //['meta', { name: "msapplication-config", content: "/assets/favicons/browserconfig.xml"}],
-        //['meta', { name: "theme-color", content: "#ffffff"}],
     ],
 
     theme: hopeTheme({
@@ -58,9 +54,10 @@ export default defineUserConfig({
             icon: {
                 assets: 'iconify', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
             },
+            photoSwipe: false,
             //readingTime: false,
         },
-        
+
         toc: false,
     }),
 });
