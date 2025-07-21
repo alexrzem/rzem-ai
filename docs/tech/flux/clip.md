@@ -1,6 +1,7 @@
 ---
 title: Contrastive Language-Image Pre-training
 icon: fluent-color:book-48
+
 ---
 
 # CLIP: Contrastive Language-Image Pre-training
