@@ -56,8 +56,11 @@ export default defineUserConfig({
                 // appId, apiKey and indexName are required
             },
             icon: {
-                assets: 'fontawesome', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
+                assets: 'iconify', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
             },
+            readingTime: false,
         },
+        
+        toc: false,
     }),
 });

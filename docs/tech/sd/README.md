@@ -1,7 +1,8 @@
 ---
-title: stablediffusion
-icon: regular:file-image
+title: Stable Diffusion
+icon: fluent-color:org-48
 ---
+
 # Stable Diffusion
 
 ## Basic SDXL Refiner Workflow

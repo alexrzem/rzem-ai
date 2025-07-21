@@ -1,14 +1,14 @@
 ---
-title: Image Generators
-icon: regular:image
+title: Image2
+icon: fluent-color:text-bullet-list-square-16
 ---
 
-# AI Image Generators
+# image
 
 
 [[toc]]
 
-### Comfy.icu
+### image-2-?
 * [comfy.icu](https://comfy.icu/)
 
 ::: info

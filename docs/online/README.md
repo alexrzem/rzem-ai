@@ -1,12 +1,9 @@
 ---
 title: Online
-icon: regular:image
+icon: uil:cloud
 ---
 
 # Online
-
-
-[[toc]]
 
 ### Comfy.icu
 * [comfy.icu](https://comfy.icu/)

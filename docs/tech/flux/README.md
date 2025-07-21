@@ -1,8 +1,9 @@
 ---
-title: Flux1
-icon: regular:file-image
+title: FLUX
+icon: fluent-color:org-48
 ---
-# Flux1
+
+# FLUX
 
 This is a normal page, which contains VuePress basics.
 
