@@ -5,11 +5,43 @@ tagline: Unleash your creativity with cutting-edge AI image generation tools. Tr
 
 features:
   - title: Online Tools
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
+    icon: 'fluent-color:cloud-48'
+    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
+    link: '/online/'
+
   - title: Desktop Tools
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Text-2-...
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Image-2-...
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+    icon: 'fluent-color:laptop-48'
+    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
+    link: '/desktop/'
+
+  - title: Technology
+    icon: 'fluent-color:code-block-48'
+    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
+    link: '/tech/'
+
+  - title: Portfolio
+    icon: 'fluent-color:image-48'
+    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
+    link: 'https://alexrzem.artstation.com'
+
 ---
+
+  - title: Online Tools
+  	icon: fluent-color:org-48
+    details: Minimal setup with markdown-centered project structure helps you focus on writing.
+	link: /guide/markdown/
+
+  - title: Desktop Tools
+  	icon: fluent-color:org-48
+    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
+	link: /guide/markdown/
+
+  - title: Text-2-...
+  	icon: fluent-color:org-48
+    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+	link: /guide/markdown/
+  
+  - title: Image-2-...
+    icon: fluent-color:org-48
+    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+	link: /guide/markdown/
