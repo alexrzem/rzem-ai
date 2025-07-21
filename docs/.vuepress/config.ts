@@ -58,7 +58,7 @@ export default defineUserConfig({
             icon: {
                 assets: 'iconify', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
             },
-            readingTime: false,
+            //readingTime: false,
         },
         
         toc: false,

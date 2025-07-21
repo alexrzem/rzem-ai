@@ -1,6 +1,6 @@
 ---
 title: Online
-icon: uil:cloud
+icon: fluent-color:cloud-48
 ---
 
 # Online

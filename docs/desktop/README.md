@@ -1,6 +1,6 @@
 ---
 title: Desktop
-icon: uil:desktop-alt
+icon: fluent-color:laptop-48
 ---
 
 # Desktop
