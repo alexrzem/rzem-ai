@@ -6,7 +6,6 @@
 	"type": "module",
 	"scripts": {
 		"docs:dev": "vuepress dev docs --port 5173",
-		"dev": "node ./backup/posters.js",
 		"docs:build": "vuepress build docs",
 		"docs:clean-dev": "vuepress dev docs --clean-cache",
 		"docs:update-package": "npx vp-update"
