@@ -1,7 +1,7 @@
 ---
 home: false
-title: Desktop
-icon: fluent-color:laptop-48
+title: Desktop Apps
+icon: 'fluent-color:laptop-48'
 
 features:
   - title: Online Tools
@@ -9,7 +9,7 @@ features:
     details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
     link: '/online/'
 
-  - title: Desktop Tools
+  - title: Desktop Apps
     icon: 'fluent-color:laptop-48'
     details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
     link: '/desktop/'
@@ -25,19 +25,7 @@ features:
     link: 'https://alexrzem.artstation.com'
 ---
 
-# Desktop
-
-
-
-## Core Technologies
-
-### FLUX.1
-[bfl.ai](https://bfl.ai/models/flux-tools) | [huggingface.co](https://huggingface.co/black-forest-labs)
-
-### Stable Diffusion
-[stability.ai](https://stability.ai/) | [github](https://github.com/Stability-AI)
-
-## Desktop Applications
+## Desktop Apps
 
 ### ComfyUI
 * [comfy.org](https://www.comfy.org/)

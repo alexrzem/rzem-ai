@@ -12,7 +12,7 @@ export const navbar: NavbarOptions = [
         icon: 'fluent-color:cloud-16',
     },
     {
-        text: 'Desktop Tools',
+        text: 'Desktop Apps',
         link: '/desktop/',
         icon: 'fluent-color:laptop-16',
     },
@@ -20,8 +20,8 @@ export const navbar: NavbarOptions = [
         text: 'Technology',
         icon: 'fluent-color:code-block-16',
         children: [
-            { text: 'FLUX', link: '/tech/flux/', icon: 'fluent-color:org-16' },
-            { text: 'Stable Diffusion', link: '/tech/sd/', icon: 'fluent-color:org-16' },
+            { text: 'FLUX', link: '/tech/flux/', icon: 'fluent-color:code-block-16' },
+            { text: 'Stable Diffusion', link: '/tech/sd/', icon: 'fluent-color:code-block-16' },
             { text: 'Text-To-Image', link: '/tech/text-to/text-to-image.md', icon: 'fluent-color:text-bullet-list-square-16' },
             { text: 'Text-To-Music', link: '/tech/text-to/text-to-music.md', icon: 'fluent-color:text-bullet-list-square-16' },
             { text: 'Text-To-Video', link: '/tech/text-to/text-to-video.md', icon: 'fluent-color:text-bullet-list-square-16' },

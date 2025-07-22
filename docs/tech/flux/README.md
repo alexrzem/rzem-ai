@@ -1,6 +1,6 @@
 ---
 title: FLUX
-icon: fluent-color:org-48
+icon: 'fluent-color:code-block-48'
 ---
 
 # FLUX

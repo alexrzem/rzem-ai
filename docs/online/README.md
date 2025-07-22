@@ -1,7 +1,7 @@
 ---
 home: false
-title: Online
-icon: fluent-color:cloud-48
+title: Online Tools
+icon: 'fluent-color:cloud-48'
 ---
 
 # Online
@@ -115,7 +115,7 @@ icon: fluent-color:cloud-48
 :::
 
 ### Sora
-* [sora.com](https://sora.com/explore)
+* [sora.chatgpt.com](https://sora.chatgpt.com/explore)
 ::: info
 *Sora is an advanced text-to-video AI model developed by OpenAI that can "create realistic and imaginative scenes from text instructions," generating videos up to a minute long while maintaining high visual quality and adherence to user prompts.*
 
