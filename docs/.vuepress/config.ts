@@ -1,12 +1,19 @@
 import path from 'node:path';
 
 import { defineUserConfig } from 'vuepress';
+// import { defineClientConfig } from 'vuepress/client';
 import { viteBundler } from '@vuepress/bundler-vite';
 import { hopeTheme } from 'vuepress-theme-hope';
 
 import { markdownExtended } from './markdown';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
+
+// defineClientConfig({
+//     layouts: {
+//         PageTitle: () => import('./components/PageTitle.js'),
+//     },
+// });
 
 export default defineUserConfig({
     lang: 'en-AU',
@@ -38,8 +45,10 @@ export default defineUserConfig({
         darkmode: 'enable', // or "toggle", "auto", "enable", "disable", "switch"
         logo: 'logo.png',
         navbar: navbar,
-        sidebar: sidebar,
         print: false,
+		//readingTime: false,
+        sidebar: sidebar,
+		toc: false,
         markdown: {
             codeTabs: true,
             component: true,
@@ -55,9 +64,7 @@ export default defineUserConfig({
                 assets: 'iconify', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
             },
             photoSwipe: false,
-            //readingTime: false,
         },
 
-        toc: false,
     }),
 });

@@ -25,23 +25,3 @@ features:
     link: 'https://alexrzem.artstation.com'
 
 ---
-
-  - title: Online Tools
-  	icon: fluent-color:org-48
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-	link: /guide/markdown/
-
-  - title: Desktop Tools
-  	icon: fluent-color:org-48
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-	link: /guide/markdown/
-
-  - title: Text-2-...
-  	icon: fluent-color:org-48
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-	link: /guide/markdown/
-  
-  - title: Image-2-...
-    icon: fluent-color:org-48
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-	link: /guide/markdown/
