@@ -131,22 +131,22 @@ export const sidebar: SidebarOptions = {
                 {
                     text: 'FLUX.1 [schnell]',
                     icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/txt2img.md',
+                    link: '/tech/flux/schnell/',
                 },
                 {
                     text: 'FLUX.1 [dev]',
                     icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/prompt_generators.md',
+                    link: '/tech/flux/dev/',
                 },
                 {
                     text: 'FLUX.1 [pro]',
                     icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/prompt_generators.md',
+                    link: '/tech/flux/pro/',
                 },
                 {
                     text: 'FLUX.1 Kontext [dev]',
                     icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/prompt_generators.md',
+                    link: '/tech/flux/kontext/',
                 },
             ],
         },

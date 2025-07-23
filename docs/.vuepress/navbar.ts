@@ -7,12 +7,12 @@ export const navbar: NavbarOptions = [
         icon: 'fluent-color:home-16',
     },
     {
-        text: 'Online Tools',
+        text: 'Online',
         link: '/online/',
         icon: 'fluent-color:cloud-16',
     },
     {
-        text: 'Desktop Apps',
+        text: 'Desktop',
         link: '/desktop/',
         icon: 'fluent-color:laptop-16',
     },

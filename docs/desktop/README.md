@@ -1,37 +1,26 @@
 ---
-home: false
-title: Desktop Apps
+home: true
+title: Desktop
+heroText: Desktop
 icon: 'fluent-color:laptop-48'
 
-features:
-  - title: Online Tools
-    icon: 'fluent-color:cloud-48'
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
-    link: '/online/'
+highlights:
 
-  - title: Desktop Apps
-    icon: 'fluent-color:laptop-48'
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
-    link: '/desktop/'
+  - features:
+      - title: ComfyUI
+        icon: 'fluent-color:send-48'
+        details: comfy.org
+        link: https://www.comfy.org/
 
-  - title: Technology
-    icon: 'fluent-color:code-block-48'
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
-    link: '/tech/'
+      - title: DrawThings
+        icon: 'fluent-color:send-48'
+        details: drawthings.ai
+        link: https://drawthings.ai/
 
-  - title: Portfolio
-    icon: 'fluent-color:image-48'
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in Markdown
-    link: 'https://alexrzem.artstation.com'
+      - title: Invoke.ai
+        icon: 'fluent-color:send-48'
+        details: invoke.ai
+        link: https://invoke.ai/
+
+
 ---
-
-## Desktop Apps
-
-### ComfyUI
-* [comfy.org](https://www.comfy.org/)
-
-### DrawThings
-* [drawthings.ai](https://drawthings.ai/)
-
-### Invoke.ai
-* [invoke.ai](https://invoke.ai/)
