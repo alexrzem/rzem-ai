@@ -1,5 +1,5 @@
 ---
-title: Image2
+title: 'Image to ...'
 icon: fluent-color:text-bullet-list-square-16
 ---
 

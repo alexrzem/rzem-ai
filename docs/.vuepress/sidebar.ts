@@ -1,38 +1,13 @@
 import { SidebarOptions } from 'vuepress-theme-hope/client';
 
 export const sidebar: SidebarOptions = {
-    '/online/midjourney': [
-        {
-            text: 'Midjourney',
-            icon: 'regular:file-image',
-            collapsible: false,
-            children: [
-                {
-                    text: 'Midjourney',
-                    icon: 'regular:paper-plane',
-                    link: 'https://www.midjourney.com/',
-                },
-                {
-                    text: 'Moodboards',
-                    icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/midjourney/moodboards.md',
-                },
-                {
-                    text: 'Style References',
-                    icon: 'fluent-color:number-symbol-square-24',
-                    link: '/txt2img/midjourney/style_references.md',
-                },
-            ],
-        },
-    ],
-
     '/online/': [
         {
             text: 'Online Tools',
             icon: 'fluent-color:cloud-16',
             collapsible: false,
             children: [
-                                {
+                {
                     text: 'ChatGPT',
                     icon: 'fluent-color:link-24',
                     link: 'https://sora.chatgpt.com/',
@@ -122,6 +97,26 @@ export const sidebar: SidebarOptions = {
         },
     ],
 
+    '/tech/': [
+        {
+            text: 'Technology',
+            icon: 'fluent-color:code-block-24',
+            collapsible: false,
+            children: [
+                {
+                    text: 'FLUX.1',
+                    icon: 'fluent-color:code-block-24',
+                    link: '/tech/flux/',
+                },
+                {
+                    text: 'Stable Diffusion',
+                    icon: 'fluent-color:code-block-24',
+                    link: '/tech/sd/',
+                },
+            ],
+        },
+    ],
+
     '/tech/flux/': [
         {
             text: 'FLUX.1',
@@ -166,7 +161,7 @@ export const sidebar: SidebarOptions = {
 
     '/tech/sd/': [
         {
-            text: 'SD Releases',
+            text: 'Stable Diffusion',
             icon: 'fluent-color:code-block-24',
             collapsible: false,
             children: [
@@ -206,6 +201,125 @@ export const sidebar: SidebarOptions = {
                     text: 'CLIP',
                     icon: 'fluent-color:book-24',
                     link: '/tech/sd/clip.md',
+                },
+            ],
+        },
+    ],
+
+    '/tech/text-to/': [
+        {
+            text: 'Text to ...',
+            icon: 'fluent-color:text-bullet-list-square-24',
+            collapsible: false,
+            children: [
+                {
+                    text: 'Text to Image',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-image.md',
+                },
+                {
+                    text: 'Text to Music',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-music.md',
+                },
+                {
+                    text: 'Text to Video',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-video.md',
+                },
+            ],
+        },
+        {
+            text: 'Image to ...',
+            icon: 'fluent-color:image-16',
+            collapsible: false,
+            children: [
+                {
+                    text: 'Image to Image',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-image.md',
+                },
+                {
+                    text: 'Image to Text',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-text.md',
+                },
+                {
+                    text: 'Image to Video',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-video.md',
+                },
+            ],
+        },
+    ],
+
+    '/tech/image-to/': [
+{
+            text: 'Text to ...',
+            icon: 'fluent-color:text-bullet-list-square-24',
+            collapsible: false,
+            children: [
+                {
+                    text: 'Text to Image',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-image.md',
+                },
+                {
+                    text: 'Text to Music',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-music.md',
+                },
+                {
+                    text: 'Text to Video',
+                    icon: 'fluent-color:text-bullet-list-square-24',
+                    link: '/tech/text-to/text-to-video.md',
+                },
+            ],
+        },
+        {
+            text: 'Image to ...',
+            icon: 'fluent-color:image-16',
+            collapsible: false,
+            children: [
+                {
+                    text: 'Image to Image',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-image.md',
+                },
+                {
+                    text: 'Image to Text',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-text.md',
+                },
+                {
+                    text: 'Image to Video',
+                    icon: 'fluent-color:image-16',
+                    link: '/tech/image-to/image-to-video.md',
+                },
+            ],
+        },
+    ],
+
+    '/online/midjourney': [
+        {
+            text: 'Midjourney',
+            icon: 'regular:file-image',
+            collapsible: false,
+            children: [
+                {
+                    text: 'Midjourney',
+                    icon: 'regular:paper-plane',
+                    link: 'https://www.midjourney.com/',
+                },
+                {
+                    text: 'Moodboards',
+                    icon: 'fluent-color:number-symbol-square-24',
+                    link: '/txt2img/midjourney/moodboards.md',
+                },
+                {
+                    text: 'Style References',
+                    icon: 'fluent-color:number-symbol-square-24',
+                    link: '/txt2img/midjourney/style_references.md',
                 },
             ],
         },

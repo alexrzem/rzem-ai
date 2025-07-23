@@ -38,7 +38,7 @@ export default defineUserConfig({
         ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/favicons/logo-32.png' }],
         ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/favicons/logo-16.png' }],
         ['link', { rel: 'manifest', href: '/assets/favicons/site.webmanifest' }],
-        ['link', { rel: 'shortcut icon', href: '/assets/favicons/logo-24.ico' }],
+        ['link', { rel: 'shortcut icon', href: '/assets/favicons/logo.ico' }],
     ],
 
     theme: hopeTheme({
@@ -46,9 +46,9 @@ export default defineUserConfig({
         logo: 'logo.png',
         navbar: navbar,
         print: false,
-		//readingTime: false,
+        //readingTime: false,
         sidebar: sidebar,
-		toc: false,
+        toc: false,
         markdown: {
             codeTabs: true,
             component: true,
@@ -65,6 +65,5 @@ export default defineUserConfig({
             },
             photoSwipe: false,
         },
-
     }),
 });

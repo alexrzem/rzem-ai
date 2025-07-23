@@ -1,6 +1,6 @@
 ---
-title: Text2
-icon: regular:image
+title: 'Text to ...'
+icon: 'fluent-color:text-bullet-list-square-48'
 ---
 
 # Text2
