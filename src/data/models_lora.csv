@@ -1,0 +1,1059 @@
+"id","hash","base","type","path","format","name","description","trigger_phrases","created_at","updated_at","file_size"
+"57a3e7d5-29fe-4e2f-8a4a-8f411ef68fff","blake3:a3f229f9b380ada7380187b3a9599c2def9ead68542adce8a58ab633d2ed512f","flux","lora","flux/lora/Landscape Illustration v1.safetensors","lycoris","Landscape Illustration v1","flux lora model Landscape Illustration v1","[""fjch""]","2025-07-18 02:49:58.402","2025-07-18 02:50:23.385",317112656
+"89fca6f6-61a4-4040-a167-3689f19ae4b5","blake3:0acd97255b6596b34119253f2a85bbab42f6db3397899786e509b174257c314c","flux","lora","flux/lora/CE - Abstract Soft Watercolor 01 FLUX.safetensors","diffusers","CE - Abstract Soft Watercolor 01 FLUX","flux lora model CE - Abstract Soft Watercolor 01 FLUX","[""pasartcCE style""]","2025-07-18 08:04:59.117","2025-07-18 08:06:05.596",343805667
+"f212f7fd-a076-4ee5-992f-ab1c101e8448","blake3:cb2f0c1ebdd23c0c96b9f91a24e71e7f6fb92647eb0c4c1d453aec90e2890281","flux","lora","flux/lora/CE - Cosmic 01 FLUX.safetensors","diffusers","CE - Cosmic 01 FLUX","flux lora model CE - Cosmic 01 FLUX","[""csmcCE style"",""cosmic""]","2025-07-18 08:04:59.452","2025-07-18 08:07:05.514",343805597
+"7351586e-19d2-441e-be73-f38af741d823","blake3:dad5383b8d70ccd5edcc215cf4fd3e041d7bc8b97b48630137ac62f1d7a89c0e","flux","lora","flux/lora/CE - Vintage Travel Poster 01 FLUX.safetensors","diffusers","CE - Vintage Travel Poster 01 FLUX","flux lora model CE - Vintage Travel Poster 01 FLUX","[""vntgtrvlpstrCE style"",""travel poster""]","2025-07-18 08:05:00.949","2025-07-18 08:08:17.676",343805669
+"048a9f08-1c73-4f08-af5e-3df92f7af2bc","blake3:6530b1add3ffbd2bcc6ee3b5a3a65d8a5528fff5669022319805812bea205eda","flux","lora","flux/lora/CE - Geometric 01 FLUX.safetensors","diffusers","CE - Geometric 01 FLUX","flux lora model CE - Geometric 01 FLUX","[""curvilinear"",""cubism"",""geometric"",""gmtrcCE style"",""honeycomb""]","2025-07-18 08:05:01.263","2025-07-18 08:07:59.192",343805577
+"f0d7551d-a97b-444b-889f-c50075934642","blake3:2321af844242c5f1764a825ca100811a7c0a9dae963c8f56c1f1477fc16a487a","flux","lora","flux/lora/CE - Ink Wash 01 FLUX.safetensors","diffusers","CE - Ink Wash 01 FLUX","flux lora model CE - Ink Wash 01 FLUX","[""inkwshCE_style""]","2025-07-18 08:05:01.360","2025-07-18 08:07:33.629",86049824
+"066c315d-56a5-4243-a919-94d98ca55e2c","blake3:1c671406a0b2fc3fcdb547af91cde86fa5c80be0083fc4d19078fbc5de3ffb23","flux","lora","flux/lora/CE - Squishy 02 FLUX.safetensors","diffusers","CE - Squishy 02 FLUX","flux lora model CE - Squishy 02 FLUX","[""sqshyCE style"",""squishy""]","2025-07-18 08:05:01.697","2025-07-18 08:07:22.183",343805681
+"49ce43c1-f530-4ce8-86b6-82d6993e1a8b","blake3:6fc5f549b1dedee83da3f3d7f9e8a4d9db1465264c0ae373e9196f0d91967e2a","flux","lora","flux/lora/CE - Art Deco 01 FLUX.safetensors","diffusers","CE - Art Deco 01 FLUX","flux lora model CE - Art Deco 01 FLUX","[""art deco"",""artdcoCE_style""]","2025-07-18 08:05:02.028","2025-07-18 08:06:31.764",343805657
+"7fb06029-550e-4247-b58d-1de1998132de","blake3:82543409b9332b334231fc4894bf811c5cd7b8836754334f1d34dfc7f959623a","flux","lora","flux/lora/CE - Painterly 01 FLUX.safetensors","diffusers","CE - Painterly 01 FLUX","flux lora model CE - Painterly 01 FLUX","[""pntrlyCE_style""]","2025-07-18 08:05:02.391","2025-07-18 08:06:48.449",343805675
+"d5864fff-e415-4003-bb96-7809f17835c0","blake3:a49a3874b20d516964b682c094b18c0a7e751c7cc77d963d10b9b27911da1a97","flux","lora","flux/lora/CE - MoviePoster 01 FLUX.safetensors","diffusers","CE - MoviePoster 01 FLUX","flux lora model CE - MoviePoster 01 FLUX","[""mvpstrCE style""]","2025-07-18 08:14:08.785","2025-07-18 08:14:22.736",343805573
+"9bdbf56e-6279-4670-9731-a804cc0c2f1c","blake3:80bacba94536095c2b3eec424af66012d894411bd6c9020d66a1ea1714eb58c4","flux","lora","flux/lora/Long-Toon.safetensors","lycoris","PrithivMLmods - Long-Toon","flux lora model Long-Toon",,"2025-07-19 03:51:20.552","2025-07-19 03:58:25.247",612748312
+"f485b22f-edeb-4355-aa98-c8a50f581157","blake3:9b3643c5480865210c18e0bfd9e945abde139105c363ef3cd269096a620d91ae","flux","lora","flux/lora/toonic2.5D.safetensors","lycoris","PrithivMLmods - Toonic-2.5D","flux lora model toonic2.5D",,"2025-07-19 03:53:35.198","2025-07-19 03:59:04.111",612747584
+"f7d4d798-42bd-4655-8a86-4e4305097264","blake3:c5c68f2a05e844749dbc90f5f4b4a193a314627eaf9827c81a93d66cb2d3b73b","flux","lora","flux/lora/lora_v2.safetensors","diffusers","Aleksa - Ghibsky illustration v2.0","flux lora model lora_v2","[""GHIBSKY style, ""]","2025-07-19 03:55:58.374","2025-07-19 06:59:28.519",171969424
+"4584b3bf-a209-4b41-8ba0-622eaafff47c","blake3:8ae5c515d4e46ef1144ecdff5348b11259a10c11e26db02b481da575d6cfedea","flux","lora","flux/lora/hauntedlinework_flux_araminta_k.safetensors","diffusers","Alvdansen - Haunted Linework","flux lora model hauntedlinework_flux_araminta_k","[""hntdlnwrk style""]","2025-07-19 04:02:44.108","2025-07-20 09:38:41.678",343805600
+"104feb97-9f5d-4754-9fa2-b3cb6bd2f136","blake3:f298b2dd32b1f6cd3de2a8aa7b05cff131af7f3474a779245fbb5cb8bf3157b2","flux","lora","flux/lora/geopop_NWGMTRCPOPV01.safetensors","diffusers","BingBangBoom - GeoPop","flux lora model geopop_NWGMTRCPOPV01","[""illustration in the style of NWGMTRCPOPV01""]","2025-07-19 04:04:57.242","2025-07-19 04:05:34.193",171969432
+"9f3a679d-e3fc-4b9b-bb2e-056d407651dd","blake3:394048efdbadfe008db6ce4a0ce60b9d94d561da157498eeae43ca68dbf360da","flux","lora","flux/lora/Brain_Melt.safetensors","diffusers","Glif - Brain Melt Acid Art","flux lora model Brain_Melt","[""in an acid surrealism style""]","2025-07-19 04:07:07.417","2025-07-19 04:09:38.597",451203024
+"d5949dc0-f02b-4fe5-ba8a-d6463487ba06","blake3:60d3041c6967bbdc83f4193eceef7101e952a97c19f720029444d4a4f22a3b31","flux","lora","flux/lora/lora.safetensors","diffusers","Adirik  - Flux Cinestill","flux lora model lora
+
+in the style of CNSTLL, a white car parked in front of a gas station, night time, cinestill 800T","[""in the style of CNSTLL, ""]","2025-07-20 09:56:35.423","2025-07-20 09:59:44.432",171969416
+"339aa472-6862-42a8-8d50-1f5cdcba47cf","blake3:087f0e1f93198fd1f9214f87a7f3366c328a1a13da9ba1d552910f1952821e7d","flux","lora","flux/lora/tost-2024-09-22-12-14-05-lightningmcqueen05.safetensors","diffusers","VinitT - Lightning McQueen","lightningmcqueen05, A vibrant and detailed illustration of Lightning McQueen, the brown race car with number 95, speeding down a race track with a determined expression. The background features a cheering crowd and a clear blue sky, capturing the excitement and energy of a high-stakes race.","[""lightningmcqueen05""]","2025-07-20 10:00:19.806","2025-07-20 10:01:21.496",171969440
+"21cf1c18-8d85-4e3c-aaed-bc02bac2da01","blake3:b75c6e5e1f849823ae36b9f273083ff595414bd73ed6fbcb72229c182d0d83ce","flux","lora","flux/lora/ume_classic_impressionist.safetensors","diffusers","UmeAiRT - Impressionism","A painting of a woman in a black dress with a flower in her hand, standing behind a table with a bowl of oranges and a bottle of champagne. She is looking at the camera with a frown on her face. The table is set with multiple bottles of champagne and oranges. The woman is wearing a black dress with a flower in her hand. The scene is set in a fancy restaurant with multiple people in the background. The painting is in an impressionist style.",,"2025-07-20 10:20:01.061","2025-07-20 10:20:39.316",343805549
+"b5fb155f-d480-4485-bc9a-7fb6bea6088f","blake3:353736c84659eb86521c7d1d9a13c8d357fe203ed7a1d381c0d26f66171bd88f","flux","lora","flux/lora/Canopus-Cute-Kawaii-Flux-LoRA.safetensors","lycoris","PrithivMLmods - Canopus Cute Kawaii Flux","Cute-kawaii, An animated image of an ice cream cone on an orange background. The ice cream in the middle of the image is white with brown dots on it. There are black eyes on the ice cream. There is a smiley face on the top of the icecream cone. The cone is made up of wicker and has ridges on the sides. The background is a vibrant orange color.","[""Cute-kawaii""]","2025-07-20 10:26:49.124","2025-07-20 10:29:25.533",612747264
+"eac50ec9-4917-4afb-83bc-137d7e58d70c","blake3:61a31addc80bef6ed4562ba24a3f961dd7f8efa598050adab7412950fb5f9428","flux","lora","flux/lora/Abstractum_Flux.safetensors","lycoris","Abstractum Flux","Abstract style painting. Try to make you prompts abstract enough even before lora :)","[""Kandinsky"",""Abstract art""]","2025-07-22 06:07:47.678","2025-07-22 06:11:44.589",19256800
+"faffced1-b33a-40f1-8fc3-a088ebe0715a","blake3:9aeda29212237149037ce0c71367810bc9eb0a3c7e48df3a34fb1ca6a4ebc064","flux","lora","flux/lora/Kandinskyan_Chaos.safetensors","diffusers","Kandinskyan Chaos","A LoRA inspired by the revolutionary work of Wassily Kandinsky (1866â1944), transforming subjects into bold, vibrant abstraction. Whether you seek fluid, expressive motion or sharp, geometric precision, this LoRA offers two distinct pathways to pure dynamic form.
+
+ð¨ Two Distinct Styles:
+Flowing Abstraction â Organic, fluid motion with swirling brushstrokes and blended colors, evoking movement and energy.
+Geometric Abstraction â Sharp, angular compositions with rigid shapes, intersecting lines, and structured contrasts.
+Trigger Word:
+kndsk 
+
+Flowing Abstraction: Use words like swirling, flowing, melting, undulating, organic shapes, luminous gradients.
+Geometric Abstraction: Use words like sharp-edged, intersecting, rigid forms, bold contrasts, fragmented shapes.","[""kndsk""]","2025-07-22 06:08:05.086","2025-07-22 06:09:58.837",451202736
+"4e671420-b19e-4059-86d0-df582e27e6d7","blake3:62d792ff566c1cf54c984d90aeca9c2f705aaea6ac9300547791efed20679d03","flux","lora","flux/lora/Wassily_Kandinsky.safetensors","lycoris","Wassily Kandinsky","Wassily Kandinsky, born on December 16, 1866, in Moscow, Russia, was a pioneering Russian painter and art theorist. He is often credited with being one of the first artists to create purely abstract paintings, breaking away from traditional representational art.","[""style of Wassily Kandinsky""]","2025-07-22 06:08:16.347","2025-07-22 06:11:04.037",306432368
+"c51a19b0-0e0c-43ef-a998-97e82d3eccf4","blake3:d351243e654e89d6dac837562241aef2d79a99339dcb1a97771544003d30ed58","flux","lora","flux/lora/CAD_Holographic.safetensors","lycoris","CAD - Holographic","flux lora model CAD_Holographic","[""holographic"",""wire form CAD""]","2025-07-22 07:15:54.788","2025-07-22 07:23:01.821",19258848
+"1ca26e31-7445-4275-9fd3-69471982e5d2","blake3:159003224fa0be52cc77378f8b26f6f401fb2ccba8514b98b382886d44ad9463","flux","lora","flux/lora/CAD_Cutaway_Technical_Drawing.safetensors","lycoris","CAD - Cutaway Technical Drawing","For final touch cutaway drawing, add more technical drawing style and more cutaway, add structured text blocks.
+
+Better for machines and hard surfaces. Less for biological.
+
+Prompt have matter.
+Model weight have matter.
+Sampler have matter.
+Scheduler have matter.
+Size and aspect ratio have matter.","[""cut4w4y""]","2025-07-22 07:16:06.435","2025-07-22 07:20:49.081",39757160
+"c29943c9-eb37-4962-9845-215103786d6f","blake3:c793fee7f65c3bd0e830e11a6d63b5700ac1ddf46d788a053587e58e3c8218fc","flux","lora","flux/lora/CAD_Drawing.safetensors","lycoris","CAD - Technical Drawing","attempts to duplicate CAD spec sheet drawings.
+
+Best prompting method is
+
+""A technical CAD drawing of a ______________""
+
+for added strength, use ""Spec Sheet"" appended to the prompt
+
+guidance can go all the way to 7.5 for increased strength, tends to burn out the image and make it look like old paper. recommended 3.5-5 sweet spot seems to be 5.5","[""A technical CAD drawing of a"",""Spec Sheet""]","2025-07-22 07:16:15.603","2025-07-30 13:03:04.504",306432832
+"bf158d5b-082f-40d8-9c71-eb694f17961f","blake3:2e597e6d683163901c6e057226b835ddd8d1de4b6fcb9480783c94273933429d","flux","lora","flux/lora/CAD_Blueprint_Drawing.safetensors","lycoris","CAD - Blueprint Drawing","Designed for generating unique sci-fi styled and intricate mechanical designs, these drawings harness creativity and imagination to produce stunning sci-fi mechanical artworks, ranging from intricate mechanical schematics to breathtaking Flux sci-fi model drawings. It aids sci-fi enthusiasts, mechanical designers, and AI art lovers in exploring the world of sci-fi mechanics with their creativity and imagination!","[""Blueprint_Drawing""]","2025-07-22 07:17:09.513","2025-07-22 07:20:58.630",459584744
+"b8f521df-115d-43ad-9c0a-5545640d759b","blake3:c8e3ce971695cfa32559b0fec86800bb01e079e6a3614878b1522027e780f75c","flux","lora","flux/lora/1980s_Technical_Manuals_Flux.safetensors","lycoris","Books - Technical Manuals 1980s","The model is designed to replicate the iconic look and feel of 1980s technical manuals and guides, capturing the retro aesthetic with precision. It focuses on producing blocky, pixelated fonts typical of the era, with bold primary colors such as red, blue, and neon accents. The model incorporates clean, minimalist layouts with geometric shapes and simple, high-contrast color schemes, evoking the corporate and industrial design trends of the time. Distressed textures, slight gradients, and sharp borders are applied to give a worn, authentic appearance, while metallic sheens and gridlines enhance the high-tech, analog vibe. It excels at producing covers with faded paper effects, subtle shadowing, and vintage typography, delivering the perfect blend of nostalgic 1980s design and technical precision.",,"2025-07-22 07:41:15.253","2025-07-23 06:26:52.631",19290208
+"96798c21-225a-426c-ba4a-ee60d1099c29","blake3:0881ccf3445b72e6387577e5f4b35ee9fb2bb4de6b4314cf81b0ce1beb2ab4f0","flux","lora","flux/lora/CE_DaVinciDrawing01.safetensors","diffusers","CE - da Vinci Drawing","Weight around 0.9 suits most pictures, within a range of around 0.5 - 1.2 depending on desired result.","[""dvnciCE style""]","2025-07-22 07:44:41.400","2025-07-22 07:46:20.788",343805595
+"fdd07f83-5d39-4c12-aa1e-3935633a45d0","blake3:924aac99adadb86ecc6284ae286a751f2be33db0fcabed71516356e6db951059","flux","lora","flux/lora/ICONS_Round_Flux.safetensors","lycoris","Icons - Round Flux","A Flux Lora trained on round simple Icons for FLUX. DEV
+
+Please make some Icons and post them. so i can Finetune.
+I used RMBG V2.0 to remove Background in ComfyUi.
+
+
+Trained with Flux. Dev 1900 times....
+
+For ROUND Icons Prompt :
+
+""iconx ,A Angry Joker Round icon looks modern with Simple reflections in logo style""
+
+Strenght i use 1.0","[""iconx, "","", round icon looks modern with simple reflections in logo style""]","2025-07-22 10:19:31.252","2025-07-22 10:21:41.992",18214100
+"ce5a5374-97b7-4eec-8f44-ededd4e59923","blake3:f226cd9cd1826f1fedf7accb011645d1ead935097340c51833e3baf70c1042f7","flux","lora","flux/lora/StarWars - ScoutTrooper.safetensors","diffusers","StarWars - ScoutTrooper","That was also a request and i think this is the last star wars clothing lora for me, as probably everything most recognized is covered now.
+
+-Update added FLUX version
+
+-Trigger is ""scouttrooper""
+
+Use with weight 0.8,0.9 for best results.
+
+Add ""helmet,mask"" to prompt to get the full headwear.","[""scouttrooper""]","2025-07-23 10:24:10.441","2025-07-23 10:24:54.662",171969360
+"4fa6b9e2-8ec6-43c5-8c21-aaec246c8969","blake3:546e3bc1273cf4bcd700c2945c3f915d11a12c13a8adce491456409e8f9db9e1","flux","lora","flux/lora/StarWars - First Order.safetensors","lycoris","StarWars - First Order","flux lora model StarWars - First Order","[""First Order Stormtrooper"",""foarmy""]","2025-07-23 10:25:15.831","2025-07-23 10:39:50.866",19310216
+"b01cd50d-1df1-4ca3-a9ea-bfe3ad835d77","blake3:87a659d31add6073939efa08ac7bb749f7924e8b2771d3813054bb18ca7e97da","flux","lora","flux/lora/StarWars - Ralph McQuarrie Illustration.safetensors","lycoris","StarWars - Ralph McQuarrie Illustration","Flux does not know Star Wars ships well, and this is a McQuarrie style LoRA, not a Star Wars concept Lora, which would require a much larger dataset. So the LoRA has problem rendering ships faithfully. You can try lowering the weight to 0.8 and see if the rendering improves.
+
+","[""ralphmcq1 painting""]","2025-07-23 10:25:46.523","2025-07-23 10:39:08.087",57551176
+"41634287-6eee-43d9-93c0-a740fd89c153","blake3:d2436572a9b7f10d19409241a405ff8b5c9997490ef021ff39d65f030db58400","flux","lora","flux/lora/StarWars - Darth Vader.safetensors","lycoris","StarWars - Darth Vader","flux lora model StarWars - Darth Vader","[""Darth Vader""]","2025-07-23 10:25:53.656","2025-07-23 10:38:20.194",19292136
+"181df1b1-e584-4ea4-b42e-361b397bccab","blake3:4b26b23ec39512c123c1b1e2a990c42402f8fd2ac727c940a325033aa13734d9","flux","lora","flux/lora/StarWars - X-Wing.safetensors","lycoris","StarWars - X-Wing","flux lora model StarWars - X-Wing","[""xwingflux""]","2025-07-23 10:26:00.487","2025-07-23 10:37:01.314",19257888
+"fdd74500-6f1b-41a0-9f16-7e6ad29f9f03","blake3:d11b06a9d4d32e3f36858d953c13b95e0e5fb6647e7467e4b271b5d3e762b680","flux","lora","flux/lora/StarWars - Yoda.safetensors","lycoris","StarWars - Yoda","flux lora model StarWars - Yoda","[""Yoda""]","2025-07-23 10:26:10.268","2025-07-23 10:36:50.716",38402632
+"1ff23e15-3cb4-4aeb-b51d-069d300f4a49","blake3:67eb4eff067d4d97276ebbfabd884ed579cd043b635af293de9debfc17c1fbd3","flux","lora","flux/lora/StarWars - Revan.safetensors","lycoris","StarWars - Revan","flux lora model StarWars - Revan","[""Revan""]","2025-07-23 10:26:17.131","2025-07-23 10:36:36.435",19275696
+"8a5c5a0c-bc5a-4aab-9f78-e0ad7010c3b0","blake3:10b388463762b5a585e9cc13fe6c3e5b7181fb3bd80d0b5e39c5ddf0aa78d391","flux","lora","flux/lora/StarWars - B2EMO.safetensors","lycoris","StarWars - B2EMO","Works best with parameters from 1.0 to 1.5. With higher values you'll obtain red B2EMO on a sand-rocky landscape(even on 1.5 it is sometimes difficult to get a different color than red). 1.0 and lower gives interesting droids similar to Bee(see my cross-post below).
+","[""B2EM0""]","2025-07-23 10:26:23.222","2025-07-23 10:36:25.666",19257120
+"640c5f1c-e4a4-43a4-ae90-58401b1044a5","blake3:85bb5b4015318d73936b796aa37f3b8b01db4c58953f6af191eb29e7d1c9c974","flux","lora","flux/lora/StarWars - General Grievous.safetensors","lycoris","StarWars - General Grievous","General Grievous, the feared cyborg leader of the droid armies of the Confederacy of Independent Systems!
+
+Trigger is ""GeneralGrievous""
+
+supporting tags: cyborg, alien, mask, robot, science fiction
+
+optional: cape, (four arms:1.4)
+
+Works best around 0.8 weight. Should work on most checkpoints, especially realistic ones. Tends towards portraits, but should respond to camera prompting and it does work with controlnet openpose. Lightsabers are hit or miss as to whether he's holding them correctly. XD
+
+Hope you like it and please post generations! :D
+
+Known issue: it does have a tendency to generate psuedo-text and logos in the bottom corners (though they're usually easy enough to crop off), I'll try to fix that if I make a v2...","[""GeneralGrievous""]","2025-07-23 10:26:32.537","2025-07-23 10:36:04.479",38408448
+"31e4d952-2ea1-4242-8fc0-10d926c88f0e","blake3:75ea559d81931412af7fbafdd0f6b8a28ef3c338ff3e987a2f898649fc40a818","flux","lora","flux/lora/StarWars - Republic Venator Class Star Destroyer.safetensors","lycoris","StarWars - Republic Venator Class Star Destroyer","flux lora model StarWars - Republic Venator Class Star Destroyer","[""V3nat0r""]","2025-07-23 10:26:58.279","2025-07-23 10:35:43.168",145180532
+"9e8e2c95-5f31-4b8e-a906-ae4733039e16","blake3:5bc72647e0a6c347220d86a80340e16d2e79d53504a2360600c277c1334c1734","flux","lora","flux/lora/StarWars - Imperial II-class Star Destroyer.safetensors","lycoris","StarWars - Imperial II-class Star Destroyer","flux lora model StarWars - Imperial II-class Star Destroyer","[""ISDII""]","2025-07-23 10:27:27.300","2025-07-23 10:35:28.745",145172956
+"8f4cc20b-98de-4ae4-92f3-7dd1c44d9709","blake3:859ea5bd16a947f5dd9cc71451401cc6d8750ca6f9eb459bf2cb143275cb2aca","flux","lora","flux/lora/StarWars - Clone Commando.safetensors","lycoris","StarWars - Clone Commando","flux lora model StarWars - Clone Commando","[""7-CloneCommando""]","2025-07-23 10:27:35.923","2025-07-23 10:35:07.564",306452432
+"f20191c5-e32e-4d59-bc40-8f27b2a622b7","blake3:0dd968e914e1e2476134f02473f4102590fc50a1cd563cf14ab1cf1dc890e97a","flux","lora","flux/lora/StarWars - B1 Droid.safetensors","lycoris","StarWars - B1 Droid","flux lora model StarWars - B1 Droid","[""7-B1""]","2025-07-23 10:29:52.519","2025-07-23 10:34:48.070",306456232
+"c5ca0889-a461-4f45-8685-c3704a99c127","blake3:6cd58e92b0e268c679f40e508589ba9fa7d7554d72d0568a3e103776084a1042","flux","lora","flux/lora/StarWars - Cinematic Style v1.safetensors","diffusers","StarWars - Cinematic Style v1","flux lora model StarWars - Cinematic Style v1","[""star wars style""]","2025-07-23 10:31:28.969","2025-07-23 10:34:17.432",343805461
+"ea4b49b9-ff8b-412f-9d23-6dab725d6b6f","blake3:fc79c04d62ea15febaea9f55228659f4c7e54fe737e3c10061d31640fd914237","flux","lora","flux/lora/StarWars - Clone Armour Phase 2.safetensors","lycoris","StarWars - Clone Armour Phase 2","flux lora model StarWars - Clone Armour Phase 2","[""Clone Trooper"",""7-Phase2""]","2025-07-23 10:32:19.074","2025-07-23 10:33:53.094",306474264
+"7758a079-c0ea-4c65-affc-a269f60eecf2","blake3:650ef766a4f7f55f87bbff618d03188c079ebebab0f637582c93c116ff23ec81","flux","lora","flux/lora/StarWars - Stormtrooper.safetensors","diffusers","StarWars - Stormtrooper","flux lora model StarWars - Stormtrooper","[""stormtrooperflux""]","2025-07-23 10:37:57.244","2025-07-23 10:38:07.961",171969432
+"3cc0273e-6817-4018-8cba-ea79c858da09","blake3:88f0c74c355a5c7bc528b9eba527c8cb97a47e6c1f79158bafa9b7945c14114c","flux","lora","flux/lora/Cybernetic_Robots.safetensors","lycoris","Robotka - Cybernetic Robots","Cybernetic Robots
+This lora is trained from digital luminous circuits and matrix code.
+
+Important words in the prompt:
+
+cybernetic
+
+translucent
+
+glass
+
+circuit
+
+matrix code
+
+futuristic
+
+glowing
+
+EXAMPLE
+PROMPT: futuristic robotic woman covered with glowing matrix code and circuits, fast running, wearing battle gear, blue, red, white, background matrix code","[""cybrob""]","2025-07-24 00:46:47.350","2025-07-24 00:47:35.565",39761376
+"ca009bf3-3548-4e78-9b7a-7a515c3ae16b","blake3:eb07edfd6c2125a4be7d4ffd617f40f4582b51669df467f8c46328099843681d","flux","lora","flux/lora/Adel_AI - Architectural_Sketching.safetensors","lycoris","AdelAI - Architectural Sketching","weighting between 1.2 - 1.6 ( you can test outside of this interval)
+
+Showcase Images were created with Flux1.dev fp16.
+
+LoRA training images base were created with Pixel Alchemy.
+
+In order to explore the extent of the possible renderings of this LoRA, it is recommended to use these tags which were used in the training. Do not of course use them all at the same time, but depending on what you are looking for : Perspective, Proportions, Construction Lines, Shading, Freehand Drawing, Rendering, Architectural Details, Schematic, Loose Lines, Abstract, Conceptual, Minimalist, Gestural, Outline, Impressionistic, Visual Brainstorming, Multi-View, Composite View.
+
+The model seems to show skills outside of architecture and interior design, yet he was only trained on that. Donât hesitate to test it on other themes.","[""Construction Lines"",""Outline"",""Shading"",""Loose Lines"",""Gestural"",""Architectural Details"",""Rendering"",""Multi-View"",""Composite View"",""Schematic"",""Impressionistic"",""Perspective"",""ConceptualMinimalist"",""Visual Brainstorming"",""Proportions"",""Abstract"",""Freehand Drawing""]","2025-07-24 01:06:18.424","2025-07-24 01:44:59.806",19295344
+"ddf3d939-87a5-437a-b02c-e73a71e2b1d6","blake3:a46ff42791e98dff037942d3d464eca612eeb3b6a1104b7b320d804336d5aa3b","flux","lora","flux/lora/AdelAI - Pascal BlanchÃ©.safetensors","lycoris","AdelAI - Pascal BlanchÃ©","Inspired by Pascal BlanchÃ© artwork (one of my favorites).
+Recommended resources : Fluxmania or Flux1.dev fp8.
+
+Settings : dpmpp_2m / sgm_uniform / 25 - 30 steps / cfg 3.5
+Weighting : 0.8 - 1.2","[""By Passcal BlanchÃ©""]","2025-07-24 01:50:17.697","2025-07-24 01:51:08.124",19295360
+"fb72dbdf-c2f2-489c-8961-3f8a59055cc1","blake3:26e3ba06efc48e734af11a3e50f4ce556812269a4acaf0678b381c398b1c02ec","flux","lora","flux/lora/DJZ - CyberSociety v66-e9.safetensors","lycoris","DJZ - CyberSociety v66-e9","flux lora model DJZ - CyberSociety v66-e9","[""cybersociety style""]","2025-07-24 02:05:49.302","2025-07-24 02:06:02.934",76954088
+"683a02e4-2cc9-496d-8c76-ae837afe225f","blake3:af825d2f646f07197a7b95de1fe6c69209c9c313fae2b707f100efc4365f15c0","flux","lora","flux/lora/CK - Ghost Reaper.safetensors","lycoris","CK - Ghost Reaper","flux lora model CK - Ghost Reaper","[""robot""]","2025-07-24 02:10:50.037","2025-07-24 02:11:07.448",76697315
+"50e284f3-c908-4c65-aefe-d51d097b33b4","blake3:4341ac41369f1959568abe5b1c8622167fe1edbed28dd48a841d4d05989001b0","flux","lora","flux/lora/Meower2024 - Cubism Style.safetensors","lycoris","Meower2024 - Cubism Style","flux lora model Meower2024 - Cubism Style","[""cubism painting""]","2025-07-24 02:13:19.418","2025-07-24 02:13:35.295",19259768
+"2e6df661-c12a-47a6-8e8d-cace83aa7f3a","blake3:95e209cb9596fcada2aca3321c60b87b008f37059ca0fd0cd72d4846e9017101","flux","lora","flux/lora/Fancy_Pants - Polygonized v0.5.safetensors","lycoris","Fancy_Pants - Polygonized v0.5","Main trigger: low poly art, geometric shapes
+
+Best weight: 0.7 ~ 1.4","[""low poly art, geometric shapes""]","2025-07-24 02:16:14.776","2025-07-24 02:17:33.718",19261776
+"420d934b-9d8d-479e-be95-b694aa605031","blake3:3f93f36b44e7eb4df90cf9baf18db449ecbd3fcf680af01b78751c5a0e03bb41","flux","lora","flux/lora/Fancy_Pants - Polygonized v0.6.safetensors","lycoris","Fancy_Pants - Polygonized v0.6","Main trigger: low poly art, geometric shapes
+
+Best weight: 0.7 ~ 1.4","[""low poly art, geometric shapes"",""polygonized""]","2025-07-24 02:16:21.206","2025-07-24 02:16:53.539",612750896
+"aa96a506-e466-4760-8a7d-0886ecb9b41c","blake3:87bfdfa0c7fc7c516d271adc0e992775733e8f2a37dabe163a2c7db717f6eccd","flux","lora","flux/lora/Seruva19 - Moebius.safetensors","diffusers","Seruva19 - Moebius","All showcase images were generated with the following settings, which are recommended:
+
+Prompts: started with ""In style of Moebius.""
+Model: flux1-dev (fp8e4m3fn)
+Text Encoder: t5pxxl_fp16
+Sampler: euler
+Scheduler: 24 steps (normal)
+Flux Guidance: 4
+LoRA Strength: 1
+","[""In style of Moebius""]","2025-07-24 13:59:07.361","2025-07-24 14:00:14.804",343805376
+"6ce9386a-c839-4989-bf49-29230050b0de","blake3:38061dd7cc10ac0b1f71e57fef6909214387bf5447ddde9bc111bb3cfba0dc0b","flux","lora","flux/lora/Corruptedcupid - Moebius.safetensors","lycoris","Corruptedcupid - Moebius","flux lora model Corruptedcupid - Moebius","[""Moebiusstyle""]","2025-07-24 14:08:16.548","2025-07-24 14:08:59.864",38405920
+"c8f44609-678f-4c06-a090-3b3311967feb","blake3:fd5a6f7e595c9d60793545492792d9f1c9098c94bbe76ea81095a97cea1fc77c","flux","lora","flux/lora/TangBohu - William Stout Style.safetensors","lycoris","TangBohu - William Stout Style","William Stout is an American artist and illustrator, known for his contributions to the field of paleoart and fantasy art. He was born on September 18, 1949, and is still alive today.
+
+Stout's main body of work includes creating realistic and detailed illustrations of prehistoric life, dinosaurs, and ancient civilizations. He has also worked extensively in the field of movie poster design, having created iconic posters for films like ""The Lost World: Jurassic Park"" and ""Pan's Labyrinth.""
+
+Stout's artistic style is characterized by his attention to detail, vibrant colors, and ability to bring extinct creatures to life through his illustrations. His work often showcases a blend of scientific accuracy and imaginative storytelling, making his art both educational and visually captivating.
+
+In addition to his artistic contributions, Stout has also written and published several books on paleoart and fantasy illustration, sharing his knowledge and expertise with aspiring artists and enthusiasts.","[""style of William Stout""]","2025-07-27 00:36:34.981","2025-07-27 00:37:40.479",306434672
+"44e24025-b3b9-48ce-9c84-8489bb09f712","blake3:1ceab2545594cbade0bbec7332a8a9309b621b873201b05fe0bf887a2bfb3a70","flux","lora","flux/lora/TangBohu - Claude Monet style.safetensors","lycoris","TangBohu - Claude Monet style","Claude Monet (1840-1926) was a French painter and the founder of the Impressionist movement. Born in Paris, he spent his youth in Normandy, where he developed his initial passion for art through outdoor sketching.
+
+Major Works:
+
+Impression, Sunrise (1872)
+
+Water Lilies series (1914-1926)
+
+Rouen Cathedral series (1892-1894)
+
+Haystacks series (1890-1891)
+
+Houses of Parliament series (1899-1901)
+
+Painting Style:
+Monet pioneered the Impressionist style, characterized by:
+
+Visible brushstrokes
+
+Emphasis on light and its changing qualities
+
+Open composition
+
+Focus on modern life
+
+Plein-air painting (outdoor painting)
+
+Major Contributions:
+
+Founded Impressionism, revolutionizing modern art
+
+Developed the concept of painting in series to capture changing light
+
+Influenced subsequent art movements including Post-Impressionism
+
+Pioneered the study of light's effects on color
+
+Created the famous garden at Giverny, which inspired his later works","[""style of Claude Monet""]","2025-07-27 00:45:52.088","2025-07-27 00:54:10.680",19256840
+"3dbd2e09-ed28-493e-830c-ab36e7d81df3","blake3:75b0b045ca4ec6c467ce167f8780be177571e32d6ee56cd34e30e7df5f528b08","flux","lora","flux/lora/TangBohu - William Zorach style.safetensors","lycoris","TangBohu - William Zorach style","William Zorach was an American sculptor, painter, and printmaker. He was born on February 28, 1887, in Eurburg, Lithuania, and passed away on November 15, 1966, in Bath, Maine.
+
+Zorach was known for his contributions to the development of modernism in American art. He began his artistic career as a painter, experimenting with various styles including Fauvism and Cubism. However, it was his transition to sculpture that brought him the most recognition.
+
+Zorach's sculptures were characterized by their simplified forms and emphasis on the natural beauty of the materials. He often worked with stone, wood, and bronze, creating organic and abstracted figures that conveyed a sense of grace and harmony. Zorach's sculptures were influenced by primitive and folk art, displaying a sense of rawness and simplicity.
+
+In addition to his sculptures, Zorach was also an accomplished printmaker and painter. His paintings often depicted landscapes, still lifes, and portraits, showcasing his mastery of color and composition.
+
+William Zorach's contributions to the art world include his role in introducing modernist aesthetics to American sculpture. His work embraced the essence of nature and celebrated the beauty in simplicity. Zorach's sculptures and paintings continue to inspire artists today, leaving a lasting impact on the development of American modernism.","[""style of William Zorach""]","2025-07-27 00:46:11.786","2025-07-27 00:57:21.402",306432752
+"590bd178-35f8-4f74-a66e-8529b582125c","blake3:8c67fe46cc5861149857f289f7b94d357d96776ceef83c25a12f31b1601d3dc0","flux","lora","flux/lora/TangBohu - Fra Filippo Lippi style.safetensors","lycoris","TangBohu - Fra Filippo Lippi style","Fra Filippo Lippi (c. 1406-1469) was an Italian painter of the Quattrocento (15th century) and one of the most important Early Renaissance artists in Florence.
+
+Birth/Death: c. 1406 in Florence, Italy - October 8, 1469 in Spoleto, Italy
+
+Major Works:
+
+""Madonna and Child with Angels"" (Uffizi)
+
+""The Annunciation"" (San Lorenzo, Florence)
+
+""Madonna with Child and Two Angels"" (Uffizi)
+
+""Coronation of the Virgin"" (Uffizi)
+
+""Stories of St. Stephen and St. John the Baptist"" (Prato Cathedral)
+
+Artistic Style:
+
+Blending of religious and secular elements
+
+Innovative use of color and light
+
+Naturalistic representation of figures
+
+Detailed attention to fabric and texture
+
+Integration of contemporary Florentine fashion
+
+Dynamic composition with psychological depth
+
+Influence of Masaccio's naturalism
+
+Rich color palette and delicate modeling
+
+Major Contributions:
+
+Advanced naturalistic portrayal in religious paintings
+
+Pioneered psychological depth in religious figures
+
+Influenced later Renaissance artists including Botticelli
+
+Developed new approaches to depicting space and perspective
+
+Combined sacred themes with contemporary life elements
+
+Innovated the intimate Madonna and Child composition","[""style of Fra Filippo Lippi""]","2025-07-27 00:46:19.607","2025-07-27 00:55:21.243",38402144
+"59b59dd9-3b5c-42e6-a84a-678b2b5c2b79","blake3:6a403eeb5875e11aba3d60bfc8114554e54d4db66f6055d81c8f6efc57c053d0","flux","lora","flux/lora/TangBohu - Milton Glaser style.safetensors","lycoris","TangBohu - Milton Glaser style","Milton Glaser, born on June 26, 1929, in New York City, was an American graphic designer, illustrator, and co-founder of the iconic design firm Push Pin Studios. He is widely regarded as one of the most influential graphic designers of the 20th century.
+
+Glaser's work is characterized by his bold and vibrant use of color, combined with his innovative and imaginative approach to design. He is best known for creating the iconic ""I â¤ï¸ NY"" logo, which has become a globally recognized symbol of New York City.
+
+One of Glaser's notable contributions to the design world is his pioneering work in the field of graphic design. He was instrumental in shaping the visual language of the 1960s and 1970s, particularly through his distinctive psychedelic posters and album covers. His designs often incorporated hand-drawn typography, cultural references, and a sense of playfulness.
+
+In addition to his commercial work, Glaser also had a passion for promoting design education and fostering creativity. He co-founded the School of Visual Arts in New York City, where he taught and mentored many aspiring designers.
+
+Glaser's work has been exhibited worldwide, and he has received numerous awards and accolades for his contributions to the field of graphic design. He was honored with the National Medal of Arts in 2009, recognizing his significant impact on American culture through his design work.
+
+Milton Glaser passed away on June 26, 2020, leaving behind a legacy of iconic designs and a lasting influence on the world of graphic design.
+
+","[""style of Milton Glaser""]","2025-07-27 00:46:26.755","2025-07-27 00:56:24.433",38402128
+"7d7d4bdf-9166-49da-862b-050db4440452","blake3:a888a351607a649b26a186fa207d83d39bb42bc123f879be24d3de4e7056f30b","flux","lora","flux/lora/TangBohu - Gentile da Fabriano style.safetensors","lycoris","TangBohu - Gentile da Fabriano style","Gentile da Fabriano (c.1370-1427) was one of the most important Italian painters of the International Gothic style, known for his luxurious decorative effects and refined technique.
+
+Birth/Death: c.1370 in Fabriano, Marche, Italy - September 1427 in Rome, Italy
+
+Major Works:
+
+""Adoration of the Magi"" (1423) - Uffizi Gallery, Florence
+
+""Valle Romita Polyptych"" (1410-1412)
+
+""Madonna and Child with Saints"" (1425)
+
+""Quaratesi Madonna"" (1425)
+
+Frescoes in the Doge's Palace, Venice (mostly lost)
+
+""Madonna of Humility"" (1420)
+
+""Coronation of the Virgin"" (1420)
+
+Artistic Style:
+
+Rich, decorative International Gothic style
+
+Extensive use of gold leaf
+
+Intricate patterns and details
+
+Elegant, flowing line work
+
+Brilliant color combinations
+
+Precise rendering of luxurious materials
+
+Delicate modeling of figures
+
+Integration of naturalistic elements
+
+Complex spatial arrangements
+
+Attention to costume detail
+
+Refined handling of light effects
+
+Major Contributions:
+
+Master of International Gothic style in Italy
+
+Bridge between Gothic and Renaissance art
+
+Advanced techniques in gold leaf application
+
+Influenced development of Florentine painting
+
+Combined Northern European and Italian styles
+
+Introduced new levels of naturalistic detail
+
+Enhanced narrative painting techniques
+
+Influenced Early Renaissance artists","[""style of Gentile da Fabriano""]","2025-07-27 00:46:34.228","2025-07-27 00:55:50.553",38403280
+"3541dd7c-fe92-454d-a09a-40aa704010cb","blake3:6f74b1ee433c82b7fe4fbb14b903af9cf1e4e1fc81dae3f4d67ea6299f2b6c4a","flux","lora","flux/lora/TangBohu - Maurice Prendergast style.safetensors","lycoris","TangBohu - Maurice Prendergast style","Maurice Prendergast was an American Post-Impressionist painter known for his colorful and vibrant depictions of urban scenes, landscapes, and leisure activities. He was born on October 10, 1858 in St. John's, Newfoundland, Canada, and later moved to Boston, Massachusetts with his family. Prendergast's art often featured lively brushwork, bold colors, and a sense of movement.
+
+His works are characterized by a combination of Pointillism and Fauvism, creating a unique and dynamic style. Prendergast was influenced by European art movements such as Impressionism and Post-Impressionism, but he developed his own distinctive approach to painting.
+
+Some of his most famous works include ""Central Park"" and ""The Bathers,"" which showcase his interest in capturing the vibrancy of everyday life and leisure activities. Prendergast's contributions to American art include his role in introducing modern European art styles to American audiences and his influence on later generations of American artists.
+
+Maurice Prendergast passed away on February 1, 1924 in New York City, leaving behind a legacy of innovative and colorful paintings that continue to inspire art lovers around the world.","[""style of Maurice Prendergast""]","2025-07-27 00:46:41.995","2025-07-27 00:54:39.455",38402152
+"757a5e15-e86e-4c6e-94f1-b307fd986f28","blake3:6745a9c53eebe317ea422b049dbd8de476c13f308455770f22a7bfd926ab7181","flux","lora","flux/lora/TangBohu - William Morris style.safetensors","lycoris","TangBohu - William Morris style","William Morris was an English textile designer, poet, novelist, and socialist activist. He was born on March 24, 1834, in Walthamstow, Essex, England, and he passed away on October 3, 1896, in Hammersmith, London.
+
+Morris is best known for his contributions to the Arts and Crafts movement, which aimed to revive traditional craftsmanship and create beautiful, functional objects for everyday life. He believed that art should be accessible to all and sought to bring artistry and beauty into people's homes.
+
+As a textile designer, Morris created intricate patterns inspired by nature and medieval art. His designs, characterized by rich colors and elaborate motifs, became highly sought after and had a significant impact on the Victorian aesthetic. His most famous textile design is ""Strawberry Thief,"" featuring birds stealing strawberries from a garden.
+
+Morris was also a prolific writer and poet. His works often reflected his socialist beliefs and advocated for social justice and environmental conservation. He wrote several novels, including ""News from Nowhere"" and ""The Wood Beyond the World,"" which combined elements of fantasy and social critique.
+
+In addition to his artistic and literary pursuits, Morris was actively involved in political activism. He co-founded the Socialist League and was a vocal advocate for workers' rights and the redistribution of wealth.
+
+William Morris's legacy lies in his pioneering role in the Arts and Crafts movement, his influential textile designs, and his commitment to social and environmental causes. His ideas continue to inspire artists, designers, and activists today, reminding us of the power of art to transform society.","[""style of William Morris""]","2025-07-27 00:52:13.258","2025-07-27 00:56:51.638",306435968
+"12d1e171-6037-4d85-a35e-5a7463fbe239","blake3:c194779beba8d30c204e3904ad3ffc695a1cb542286f207dccaeae881dc7d19a","flux","lora","flux/lora/RZ - HamishMacbeth.safetensors","diffusers","RZ - HamishMacbeth","flux lora model RZ - HamishMacbeth","[""hamish""]","2025-07-28 07:55:47.752","2025-07-28 07:56:05.507",89745224
+"e15f90fd-6128-45e8-ae1a-85d2608dda28","blake3:60a4883e6b4c576170b66e650ae1aa2e1291d50a9f356ed44aa2f1e67de3dc57","flux","lora","flux/lora/PhotobAIt - Tron2 Style.safetensors","lycoris","PhotobAIt - Tron2 Style","Q2xpcCBTa2lwOiAxClN0cmVuZ3RoOiAwLjkKdHJvbjIgc3R5bGUsIHNjaWVuY2UgZmljdGlvbiwgbmVvbiwgcGFyaXMgbGFuZHNjYXBlIHdpdGggdGhlIGVmZmVpbCB0b3dlciwgbm90cmUgZGFtZSBjYXRoZWRyYWwsIFRoZSBCYXNpbGljYSBvZiBTYWNyw4PCqSBDw4XCk3VyIGRlIE1vbnRtYXJ0cmUsIFRoZSBBcmMgZGUgVHJpb21waGUgZGUgbCfDg8KJdG9pbGUgPGxvcmE6VHJvbjJfU3R5bGU6MC45PiB0cm9uMiBzdHlsZSwgc2NpZW5jZSBmaWN0aW9u","[""tron2 style, science fiction, neon""]","2025-07-29 02:29:37.355","2025-07-29 04:09:49.945",19260760
+"238fccb1-d1d2-4312-bb34-6406b2e2a8e8","blake3:b8a8dab33b705fa38e1582645cad7a67348c5d58104f74dd547a9048f711dd8b","flux","lora","flux/lora/PhotobAIt - Clement Thoby Style.safetensors","lycoris","PhotobAIt - Clement Thoby Style","<lora:Clement_Thoby_Style:0.9> clement thoby style, digital painting. the eiffel tower with snow at sunset","[""clement thoby style, painting""]","2025-07-29 03:51:46.961","2025-07-29 04:07:36.272",19260736
+"1054d51e-d395-4606-962a-e0f2714cfb35","blake3:6d3e8ece26cf669d39d88ffc04a01eb1a6800982d34c7899536ebfd573810815","flux","lora","flux/lora/PhotobAIt - Renoir style.safetensors","lycoris","PhotobAIt - Renoir style","<lora:Renoir_style:0.9> renoir style, a woman holds a cocktail on the beach at sunset","[""renoir style""]","2025-07-29 03:51:57.163","2025-07-29 04:07:08.666",19260784
+"33b08699-4e54-43ac-887b-fc1c92ec822c","blake3:d0cb1a98c3d4b4742b7343e9606e6e13073ed9b7181502ebc6c6cc84f618e2ec","flux","lora","flux/lora/PhotobAIt - Dali Style.safetensors","lycoris","PhotobAIt - Dali Style","<lora:Dali Style:0.9> dali style, painting. a man holding a melting beer in a pub with long legs elephants","[""dali style, painting""]","2025-07-29 03:52:06.806","2025-07-29 04:06:45.040",76692896
+"4571959e-b36b-4193-a93b-a879e0d5220b","blake3:79b6b03e4ff6d2cba32004192a0b2862c51ac4c1878578931f498ca97756f900","flux","lora","flux/lora/PhotobAIt - George PÃ©rez.safetensors","lycoris","PhotobAIt - George PÃ©rez","<lora:George_PÃ©rez:0.9> george pÃ©rez style, comics, full body, spiderman is holding a beer in a pub","[""george pÃ©rez style, comics""]","2025-07-29 03:52:14.795","2025-07-29 04:04:28.720",19260952
+"81d955d4-d9ae-4dc7-a16e-60780e1dab18","blake3:0a6cdcad032a88b44d33fc22f214624a99e4dc84cd97d993cb2e7c20100fffb7","flux","lora","flux/lora/PhotobAIt - Origami style.safetensors","lycoris","PhotobAIt - Origami style","<lora:Origami_style:0.9> origami style,  scilpture, a cat at a window","[""sculpture"",""origami style""]","2025-07-29 03:52:24.568","2025-07-29 04:04:07.111",19259576
+"d00a5f34-870e-4a1c-81eb-3b44d9da2404","blake3:08f036a2bea91b17ea7e54648fa370acdba7f19bef831b8fbc2172e41012c3c6","flux","lora","flux/lora/PhotobAIt - Papercut Art.safetensors","lycoris","PhotobAIt - Papercut Art","<lora:Papercut_Art:0.9> papercut art, a man holds a beer","[""hands holding"",""papercut art""]","2025-07-29 03:52:35.308","2025-07-29 04:03:41.334",19262144
+"2a9953cc-87d0-49e9-9aa2-f92e05670add","blake3:3ab7a630c1157105821cca684fa9f95145ca0dd7a45963128bc160e305d442b6","flux","lora","flux/lora/PhotobAIt - Pablo Oliveira Style.safetensors","lycoris","PhotobAIt - Pablo Oliveira Style","a spaceship in the desert parked in front of a pub. sunset <lora:Pablo_Oliveira_Style:0.9> pablo oliveira style, scenery, science fiction","[""pablo oliveira style, scenery, science fiction.""]","2025-07-29 03:53:08.434","2025-07-29 04:03:10.927",19260952
+"193c7705-3683-4024-a2fe-b1393593fa5b","blake3:be2b8e2f99f309461e48e67ae2ce6eed40fc2407b374d38e92f2a66a72a0cdcd","flux","lora","flux/lora/PhotobAIt - Roy Lichtenstein Style.safetensors","lycoris","PhotobAIt - Roy Lichtenstein Style","<lora:Roy_Lichtenstein_Style:0.9> roy lichtenstein style, a redhead woman portrait","[""roy lichtenstein style""]","2025-07-29 03:53:17.061","2025-07-29 04:02:41.017",19261144
+"ba6ffa49-4ec6-40c7-a6c7-de0d9bebce3d","blake3:0158c6cf6d0861e68678f88081795ea04f98b011cfff4c7286e97b3b0cebda8d","flux","lora","flux/lora/PhotobAIt - Bansky.safetensors","lycoris","PhotobAIt - Bansky","<lora:Bansky:0.88> Bansky style, streetart on a wall , a muscular man is weightlifting barbell made of balloons","[""Bansky style, streetart"",""on a wall""]","2025-07-29 03:53:27.785","2025-07-29 04:02:13.306",19262184
+"aa446fbf-0b45-40e0-91d4-e773a4ec5516","blake3:da4411146873ed392e93d27e1f07d6b89acc24b24ac480416bfcfd152f9923a8","flux","lora","flux/lora/PhotobAIt - Vermeer Style.safetensors","lycoris","PhotobAIt - Vermeer Style","<lora:Vermeer_Style:0.9> vermeer style, superman stands in front of a castle, hands on hips","[""vermeer style""]","2025-07-29 03:53:35.916","2025-07-29 04:01:31.217",19261584
+"3a930d37-c45f-4ae7-ad14-c031ef669b57","blake3:f60ef0d5424d58af46c7d8fc0d67ecddba92fbc1aa98c77153a406c8169bb32d","flux","lora","flux/lora/PhotobAIt - Michelangelo Style.safetensors","lycoris","PhotobAIt - Michelangelo Style","<lora:Michelangelo_Style:0.9> michelangelo style, a man is holding a beer in a pub","[""michelangelo style""]","2025-07-29 03:53:45.054","2025-07-29 04:01:08.112",19261648
+"d4d8153c-48df-466f-be72-922a166b2ac4","blake3:0557af4cc778e39202bb8d831d86ddc49d980be1100772d7e2278c2c88051a06","flux","lora","flux/lora/PhotobAIt - Botticelli.safetensors","lycoris","PhotobAIt - Botticelli","Sandro Botticelli Style","[""botticelli style, painting.""]","2025-07-29 03:53:55.057","2025-07-29 04:00:36.242",76693056
+"21e48f99-347e-442d-aac8-72f25324c6b7","blake3:340f2381c7cfe84de14151dcb62e790fc0b1ac201e81f42f85a01ddb497e01d8","flux","lora","flux/lora/PhotobAIt - Rembrandt Style.safetensors","lycoris","PhotobAIt - Rembrandt Style","flux lora model PhotobAIt - Rembrandt Style","[""rembrandt style, painting""]","2025-07-29 03:54:11.400","2025-07-29 03:59:53.616",76693304
+"aa03655a-3bb6-489d-8a9f-1406e8c215a2","blake3:bad9d06333d6f96d43206d3e80b2ae01b0684af4906ea7b5d543b444fb8fbe23","flux","lora","flux/lora/PhotobAIt - Art Nouveau Style.safetensors","lycoris","PhotobAIt - Art Nouveau Style","flux lora model PhotobAIt - Art Nouveau Style","[""art nouveau style"",""text says \""your text\""""]","2025-07-29 03:54:20.785","2025-07-29 03:59:28.783",19261728
+"d20df382-5364-4f06-8d4c-ca099ff9f0bb","blake3:6a8d53a094a11053f686a1cc272a5d0e49862049dbbae394cb7207be9d67ac0b","flux","lora","flux/lora/PhotobAIt - Renaissance Style.safetensors","lycoris","PhotobAIt - Renaissance Style","flux lora model PhotobAIt - Renaissance Style","[""renaissance style painting""]","2025-07-29 03:54:29.264","2025-07-29 03:59:10.925",76693232
+"6f2c842c-d6f5-4b8b-afe4-5d36232d55be","blake3:289aa803472f520c358458beb0b3c6d272b2135ef1e9403d8e3e5401b515a902","flux","lora","flux/lora/PhotobAIt - Abstract PopArt.safetensors","lycoris","PhotobAIt - Abstract PopArt","<lora:Abstract_PopArt:0.9> Abstract PopArt.  <lora:Batman60s:0.9> batman60s, man dressed with a batman costume","[""Abstract PopArt""]","2025-07-29 03:54:40.644","2025-07-29 03:56:36.384",19260040
+"c3818d66-bf88-406a-93f9-ade1e3cc5e2c","blake3:f6a6d584f33c25fe0bd7153981d273b26d78432c6969074bde645e22769e3d1d","flux","lora","flux/lora/PhotobAIt - Retrofururism Style.safetensors","lycoris","PhotobAIt - Retrofururism Style","flux lora model PhotobAIt - Retrofururism Style","[""retrofururism style, scenery, science fiction""]","2025-07-29 03:54:51.773","2025-07-29 03:58:56.525",19261840
+"1fd0ce98-1780-43cb-8b58-e33899ad2c32","blake3:a1c5569721c61f4e149bb4215c476f774054c14bf9a589dbdbb1c82b44c6dd18","flux","lora","flux/lora/PhotobAIt - Hellboy.safetensors","lycoris","PhotobAIt - Hellboy","He holds a beer in a pub  <lora:Hellboy:0.9> hellboy, a man with red skin.","[""hellboy, a man with red skin.""]","2025-07-29 03:55:03.097","2025-07-29 03:57:50.371",306431144
+"79efc172-c106-4932-a2fc-81e5c0b6b834","blake3:20eaf6eb14c9b9b1f19726c15addd788a18bbbbc67380c39ec15a7c1b69274ca","flux","lora","flux/lora/PhotobAIt - Art Deco Style.safetensors","lycoris","PhotobAIt - Art Deco Style","<lora:Art_Deco_Style:0.9> art deco style, a cat, text ""OBEY""","[""art deco style""]","2025-07-29 03:55:12.788","2025-07-29 03:58:16.737",19260024
+"99ced5ab-22e9-4211-be25-db3ae5b80c3e","blake3:17beb84c2f1c905b9a916d4a102f97aae4f206c2dca9033c9fec142197325fa1","flux","lora","flux/lora/PhotobAIt - Mario style.safetensors","lycoris","PhotobAIt - Mario style","Mario style,  Mario and Luigi and princess peach and Donkey Kong are holding beers in a pub<lora:Mario_style:0.9>","[""Mario style""]","2025-07-29 03:55:26.342","2025-07-29 03:57:18.558",19265464
+"8e3cbfdd-692c-4072-b2f8-34823b6101e5","blake3:f1a14a512aa6c5032b4e43a9a3b08c9d9806e697d1e58e8be28699fdf38c2cdb","flux","lora","flux/lora/PhotobAIt - FÃ©lix Meynet Style.safetensors","lycoris","PhotobAIt - FÃ©lix Meynet Style","<lora:FÃ©lix_Meynet_Style:0.9> fÃ©lix meynet style, a woman holds a cocktail. text says ""Happy New Year 2025""","[""fÃ©lix meynet style""]","2025-07-29 04:06:02.305","2025-07-29 04:06:28.261",19263112
+"c19e54c5-6fd5-4023-8cbe-1f4a6d46ae61","blake3:cde6f46ebe70e982430c07bb9629e6f3a9ff47fba11bd83c1f3ef815e24de68b","flux","lora","flux/lora/Neon Tron.safetensors","diffusers","Neon Tron","flux lora model Neon Tron","[""neontron""]","2025-07-29 04:12:35.708","2025-07-29 04:12:56.543",89745224
+"62fdc8ea-bfe0-40a1-81d2-3e863570f173","blake3:196881c6f46b618739a64b69d6a75c2ff9cea378d1a2c3b4c0f406218943e2c7","flux","lora","flux/lora/Lunakrita - Blueprint Vision.safetensors","lycoris","Lunakrita - Blueprint Vision","# Parameter Recommendations
+
+## The example images use the default parameters
+
+Weightsï¼0.6~1.0
+
+sizesï¼768/1024
+
+Guidanceï¼3.5 ~ 5
+
+Stepsï¼20~40 (I use 30 steps)
+
+Samplerï¼euler
+
+Sample Prompts:
+
+An ancient planet carved like a giant cave is struck by a massive celestial hammer, the impact releasing golden energy in perfect spline shockwaves. Structural collapse is mapped with vector fracture lines, dust clouds illustrated as flowing mesh gradients.
+
+A South Asian dancer mid-spin, her lehenga fanned like a plotted bloom in polar coordinates. Each movement path is mapped in splines across the scene, leaving a trail of schematic afterimages. The background fades into radial floral vectors and faint rhythm annotation curves.
+
+A goddess-like woman standing amid ruins, her sari blowing in CAD-simulated wind, with plotted vortex lines and gravity fields overlaying ancient stone. Vector birds in flight arc across a sunburst schematic behind her, merging grace and decayed architecture with dreamlike precision.
+
+Suggested words & Concepts
+
+blueprint vector style, CAD surrealism, engineering overlays
+
+schematic fusion, mechanical shading, crosshatched design
+
+Indian woman vector, comic book precision, exploded diagrams
+
+celestial smash, circuit aesthetic, architectural abstraction","[""architectural abstraction"",""engineering overlays"",""exploded diagrams"",""circuit aesthetic"",""crosshatched design"",""blueprint vector style"",""CAD surrealism"",""schematic fusion"",""mechanical shading""]","2025-07-29 04:25:15.305","2025-07-29 23:43:17.632",153373456
+"2d132994-3b2a-4f8f-9565-23ad88c3f20d","blake3:12744769fbebd1d328de14e5f316e0abfb50101d4c0c8ba8dcc74d65560e4c0c","flux","lora","flux/lora/Bra2ha - Mecha Anime Style.safetensors","lycoris","Bra2ha - Mecha Anime Style","<lora:Mecha_Anime_style_v.1:0.8>  A humanoid mecha exosuit rendered in precision industrial anime style, with a pilot cockpit embedded in the torso framed by reinforced ceramic armor plates in glossy off-white, contrasted by muted graphite paneling and bright hazard-orange mechanical limbs. The design incorporates articulated servo joints, modular access panels, and detailed caution labeling across limb plating, enhancing its functional realism. Inked with clean contour lines and shaded using a cel-rendered approach, the suit features high-contrast highlights and geometric decal motifs on the forearms, while exposed wiring and hydraulic pistons add mechanical depth. Displayed on a neutral black-to-charcoal vertical gradient, the silhouette is clean and upright, emphasizing utility-driven elegance and modular construction symmetry.",,"2025-07-29 04:29:10.832","2025-07-29 04:29:54.189",76692656
+"973fcbb2-369b-4faa-95fc-4d1635b80de3","blake3:689eea0bbc98d485a4a0d7d4b100458f5ee9fd2ebf9bd291e63a67ad1c5f3d36","flux","lora","flux/lora/YFG - Aarchy v1.safetensors","lycoris","YFG - Aarchy v1","flux lora model YFG - Aarchy v1","[""YFG-Aarchy""]","2025-07-31 01:36:43.452","2025-07-31 01:57:12.574",158608760
+"f92b4d95-a978-4c81-81bf-0e3b52e8fec0","blake3:d2b1239a823f18d2d2c6ea30bf058de26f8309d63600cd5edff99bf1159347e0","flux","lora","flux/lora/YFG - Bauhaus v1.safetensors","diffusers","YFG - Bauhaus v1","Bauhaus Posters - A Tribute to Modernist Design
+
+Overview:
+This model is dedicated to emulating the striking aesthetic of early 20th-century Bauhaus graphic design, channeling the clean geometric shapes, bold typographic treatments, and harmonious primary color palettes that defined an era. Inspired by the influential Bauhaus school of art and design, it excels at producing high-impact posters that are as visually arresting today as they were a century ago.
+
+Key Features:
+
+Distinctive Geometry: Reproduce the crisp lines, circles, and rectangles characteristic of Bauhaus compositions. The model maintains a careful balance between form and function, ensuring that shapes serve a clear visual purpose.
+
+Primary Colors & Balanced Palettes: Expect vibrant reds, blues, and yellows, paired thoughtfully with black, white, and neutral tones. The modelâs carefully trained color arrangements help your images capture the authentic Bauhaus spirit.
+
+Bold Typography: Typography in Bauhaus design was never an afterthought. This model pays special attention to typeface placement, scale, and spacing. It encourages sleek sans-serif fonts and structured letterforms to integrate seamlessly with geometric layouts.
+
+Modern Adaptability: While firmly rooted in historical references, the model can adapt to contemporary contexts. Generate vintage-inspired festival posters, minimalist brand advertisements, or modern conceptual designs with a distinctively Bauhaus flair.
+
+Recommended Use Cases:
+
+Art Prints & Decor: Create elegant prints that bring a timeless, high-brow modernist vibe to any interior space.
+
+Branding & Marketing: Develop bold, innovative visual identities, packaging, and promotional materials that stand out with their confident geometry and color usage.
+
+Editorial & Magazine Layouts: Enhance your publications, covers, and spreads by evoking the Bauhaus legacy, lending a unique and memorable style to your editorial projects.
+
+Tips for Best Results:
+
+Prompts & Style Cues: Incorporate keywords like ""Bauhaus,"" ""Modernist,"" ""Geometric Layout,"" ""Minimalist Poster,"" and ""Primary Color Palette"" for a more authentic aesthetic.
+
+Composition & Framing: Focus on symmetry, grids, and controlled arrangements of elements. Use negative space purposefully.
+
+Contrast & Hierarchy: Play with the scale of shapes and text to guide the viewerâs eye. Aim for a balanced yet dynamic composition.
+
+Strength: Use anywhere from 0.40 to 0.75 for a good balance. However, depending on your prompt or desired theme, you may have to either push it up to and above 1.00 or lower it to 0.35 or 0.25. You must experiment.
+
+Steps: 40 steps are a good starting point for solid results consistently. Less or more should be experimented.
+
+Sampler/Scheduler: Euler/Beta works well and is predictable. Euler/ddim_uniform will produce different but still usable results.
+
+License & Usage:
+This model is open to creators of all backgrounds, whether you're a professional designer, student, or hobbyist. Please respect the original intent of Bauhaus principles: honest, functional, and forward-thinking design. Use responsibly and let your creations reflect the humanistic spirit that Bauhaus art brought to the world.
+
+Embrace the confident minimalism and timeless geometry of Bauhaus posters. Bring a piece of art history into your creative projectsâand see how its classic simplicity can spark bold, modern solutions today.","[""YFG-Bauhaus""]","2025-07-31 01:36:49.511","2025-07-31 02:11:05.565",343805545
+"fb2dcd3d-12af-45a1-a015-795f1f6cb07f","blake3:81209246f25b4a852fb659315f679475ae9f2608e5e0b06891d1710b4bbc7f01","flux","lora","flux/lora/YFG - Beyond Glitch v1.safetensors","lycoris","YFG - Beyond Glitch v1","YFG Beyond Glitch â Cyberpunk Overlays & Digital Distortion
+Style
+Applies high-energy glitch artifacts, HUD graphics, bold typography, and neon overlaysâperfect for cyberpunk portraits, tech interfaces, and corrupted-signal visuals. Expect chromatic splits, scan-line breaks, graphical UI elements, and floating text fragments.
+
+Trigger
+No dedicated trigger word. Boost the aesthetic with phrases such as:
+
+ââ¦surrounded by graphical images and textâ
+
+ââ¦a futuristic interface on her headâ
+
+ââ¦cyberpunk backdrop, glitch overlays, floating typography.â
+
+Strength
+
+Effective from 0.40 â 1.00.
+
+0.60 â 0.80 is the sweet spot for balanced glitch flair and prompt fidelity.
+
+Lower for subtle static; higher for full data-corruption chaos.
+
+Key Characteristics
+Glitch Artifacts â RGB channel splits, scan-line distortions, pixel tears.
+
+Futuristic UI â Floating holographic panels, target reticles, data readouts, chunky sans-serif type.
+
+Bold Typography â Oversized text, warped captions, stacked Kanji/Latin phrases.
+
+Neon & Chromatic Color â Hot magentas, blues, cyans, and acidic greens light up the scene.
+
+Prompt Ideas
+âCyberpunk portrait, a futuristic interface on her head, surrounded by glitchy text and neon overlays, YFG Beyond Glitch style.â
+
+âA lone hacker silhouetted by scrolling code and graphical images, heavy chromatic aberration and scan-line effects.â
+
+âFuturistic city skyline with floating billboards, distorted typography, and glitch artifacts across the entire frame.â
+
+Tips & Tricks
+Direct the Overlay
+
+Use terms like âfloating UI,â âHUD graphics,â âvector shapes,â or âerror codeâ to shape the glitch layers.
+
+Control Chaos
+
+If details become unreadable, reduce strength or add negatives: âavoid heavy pixelation,â âmaintain face clarity.â
+
+Color Guidance
+
+Prompt specific palettes (e.g., âneon magenta and teal,â âmonochrome green DOS glitchâ) to steer the vibe.
+
+Combine with Portrait or Scene LoRAs
+
+Layer YFG Beyond Glitch at 0.6â0.7 over a character or cityscape style to merge clean subjects with digital distortion.
+
+Typography Emphasis
+
+Phrases like âoversized headline text,â âstacked kanji columns,â or âglitched lorem ipsumâ add graphic punch.
+
+Turn your visuals into fractured screens and cyber interfaces with YFG Beyond Glitchâdial in the strength, drop the right keywords, and watch your scenes burst with neon noise and data-driven drama.","[""â¦cyberpunk backdrop, glitch overlays, floating typography."",""monochrome green DOS glitch"",""â¦surrounded by graphical images and text"",""error code"",""vector shapes,"",""stacked kanji columns,"",""HUD graphics,"",""neon magenta and teal,"",""â¦a futuristic interface on her head"",""glitched lorem ipsum"",""foating UI,""]","2025-07-31 01:36:54.510","2025-07-31 02:10:40.630",158633456
+"184c9163-95c8-4c19-b9a1-b09587b5d4c6","blake3:efb0b888b7a0f20dfd0db67e39927bdf2738b68ed2675b02922e75c4dea7bce5","flux","lora","flux/lora/YFG - Cehda v1.safetensors","lycoris","YFG - Cehda v1","flux lora model YFG - Cehda v1","[""YFG-Cehda""]","2025-07-31 01:37:01.186","2025-07-31 01:57:28.991",158608752
+"5f0135f9-b52f-4084-a464-296a3eb36086","blake3:ba405799136b830ffc203d7642099431d8a503d828eff32a127b0cef14cee1e5","flux","lora","flux/lora/YFG - Clemes Gritl v1.safetensors","diffusers","YFG - Clemes Gritl v1","flux lora model YFG - Clemes Gritl v1","[""in the style of YFG-ClemensGritl"",""YFG-ClemensGritl""]","2025-07-31 01:37:06.350","2025-07-31 02:01:01.598",171969515
+"860d5aa3-0f97-445f-95b0-1bf84b467c54","blake3:aba2577897272374ba3c673bd4491c862df5350b5a6129c3a91de0db4f59a471","flux","lora","flux/lora/YFG - Face Gear v1.safetensors","lycoris","YFG - Face Gear v1","flux lora model YFG - Face Gear v1","[""YFG-F@ce""]","2025-07-31 01:37:11.543","2025-07-31 02:01:46.763",39795488
+"4000d469-e5d5-496a-b824-50096b2da1dc","blake3:e7943e96568a7eaf8f3ac1c235ded046aa7f368e8ce918f33789315c09d0eff1","flux","lora","flux/lora/YFG - Fwshn - Fusion.safetensors","lycoris","YFG - Fwshn - Fusion","flux lora model YFG - Fwshn - Fusion","[""YFG-Fwshn""]","2025-07-31 01:37:27.213","2025-07-31 01:57:21.963",158608736
+"e38f6e88-2256-40b4-91aa-14159bdd575b","blake3:fe0a8720a7a6c133b50b7fe681135c06dd8e1639f18e2444ad739b652aeec5d3","flux","lora","flux/lora/YFG - Geometric v1.safetensors","lycoris","YFG - Geometric v1","YFG Geometric: Bold Shapes & Symmetrical Designs
+YFG Geometric infuses artwork with eye-catching geometric formsâtriangles, circles, sharp corners, and smooth edgesâwhile emphasizing balanced composition and vibrant colors. Whether youâre aiming for abstract art, retro-futuristic posters, or stylized graphic backdrops, this LoRA adds visual punch with strong shapes and striking symmetry.
+
+Key Features
+Bold Geometric Shapes
+
+Generates noticeable triangles, circles, squares, and more.
+
+May introduce color blocks or patterns in the background or foreground.
+
+Symmetry & Balance
+
+Naturally leans toward symmetrical or mirrored designs.
+
+Great for modern art pieces, stylized patterns, or structured compositions.
+
+Flexible Strength Range
+
+Works well between 0.4 and 0.9, balancing geometric flair with your original prompt.
+
+Higher values (over 1.1) can produce overly aggressive shapes, so proceed with caution if you want subtler geometry.
+
+Easy Integration
+
+Pairs smoothly with other LoRAs and styles, making it an ideal additive layer for extra visual interest.
+
+Perfect for combining with character or environment prompts to add dynamic shapes and color blocking.
+
+Recommended Usage
+Trigger / Prompt Word
+
+Use âYFG-Ge0mâ to emphasize the geometric patterns, but itâs optional if your prompt already strongly indicates abstract geometry.
+
+LoRA Strength
+
+0.4 â 0.9 recommended for balanced geometric inserts without overpowering your base concept.
+
+Lower for subtle shapes, higher for bold, eye-catching geometry.
+
+Suggested Themes & Keywords
+
+âAbstract geometric artwork,â âfuturistic poster design,â âmodern minimal illustration,â âtriangular color blocking,â etc.
+
+Tips & Tricks
+Guide the Palette
+
+If you want specific colors (e.g., âblue and orange geometry,â âmonochrome shapes,â or âretro pastelâ), mention them to direct the LoRAâs color choices.
+
+Highlight Composition
+
+Terms like âsymmetrical layout,â âcentral focal point,â or âbalanced designâ help reinforce harmony in the final image.
+
+Combine With Character or Environment
+
+Try merging with character prompts to give them geometric clothing or backgrounds, or add an abstract flair to cityscapes with geometric patterns layered in.
+
+Refine Via Negative Prompts
+
+If youâre seeing too many shapes or an unwanted style shift, negative prompts like âno complex geometry,â âless saturated color,â or âsmooth gradientâ can dial things back.
+
+YFG Geometric transforms your images with vibrant geometric motifs, symmetrical layouts, and bold shapesâideal for adding a contemporary or retro edge to any composition. Adjust strength levels and pair with other styles for unique, visually compelling results!","[""YFG-Ge0m""]","2025-07-31 01:37:33.978","2025-07-31 01:55:03.136",39769728
+"e923e73a-4403-4e62-a05d-73713018b1c5","blake3:8e55b694a060f23a51609d934817117116b0cfd944b0fa8ee94dcabc004bef40","flux","lora","flux/lora/YFG - Geometric v2.safetensors","lycoris","YFG - Geometric v2","YFG Geometric (v2): Expanded Depth & Contrast for Geometric Art
+YFG Geometric (v2) evolves the original geometric art style with enhanced depth of field, improved contrast, and smoother, more intricate shapes. Whether youâre aiming for abstract compositions, realistic scenes featuring 3D letters, or neon paper cutouts, this LoRA brings a creative, geometric flair to your prompts.
+
+Key Improvements & Features
+Enhanced Depth of Field
+
+Creates a stronger sense of depth and focus in the scene.
+
+Emphasizes foreground vs. background, letting geometric elements pop with new clarity.
+
+Increased Contrast
+
+Delivers vibrant highlights and deeper shadows for a more striking visual.
+
+Perfect for bold, high-impact designs or stylized photographic effects.
+
+Smoother Lines & Shapes
+
+Generates cleaner, more fluid polygons, cutouts, and abstract panels.
+
+Ideal for sharp geometric forms, organic patterns, or anything in between.
+
+Versatile Creative Elements
+
+Excels at paper cutout aesthetics, 3D letters, neon accents, transparent glass, or cellular-like abstracts.
+
+Adapts to both purely digital art and realistic scenes populated with imaginative geometric objects.
+
+Recommended Usage
+Trigger / Prompt Word
+
+Use âYFG-Ge0mâ to emphasize the LoRAâs geometric style in your prompts.
+
+Potential Prompts & Themes
+
+âLayered paper cutouts with neon edges,â âtransparent glass polygons in a minimal scene,â âhigh-contrast geometric street art,â or â3D alphabet shapes stacked in an abstract pattern.â
+
+LoRA Strength
+
+Start around 0.5 â 0.8 for balanced results; raise or lower to control how dominant the shapes, contrast, and DOF become.
+
+Tips & Tricks
+Leverage Depth of Field
+
+Call out âshallow depth of field,â âbokeh background,â or âforeground focusâ to underline your subject.
+
+Perfect for close-up showcases of letters or shapes floating in a blurred environment.
+
+Play With Contrast & Color
+
+Try neon, bright hues, or stark monochrome for bold, high-contrast results.
+
+Combining bright and dark tones underscores the LoRAâs boosted contrast features.
+
+Realistic Scenes With Abstract Twists
+
+Prompt for everyday environments plus geometric elementsâlike âgeometric glass sculptures in a modern living room.â
+
+The LoRA can blend imaginative shapes seamlessly into real-life contexts.
+
+Combine With Other Styles
+
+Merge with LoRAs for painting, photorealism, or futuristic aesthetics.
+
+Keep an eye on color or shape overlap; use negative prompts if undesired geometry crowds the composition.
+
+YFG Geometric (v2) breathes new depth and boldness into geometric designs, marrying crisp shapes with striking contrast and improved DOF. From vibrant abstracts to unique modern scenes, let this updated LoRA push the boundaries of your artistic vision!","[""YFG-Ge0m""]","2025-07-31 01:37:39.486","2025-07-31 01:54:46.678",39809120
+"ecb1aaec-7401-4def-9234-9839b2348268","blake3:e9fac68292ed9134b2d1e4667cd851e3f323c3adf971d82c964c7cd1eb833c90","flux","lora","flux/lora/YFG - HUD v3.safetensors","diffusers","YFG - HUD v3","flux lora model YFG - HUD v3","[""YFG-HUD""]","2025-07-31 01:37:45.380","2025-07-31 01:58:11.567",687476649
+"ec949127-e092-4999-83ad-694f29558108","blake3:84b99fad2479bbb8cbfef7abfea95218c35c5a780ba67f30944052b4a4aa97f1","flux","lora","flux/lora/YFG - L3ms v1.safetensors","lycoris","YFG - Lochen v1","flux lora model YFG - L3ms v1","[""sketchy"",""Lochen style."",""painterly""]","2025-07-31 01:37:51.001","2025-07-31 02:02:39.393",39764032
+"953d63ec-2f8f-4295-847b-8650436a383b","blake3:a3e88f052e174b1ab4caa415979b3f20d35aec1a3e9a50ad0ee3a7d308a06e7e","flux","lora","flux/lora/YFG - Liquid Strokes v1.safetensors","lycoris","YFG - Liquid Strokes v1","LoRA Strength
+
+0.5: Subtle artistic accent
+
+1.0: Balanced painterly effect
+
+1.5 - 2.0: Striking surrealism with fluid distortion and vivid textures
+
+YFG Liquid Strokes: Surreal Painterly Transformations
+Elevate your creations with YFG Liquid Strokes, a LoRA that imbues images with fluid, dynamic brushwork reminiscent of traditional painting techniques. This model is flexible across a wide range of strengths, offering anything from a subtle artistic flare to bold, surreal transformations.
+
+Key Features
+Painterly Brushwork
+
+Adds fluid, organic strokes to any scene, delivering a hand-painted feel.
+
+Visually softens edges while introducing rich textures and vibrant layering.
+
+Wide Strength Range
+
+Works effectively from 0.5 (mild effect) to 2.0 (extreme surrealism).
+
+Retains coherence even at higher strengths, though the style grows increasingly surreal.
+
+1.5 strength is a sweet spot for a strong painterly transformation without losing subject clarity.
+
+Most users prefer 0.8 â 1.0 for a balanced, artistic look.
+
+Responsive to Keywords
+
+Incorporating terms like âpainting,â âillustration,â âdrawing,â or âbrush strokesâ guides the LoRA toward more refined painterly outcomes.
+
+Without direction, it may default to fiery or skeletal imageryâso well-defined prompts yield the best results.
+
+Recommended Usage
+Trigger / Prompt Word
+
+Use âYFG-Liqdâ to activate the liquid, painterly aesthetic in your scenes.
+
+LoRA Strength
+
+0.5: Subtle artistic accent
+
+1.0: Balanced painterly effect
+
+1.5 - 2.0: Striking surrealism with fluid distortion and vivid textures
+
+Suggested Themes & Keywords
+
+âPainting,â âbrush strokes,â âcanvas texture,â âvibrant illustration,â etc.
+
+Pair with your main subject (character, landscape, object) to evoke a captivating, painted style.
+
+Tips & Tricks
+Directing the Theme
+
+If you donât want unintentional fire or skeleton elements, specify your subject clearlyâ e.g., âportrait of a woman in a flowing gown, YFG-Liqd styleâ.
+
+Lighting & Color
+
+Because of its painterly nature, colorful or high-contrast prompts produce especially dramatic results.
+
+Try âsunset lighting,â ârainbow palette,â or âpastel watercolorâ for diverse effects.
+
+Combine With Other LoRAs
+
+YFG Liquid Strokes can blend well with additional style or subject LoRAs, overlaying its painterly effect onto various settings, eras, or thematic elements.
+
+YFG Liquid Strokes beautifully blends digital artistry with traditional brushwork aesthetics, giving your creations a lush, painterly essence at almost any strength level. Perfect for conceptual art, surreal illustrations, or simply adding a fresh, fluid dimension to your images.","[""YFG-Liqd""]","2025-07-31 01:38:46.044","2025-07-31 01:55:33.319",39771528
+"177280d3-bdd5-4d9a-9e9a-79a47b1cdf3d","blake3:a2079af666169b54469dc926a5d1849ea0b8da2209d40f3e0952944ed1ff282b","flux","lora","flux/lora/YFG - Simon - Flood v1.safetensors","diffusers","YFG - Simon StÃ¥lenhag - Things from the Flood v1","flux lora model YFG - Simon - Flood v1","[""YFG-SimonFlood""]","2025-07-31 01:38:46.142","2025-07-31 01:59:49.900",171969511
+"1fbc8461-4495-42b4-ac81-e42d3a16b98c","blake3:b7a62879ea53317f2bad4965e2f6c90750334babe5d2687d60fddf472e6c4895","flux","lora","flux/lora/YFG - Soares v1.safetensors","lycoris","YFG - Soares v1","LoRA Strength
+
+Generally 0.6 â 1.0 for a bold effect; lower for subtle adjustments, higher for a strong, ultra-modern look.
+
+
+
+YFG Soares: Sleek Symmetry & Futuristic Verticality
+Introducing YFG Soares, a LoRA that imbues your renders with towering, vertically oriented forms, glossy symmetrical designs, and a cool grayscale palette. Ideal for creating streamlined spaceships, futuristic automobiles, advanced weaponry, and other angular, elongated objects.
+
+Key Features
+Emphasis on Verticality
+
+Prefers tall, narrow silhouettes and upright structures.
+
+Elevates the scene with a striking vertical presence, whether in architecture or vehicles.
+
+Symmetry & Smooth Textures
+
+Delivers a clean, mirrored aestheticâthink polished metal surfaces and refined edges.
+
+Adds a sleek skin-smoothing effect, perfect for polished future tech or minimalistic art pieces.
+
+Predominantly Grayscale
+
+Incorporates silvers, grays, and white tones for a modern, industrial vibe.
+
+Subtle contrasts create visual impact without straying far into color.
+
+Futuristic Angular Shapes
+
+Excels at rendering sharp, aerodynamic formsâideal for high-tech transport or weaponry.
+
+Seamlessly fuses futuristic design with near-photo-realistic finishing.
+
+Recommended Usage
+Trigger / Prompt Word
+
+Use âYFG-SRSâ to invoke its trademark sharp lines, smooth textures, and grayscale palette.
+
+Best Subjects & Themes
+
+âFuturistic spaceship,â âvertical fighter jet,â âhigh-tech automotive design,â âweapon concept,â etc.
+
+Tall, narrow geometry highlights the LoRAâs unique vertical emphasis.
+
+LoRA Strength
+
+Generally 0.6 â 1.0 for a bold effect; lower for subtle adjustments, higher for a strong, ultra-modern look.
+
+Tips & Tricks
+Lighting & Reflection
+
+Dramatic lighting (e.g., rim lights, backlights) accentuates the polished metal finishes.
+
+Position multiple light sources to highlight symmetrical features and curvature.
+
+Minimal Color
+
+Maintain a primarily grayscale scheme for maximum fidelity to the modelâs style.
+
+If additional color is desired, keep it accent-based (like a neon glow or subtle highlight).
+
+Vertical Composition
+
+Emphasize the LoRAâs vertical orientation by prompting for tall scenes, elongated objects, or portrait-style framing.
+
+Combine with âtowering,â âvertical columns,â or âhigh-riseâ to enhance height and drama.
+
+YFG Soares transforms your images into futuristic visions marked by tall, angular forms, silky-smooth textures, and a silvery grayscale aesthetic. Whether itâs crafting next-gen spacecrafts, sleek supercars, or towering modern architecture, this LoRA adds a refined edge to any futuristic concept.","[""YFG-SRS""]","2025-07-31 01:38:46.228","2025-07-31 01:56:13.806",158608752
+"b7132296-0845-4426-bec4-d437c91792f8","blake3:0f892bf772e2606ddcad6684d68e86c836887b4b57a23da41ef31d2e1ad46146","flux","lora","flux/lora/YFG - Patents v1.safetensors","lycoris","YFG - Patents v1","Flexible Strength
+
+0.25 â 1.0 recommended range. Lower strength keeps the style subdued, while higher strength yields more
+
+YFG Patents: Technical Diagrams & Random Patent Concepts
+YFG Patents is a LoRA specially crafted to generate diagrams reminiscent of official patent applications. Whether you need intricate flowcharts, mechanical schematics, or design blueprints, this model can deliver convincingly detailed illustrations. By adjusting its strength, you can achieve anything from subtle, refined diagrams to bold, retro patent sketches.
+
+Key Features
+Patent-Style Drawings
+
+Emulates the clean lines, numbering systems, and labeling typical of real patent documents.
+
+Suitable for a broad range of technical or conceptual prompts, from everyday inventions to futuristic gadgets.
+
+Flexible Strength
+
+0.25 â 1.0 recommended range. Lower strength keeps the style subdued, while higher strength yields more pronounced patent-like visuals.
+
+Fine-tune the intensity to balance your artistic goals with the clarity of technical details.
+
+Random & Convincing Results
+
+Excels at conjuring up imaginative, sometimes unexpected technical elements.
+
+Creates diagrams that can look surprisingly plausible or intentionally whimsicalâwhatever your project requires.
+
+Recommended Usage
+Trigger / Prompt Word
+
+Use âYFG-Ptntsâ for the LoRAâs full schematic effect.
+
+Suggested Themes & Keywords
+
+âTechnical blueprint,â âflowchart,â âmechanical design,â âschematic diagram,â âconcept invention,â âexploded view,â or âannotated illustration.â
+
+Combine with descriptive prompts like âtransparent overlay,â âdotted guidelines,â âengineering style,â or âlabeled components.â
+
+Tips & Tricks
+Combine With Other Styles
+
+YFG Patents can blend nicely with architectural, mechanical, or even whimsical LoRAs.
+
+Experiment with stylized color palettes (e.g., blueprint blues, grayscale) for thematic variety.
+
+Play With Composition
+
+Include terms like âsection view,â âcross-sectional detail,â or âmagnified insetâ to highlight intricate details.
+
+Prompt for labeling (e.g., âfigure 1,â âfig. 2,â âreference lettersâ) to heighten realism.
+
+Refine Prompt Strength
+
+At lower strengths (0.25â0.4), youâll see subtle patent hints layered atop your base subject.
+
+Moving toward 1.0 amplifies the strict line art, labeling, and structured diagram feel.
+
+YFG Patents transforms your prompts into cleverly rendered, patent-inspired illustrations. Perfect for adding a touch of technical charmâor a playful, schematic twistâto your next project. Adjust the LoRA strength for just the right balance of authenticity and creativity, and watch as your ideas materialize into polished, convincing âinventions!â","[""YFG-Ptnts""]","2025-07-31 01:38:46.395","2025-07-31 01:56:58.115",158608768
+"fb3904e6-20db-4862-9dbc-af084f7efdf0","blake3:d6a88368ca6c56264af33a82aff8e285b6509fd2e0bf138698cb0fd811a362fc","flux","lora","flux/lora/YFG - Simon - Loop v1.safetensors","diffusers","YFG - Simon StÃ¥lenhag - Loop v1","flux lora model YFG - Simon - Loop v1","[""YFG-SimonLoop""]","2025-07-31 01:38:46.483","2025-07-31 01:59:10.555",171969509
+"bd24c4b2-c7eb-48e6-a505-e34e8adf1989","blake3:b0162ee1fccb28e0bd93085ef614d9cfbe7bb583332aabc996a1fcb6b8798dd2","flux","lora","flux/lora/YFG - Terminator1 v1.safetensors","diffusers","YFG - Terminator1 v1","flux lora model YFG - Terminator1 v1","[""YFG-TTVHUD""]","2025-07-31 01:38:46.571","2025-07-31 02:00:48.929",171969502
+"22c99218-1c90-44fd-b9f1-b001fa9984ee","blake3:2ee639432e90a68ce3b988a0f01373ea9fc8f5eba7f981335b5d07efebaa56a4","flux","lora","flux/lora/YFG - Salvo v1.safetensors","lycoris","YFG - Salvatore âSalvoâ Mangione v1","Recommended 0.60 â 0.80 for a distinct but not overpowering influence.
+
+YFG Salvatore âSalvoâ Mangione captures the distinctively bright, streamlined qualities reminiscent of the Italian painter Salvo. Expect vibrant color blocks, simplified shapes, and playful yet thoughtful compositionsâparticularly suited for still-life arrangements, stylized cityscapes, and serene landscapes.
+
+Key Features
+Bold Color Usage
+
+Favors solid, bright palettes with carefully chosen contrasts.
+
+Depicts scenes with a somewhat âsimplifiedâ geometry, reminiscent of a naÃ¯ve or minimalistic approach.
+
+Subtle Yet Playful Aesthetic
+
+Retains a serene, almost dreamlike feelâperfect for gentle, uplifting illustrations.
+
+Offers a modern twist on traditional subjects (city views, interior spaces, or still lifes).
+
+Best Strength Range
+
+Recommended 0.60 â 0.80 for a distinct but not overpowering influence.
+
+Increase or decrease to adapt style intensityâlower for subtle color shifts, higher for a vividly stylized effect.
+
+Trigger Word
+
+âYFG-S@lvoâ helps emphasize the Salvo-inspired elements if your prompt needs a stylistic nudge.
+
+Recommended Usage
+Suggested Prompts & Themes
+
+âA bright cityscape with simplified buildings, YFG-S@lvo style.â
+
+âVibrant interior scene featuring geometric furniture in pastel blocks.â
+
+âStill life arrangement of fruit on a simple, colorful background.â
+
+Combining With Other Themes
+
+Can work with scenic landscapes, urban geometry, or even character-centric promptsâexpect plenty of color and minimal detail.
+
+Blend with other styles or LoRAs for unique hybrids (e.g., Salvo meets Surrealism or Sci-Fi).
+
+Tips & Tricks
+Keep It Simple
+
+Salvoâs aesthetic often relies on minimal detail and bold shapes. Overly detailed prompts may clash with the simplified style.
+
+Color Coordination
+
+Emphasize complementary or contrasting colorsââbright pastel pink and dusty teal buildingsâ or âsunny yellow and royal blue furniture.â
+
+Low Key or High Vividness
+
+Adjust LoRA strength or incorporate negative prompts like âno excessive detail,â âavoid hyperrealismâ to maintain a consistent, stylized look.
+
+YFG Salvatore âSalvoâ Mangione channels the artistâs luminous, stripped-down visual languageâideal for those seeking bold color expressions and tranquil, modern compositions. Experiment within the sweet spot of 0.60â0.80 strength to ensure your scenes radiate the balanced, whimsical charm of Salvoâs iconic style.","[""YFG-S@lvo""]","2025-07-31 01:38:46.682","2025-07-31 01:53:42.191",39776080
+"7d37db5a-6b41-4d0b-bdf8-24b1b2902841","blake3:1362d049cc1192ac56c9d8bcabd00ee3056f2873755638f52697c558c9cbe516","flux","lora","flux/lora/YFG - SpyWorld50s v01.safetensors","diffusers","YFG - SpyWorld50s v01","flux lora model YFG - SpyWorld50s v01","[""YFG-SpyWorld50s""]","2025-07-31 01:38:46.773","2025-07-31 02:01:28.267",171969432
+"87c092fb-2586-410d-9354-6978a101e3c6","blake3:0463b61ce819cfc6c496419e4e7db5e3adc93d5afcc841747bd663a9772596d1","flux","lora","flux/lora/YFG - Patterns v1.safetensors","lycoris","YFG - Patterns v1","Best results between 0.4â0.8 for noticeable but controlled complexity.
+
+Usable from 0.2 (subtle infusion) to 1.0 (bold, dominating patterns).
+
+YFG Patterns: Intricate, Abstract Geometric Complexity
+YFG Patterns is a LoRA meticulously crafted to infuse your images with rich, interwoven motifsâfrom subtle, swirling designs to elaborate geometric matrices. Ideal for enhancing backgrounds, fabrics, architectural details, or any setting needing a burst of pattern-driven interest.
+
+Key Features
+Abstract & Geometric Patterns
+
+Produces everything from faint pattern overlays to heavily detailed labyrinthine structures.
+
+Great for decorative accents, mandalas, fractal-like compositions, and conceptual design elements.
+
+Fine Detail Enhancement
+
+Can add filigree, swirling lines, repeating shapes, or kaleidoscopic geometry to your scenes.
+
+Perfect for turning simple surfaces into eye-catching statement pieces.
+
+Flexible Strength Range
+
+Best results between 0.4â0.8 for noticeable but controlled complexity.
+
+Usable from 0.2 (subtle infusion) to 1.0 (bold, dominating patterns).
+
+Adjust CLIP strength independently to fine-tune how strongly the patterns appear relative to your primary subjects.
+
+Trigger Word
+
+Use âYFG-Patt3rnâ to reinforce complex pattern generation.
+
+Though not mandatory, itâs especially helpful if your base prompt isnât strongly oriented toward patterns.
+
+Recommended Usage
+Sample Prompts & Themes
+
+âYFG-Patt3rn design on a large tapestry, showcasing intertwined geometric shapes in warm earth tones.â
+
+âA sleek modern interior with subtle fractal wallpaper, YFG-Patt3rn style.â
+
+âMandala-inspired layout with intricately layered lines and floral motifs.â
+
+LoRA & CLIP Strength
+
+Start with 0.4â0.8 for a good balance.
+
+Increase or decrease to amplify or minimize the pattern emphasis.
+
+If patterns overshadow your main subject, lower the LoRA weight or negative-prompt excessive detailing (e.g., âno overlapping lines,â âavoid crowded shapesâ).
+
+Tips & Tricks
+Directing the Motif
+
+Use terms like âgeometric,â âornamental,â âfloral,â âfractal,â or âkaleidoscopicâ to shape the style of pattern.
+
+Color prompts (e.g., âmonochrome,â âpastel,â âvibrant neonâ) refine the aesthetic mood.
+
+Combining With Other LoRAs
+
+Try pairing YFG Patterns with a painting or photorealism LoRA.
+
+Adjust each modelâs strength to keep patterns from overwhelming the compositionâor to push them front and center.
+
+Focus on Surfaces
+
+Mention walls, textiles, floors, or even character clothing to target where patterns appear.
+
+For more subtlety, describe partial coverage (e.g., âpatterned border,â âtextured accent wallâ).
+
+Refine With Negative Prompts
+
+If you notice pattern overload, consider negative phrases to restrict complexity or thickness of lines.
+
+YFG Patterns unleashes a world of abstract geometry and intricate detail in every piece. Whether youâre aiming for a subtle decorative flourish or a mesmerizing, pattern-packed spectacle, fine-tune the LoRA and CLIP strengths to find your perfect balance between eye-catching complexity and visual harmony.","[""YFG-Patt3rn""]","2025-07-31 01:38:46.819","2025-07-31 01:54:21.660",39770472
+"3f9bf762-02b6-49fe-b29e-bd2bea029a57","blake3:c681ab895e55a68670b61fd1ee39a0412687d5a5c45652a4d531557f3145c0d3","flux","lora","flux/lora/YFG - Simon - Svema v1.safetensors","diffusers","YFG - Simon StÃ¥lenhag - Swedish Machines v1","flux lora model YFG - Simon - Svema v1","[""YFG-SimonSvema""]","2025-07-31 01:38:46.883","2025-07-31 01:58:53.314",171969511
+"12b587a6-b240-436b-93ea-918d798bf7ca","blake3:2000263f354481a1b9e8b3227952cafa024f612377820b2a705f9809a768484d","flux","lora","flux/lora/YFG - SpyWorld50s v10.safetensors","lycoris","YFG - SpyWorld50s v10","flux lora model YFG - SpyWorld50s v10",,"2025-07-31 01:38:46.974","2025-07-31 01:38:46.974",158608816
+"047d8402-75ad-4ffc-8253-f0199c3d03d8","blake3:69d6e9d7ee364cde695edd389a4371db7641f9ac180c1b7715a6497af4e51ac8","flux","lora","flux/lora/YFG - Smorgas v1.safetensors","lycoris","YFG - Smorgasbord v1","flux lora model YFG - Smorgas v1","[""YFG-Sm0rg""]","2025-07-31 01:38:47.044","2025-07-31 02:02:01.136",39804680
+"163bcc93-989c-4379-abc0-00b45f10a79b","blake3:625282a5fd3ec6a73aef73e1575df45fde1493663fede6a00d40d71f5cd2db57","flux","lora","flux/lora/YFG - Terminator4 v2.safetensors","diffusers","YFG - Terminator4 v2","flux lora model YFG - Terminator4 v2","[""YFG-TTVHUD4""]","2025-07-31 01:38:47.189","2025-07-31 02:00:38.720",171969504
+"d0871f56-d9a0-40cf-9a98-e0f028c22f03","blake3:047dcc4a884f5b0397a539377e5f677cdafb996868c7de5866001262525f54c4","flux","lora","flux/lora/YFG - Pulp Magazine v1.safetensors","diffusers","YFG - Pulp Magazine v1","flux lora model YFG - Pulp Magazine v1","[""YFG-PulpMagazine""]","2025-07-31 01:38:47.306","2025-07-31 01:58:18.899",171969515
+"8d468567-4232-4860-a0e1-d5f47ec561de","blake3:b7d9e2ff43fbd105f3c3604c1ef214f49741576f0ecb35454aa873307a2b2415","flux","lora","flux/lora/YFG - Rounded v1.safetensors","lycoris","YFG - Rounded v1","flux lora model YFG - Rounded v1","[""YFG-Rounded""]","2025-07-31 01:38:47.443","2025-07-31 01:57:38.180",158608768
+"3921c157-0031-451f-957e-a613f0057699","blake3:b52af1d9c2d8b46c87bf222cec1af3f03f0acca8124f16d807351381fcc774b6","flux","lora","flux/lora/YFG - Terminator3 v1.safetensors","diffusers","YFG - Terminator3 v1","flux lora model YFG - Terminator3 v1","[""YFG-TTVHUD3""]","2025-07-31 01:38:47.537","2025-07-31 02:00:43.513",171969504
+"954eeb42-8b8a-4868-9601-197519f23eec","blake3:26e81520b3f1393dc30e8c2c1bd699a67029849564656a511e383fa939d8e5a9","flux","lora","flux/lora/YFG - SpyWorld50s v03.safetensors","diffusers","YFG - SpyWorld50s v03","flux lora model YFG - SpyWorld50s v03","[""YFG-SpyWorld50s""]","2025-07-31 01:38:47.619","2025-07-31 02:01:12.615",171969512
+"440e5760-4903-48f6-a9ae-adbdbc2b158a","blake3:672b3228359f674e8f0bab9f059cbbd1ef04ea8ea744553bc6eb8c4cb193ac50","flux","lora","flux/lora/YFG - Leather Gadgets v1.safetensors","lycoris","YFG - Leather Gadgets v1","flux lora model YFG - Leather Gadgets v1","[""YFG-LBGadgets""]","2025-07-31 01:38:47.670","2025-07-31 01:57:47.632",39757264
+"257e8add-f16e-473f-a244-13f31a68dad2","blake3:cc34c5b9438e12a318e5764d3981ba0a9e6767d715cfd86efc42a80faf2b87b5","flux","lora","flux/lora/YFG - SpyWorld.safetensors","lycoris","YFG - SpyWorld","flux lora model YFG - SpyWorld","[""YFG-SpyWorld50s""]","2025-07-31 01:38:47.709","2025-07-31 02:01:21.652",19616848
+"b4c01e62-f394-45c6-bc8b-b6a4d95e15b9","blake3:c965187245e755e77184794ac70fd2f32a403fe78ed0633292698d8bf4085c04","flux","lora","flux/lora/YFG - Simon - Labyrinth v1.safetensors","diffusers","YFG - Simon StÃ¥lenhag - Labyrinth v1","flux lora model YFG - Simon - Labyrinth v1","[""YFG-SimonLabyrinth""]","2025-07-31 01:38:47.765","2025-07-31 02:00:16.279",171969519
+"100cea14-a3bd-4499-80c7-cafdf81d2f4f","blake3:2647a424fd32761862754cbc664b70923097856fe46d0caa7dbe0c89b496e539","flux","lora","flux/lora/YFG - Zaat v1.safetensors","lycoris","YFG - Zaat v1","flux lora model YFG - Zaat v1","[""YFG-Zaat""]","2025-07-31 01:38:47.896","2025-07-31 01:57:53.324",158608720
+"5364f037-e48c-4346-8e85-6f225c8bd6c4","blake3:18d97ddc5d035616d670e89f7d5b4c656f1dee7b3ba4fad5a3dc37f453a45fd2","flux","lora","flux/lora/YFG - Magritte v1.2.safetensors","diffusers","YFG - Magritte v1.2","flux lora model YFG - Magritte v1.2","[""YFG-Magritte""]","2025-07-31 01:43:55.997","2025-07-31 02:01:37.575",171969507
+"815c2860-8c6d-411c-87f1-728f4a4f9997","blake3:91f85105a88c7269f6fc438c5869988c9e9092074686458944b26dfaef4f060c","flux","lora","flux/lora/YFG - Simon - Electric v1.safetensors","diffusers","YFG - Simon StÃ¥lenhag - Electric State v1","flux lora model YFG - Simon - Electric v1","[""YFG-SimonElectric""]","2025-07-31 01:47:36.206","2025-07-31 02:00:23.000",171969517
+"89c07288-4905-4135-955b-adc73dcd1b2b","blake3:453dcabe976217da743b3d16ef3086f0ff2edbf9639b2aba681c6967ac1be1cf","flux","lora","flux/lora/YFG - Car Sketch v1.safetensors","lycoris","YFG - Car Sketch v1","YFG CarSketch â Multi-View Automotive Sketches & Blueprints
+Style
+Generates hand-drawn car concepts: multiple angles, exploded views, and blueprint-like line work. Expect construction lines, annotations, and varying sketch stages (from loose thumbnails to refined orthographic drawings).
+
+Trigger
+No dedicated trigger word. Guide the model with phrases such as âSketch of,â âSketching of,â âDiagram of,â âBlueprint view,â or âmulti-view car concept.â
+
+Strength
+
+Works cleanly across the usual 0.3 â 1.0 range.
+
+Around 0.8 delivers clear, detailed line art without excessive stylization.
+
+Lower values keep subtle sketch hints; higher values yield bolder, more technical drawings.
+
+Key Characteristics
+Multi-View Layouts â Front, side, rear, top, and Â¾ perspectives often appear together on one canvas.
+
+Technical Line Work â Construction grids, dimension arrows, and note callouts reminiscent of design-studio sheets.
+
+Progressive Drafts â May include rough gesture thumbnails alongside polished final views.
+
+Universal Sketch Filter â Applies loose pencil or marker strokes to almost any car-related prompt (and can affect non-car prompts if not directed).
+
+Prompt Ideas
+âSketch of a futuristic electric sports car, multi-view blueprint sheet, YFG CarSketch style.â
+
+âDiagram of a vintage sedan with exploded components and annotation notes.â
+
+âConcept sketches showing the evolution of an off-road SUV, from thumbnail to refined orthographic views.â
+
+Tips & Tricks
+Use Clear Sketch Phrases â Keywords like âtechnical sheet,â âorthographic,â âcutaway,â âexploded view,â or âdesign studio pageâ enforce the multilayer sketch aesthetic.
+
+Limit Color â If you want pure line art, add âblack pencil on white background,â âno shading,â or âminimal color accents.â
+
+Combine With Style LoRAs â Layer a texture or paper-grain LoRA for a scanned-sketch look; keep YFG CarSketch strength around 0.6â0.8 to preserve line clarity.
+
+Control Clutter â If too many views overlap, use negative prompts like âavoid overcrowded layout,â âlimit to three perspectives,â or lower the strength slightly.
+
+Bring your automotive concepts to lifeâdrafted, annotated, and ready for the virtual design boardâwith YFG CarSketch.","[""multi-view car concept"",""Diagram of"",""Sketch of"",""Blueprint view"",""Sketching of""]","2025-07-31 02:17:16.300","2025-07-31 02:18:36.053",158645312
+"fd89e505-3f0c-4b11-9919-e935c24fa44b","blake3:1d6d80139fa2d166f7fa2ea836a61fab5413e884f7fdf3e8526c656b2e8efa21","flux","lora","flux/lora/Andreac75 - The Dark Side Of The Future.safetensors","lycoris","Andreac75 - The Dark Side Of The Future","No Keyword. Start with 0.7 strength and go up to 0.8 or down to 0.6 depending on the prompt
+
+""The Dark Side of the Future"" blends elements of dystopian science fiction and cyberpunk, characterized by intricate, mechanical details and a predominantly dark, metallic palette. This style emphasizes a cold, technologically advanced yet oppressive atmosphere, often portraying a fusion of organic and synthetic forms. The visuals are typically heavy on complex textures, wires, and machinery, evoking feelings of alienation and the loss of humanity in a future dominated by technology. The overall tone is bleak, moody, and heavily influenced by cybernetic or post-apocalyptic themes.",,"2025-07-31 02:22:02.103","2025-07-31 02:22:31.223",76692728
+"08a86d0b-8c65-4771-b766-04f134e58d25","blake3:c74f5a6e6f3ee08661c597e5be4588dc3e9bb13fc4e1e44fedb1d0c1196a378c","flux","lora","flux/lora/Adel_AI  - Comics Factory.safetensors","lycoris","AdelAI  - Comics Factory","ComicsFact1 style. A pencil sketch from a profile camera angle about a stylized pencil drawing of a superhero and wonder woman in a sensual pose, showcasing their respective bodies in a highly detailed and realistic style. on the left side of the image, a woman with long, wavy dark hair is standing with her back to the viewer, looking over her shoulder with a sultry expression, wearing a tight, metallic wonder woman costume with a golden emblem on her chest and a matching leotard, which accentuates her toned physique and curvy figure. her long, dark hair cascades down her back, and her eyes are focused intently on something in the distance. she appears to be in her mid-twenties, with pale skin and a slim, toned body. her expression is serious and intense, with her eyes narrowed into the distance, as if she is deep in thought. in the background, a man with a muscular physique is standing behind her, looking at her with a serious expression, his face partially obscured by his superman costume. he has short, light brown hair and a strong, defined jawline. the man is wearing a dark, metallic suit with a red and gold design, which contrasts nicely with the woman's tight, form-fitting costume. the background is a neutral, textured grey, which gives the image a sense of depth and dimensionality. the overall style is reminiscent of comic book art, with careful attention to detail and shading, making the image visually striking.
+1girl, long hair, looking at viewer, black hair, 1boy, bare shoulders, standing, brown hair, brown eyes, ass, hetero, leotard, looking back, from behind, black and white, tattoo, lips, one-piece suit, armlet","[""ComicsFact1 style""]","2025-08-02 00:28:10.712","2025-08-02 00:30:49.643",38518160
+"e2afab6a-507e-42ba-b321-4e60c5a838a9","blake3:18ec4645495042cd7f30e08e7ce34f51b760a8e212b29c8fc0b0b5c41ac82b4e","flux","lora","flux/lora/Someone97421  - Plush Material.safetensors","lycoris","Someone97421  - Plush Material","""T5"": ""A whimsical, hyperrealistic scene set in a dense, vibrant forest, with a unique viewing angle from a low, worm's-eye perspective, looking up at the plush, colorful trees, their trunks and branches made of soft, velvety material, with intricate, detailed textures, and leaves that resemble fluffy, pastel-colored pom-poms, in the background, a massive, plush mountain range rises, with peaks and valleys made of layered, colorful fabrics, and a few fluffy, white clouds drift lazily across the sky, which is a brilliant, electric blue, with a few, puffy, white clouds, and in the foreground, a few, oversized, plush mushrooms, with caps made of soft, suede-like material, and stems that resemble fuzzy, colorful pipe cleaners, are scattered about, with a few, delicate, sparkling dew drops clinging to their caps, and the entire scene is illuminated by a warm, soft, golden light, with deep, rich shadows, and a sense of depth and dimensionality, and the composition is balanced, with elements placed according to the rule of thirds, and the golden ratio, to create a sense of harmony, and visual interest"",
+""CLIP-L"": ""whimsical, hyperrealistic, plush, colorful, forest, trees, mountains, mushrooms, suede, velvet, fuzzy, pipe cleaners, pom-poms, electric blue, sky, clouds, dew drops, golden light, shadows, depth, dimensionality, rule of thirds, golden ratio, harmony, visual interest""","[""maorong"",""Plush material""]","2025-08-02 08:51:14.338","2025-08-02 09:03:12.150",153268392
+"a0a16746-b074-446d-b23d-3bef839e5240","blake3:65f90b27506be0530303f06f0319a3b3ae04be6c4ede5ef528b802b242687b47","flux","lora","flux/lora/PhotobAIt - Westworld Drone.safetensors","lycoris","PhotobAIt - Westworld Drone","is wearing a french beret and is painting the eiffeltower on a canvas painting  <lora:Westworld Drone:0.9> westworld drone, white man with white muscle body suit and white helmet","[""westworld drone, white man with white muscle body suit and white helmet""]","2025-08-02 09:15:16.730","2025-08-02 09:16:51.768",76692512
+"6a7b2085-ac02-4aca-8095-82789a38541c","blake3:244ad7609f3304a32609d1b8298ba96bf8a5d9249b9c2e3c305d4fd9239cc54f","flux","lora","flux/lora/BlzZD - Guy-Manuel de Homem-Christo.safetensors","diffusers","BlzZD - Guy-Manuel de Homem-Christo","flux lora model BlzZD - Guy-Manuel de Homem-Christo","[""gmhc, a man with a glossy gold-black helmet, black gloves, black sequined suit, and robotic hands with gold backs, black fronts, and golden fingertips.""]","2025-08-02 09:20:13.126","2025-08-02 09:20:34.558",171969064
+"c66eec89-16da-4c3e-8fce-948957b4a5c2","blake3:82bf25f25f42362f8ce5a3f4844658c81637f57e1255abcd326043badc10f041","flux","lora","flux/lora/c77161488497 - Mech Suit BluePrints.safetensors","lycoris","c77161488497 - Mech Suit BluePrints","Detailed illustration of the iron man suit from the marvel cinematic universe. the suit is shown in a full-body view, with the main body of the suit in the center. it is made up of various components such as the helmet, armor, gloves, and other accessories.  the suit is predominantly red and gold in color, with gold accents on the shoulders, arms, and legs. the helmet has a large eye patch on the top and a red visor. the armor is also red and has a gold-colored design on the front and back. the gloves are red and have a blue-tinted design on them. the arm and leg armor are also red, with a gold and silver design on both sides. - there are also several other accessories scattered around the suit, including a pair of red gloves, a red glove, and a silver glove. these accessories are likely used to protect the suit from damage and wear. the background of the image is white, and there is a red border around the edges.",,"2025-08-02 09:24:35.678","2025-08-02 09:25:09.436",19258608
+"a6bc7829-5e94-4609-825b-c3b68a0b9563","blake3:d2fc64b9d40bcc551b7cb5e4d1605bbb8c02c246ae990ef7962f4a195869876b","flux","lora","flux/lora/PhotobAIt - Starter Pack v2.1.safetensors","lycoris","PhotobAIt - Starter Pack v2.1","flux lora model PhotobAIt - Starter Pack v2.1","[""text \""STARTER PACK\"""",""accessorie"",""starter pack with toy figure""]","2025-08-02 10:08:23.741","2025-08-02 10:09:07.960",76699144
+"b114f818-654e-4d83-94ae-9a9fe7d24d66","blake3:6fa2d9b708131b4e3d167f147da7c1b4cbaec37328d9201ab7c7cdbb2c594026","flux","lora","flux/lora/PhotobAIt - Jack Kirby Comics Style.safetensors","lycoris","PhotobAIt - Jack Kirby Comics Style","<lora:Kirby_Style:0.9> kirby style, a man holds a beer with a woman in a pub","[""kirby style""]","2025-08-02 10:17:43.842","2025-08-02 10:18:17.412",19260440
+"d0ba1028-2260-4538-b4c4-5275d045ab88","blake3:990e90e7291c4adfa2748e7c972ddb1a1909d656c0d5c293885d21afc375cab9","flux","lora","flux/lora/Envy - Flux Anime Backgrounds 01.safetensors","lycoris","Envy - Flux Anime Backgrounds 01","This is an anime style movie background.  The image is rendered in a clean, modern, and vibrant style, with bold, smooth lines and vibrant colors japanese_countryside_elements and japanese_countryside_elements","[""anime style movie background""]","2025-08-02 12:20:23.542","2025-08-02 12:26:36.566",156361763
+"5b57046b-3f3f-4539-a936-e59a3ca6e82d","blake3:ea11fe50008f65949fa76592707726c99cb434d3a2313821405ee97fe20a5ccc","flux","lora","/home/alex/Downloads/Swiss_Design.safetensors","lycoris","Swiss_Design","flux lora model Swiss_Design",,"2025-08-03 02:20:28.364","2025-08-03 02:20:28.364",19260480
+"9e8c0194-37b7-48b2-bc91-041eba6ab538","blake3:b96409716c449d83e0086f12f619b03c9236b64e0f3056b82747711b3a0ca33b","flux","lora","flux/lora/bblink787 - Simple Vector Illustration.safetensors","lycoris","bblink787 - Simple Vector Illustration","As opposed to my Detailed Vector LoRA, this LoRA is intended to create more simple vector illustrations (fewer shapes). Flux sometimes does a great job with vector graphics, but if you include other strong keywords (e.g. an art style or something famous/well known) sometimes it just won't do it, or will partially do it. Standard trigger is ""vector illustration"", but you can force clipart level simplicity by also including ""simple"", etc. Here are some examples where the LoRA helped. Sometimes it helps a lot, sometimes just a little.
+
+""Vector illustration, tiny dinosaur roars in a toy box, scaring away the other toys. He feels lonely and bored. He sees a stuffed teddy bear and decides to attack it. He bites its ear and pulls its fur.""","[""vector illustration""]","2025-08-03 09:27:35.247","2025-08-03 09:28:20.595",153302240
+"c181629c-2bb0-48a6-8c43-1657834b89d1","blake3:fe7f1db552923a31af56af051900f4fad3a5b873333dd634144811206154a2fc","flux","lora","flux/lora/Bra2ha - Vintage Sketch Style.safetensors","lycoris","Bra2ha - Vintage Sketch Style","<lora:Vintage_sketch_style_v.1:0.8> VintageSketch style. A stately architectural sketch of the U.S. Capitol Building at dusk, centered on its iconic white dome and classical portico. The view is from the Reflecting Pool, with a low angle magnifying the structure against a twilight sky. Ink lines capture the fluted Corinthian columns, triangular pediment, and graceful curves of the dome, while watercolor washes of purples and blues fill the sky. Warm golden light glows from the domeâs windows and exterior floodlights, creating a contrast against the cool backdrop. The reflecting pool softly mirrors the Capitol, uniting precise architectural detail with an expressive dusk atmosphere that honors this symbol of democracy.","[""VintageSketch style""]","2025-08-03 09:40:35.005","2025-08-03 09:41:33.173",57600856
+"c90b7d7f-0564-4f4e-8992-7470f18aa5fd","blake3:0881ccf3445b72e6387577e5f4b35ee9fb2bb4de6b4314cf81b0ce1beb2ab4f0","flux","lora","flux/lora/CE - Da Vinci Drawing 01.safetensors","diffusers","CE - Da Vinci Drawing 01","flux lora model CE - Da Vinci Drawing 01",,"2025-08-03 09:40:46.033","2025-08-03 09:40:46.033",343805595
+"496ad226-80bb-4abe-99cb-c224b9c5d2b4","blake3:78af4f7c1a5fcfbf69b340463d24e4c6baad2324c26056c9624d77593e75acef","flux","lora","flux/lora/DP - Miniature Bonsai Landscaping - Integration Of Architectural Landscapes.safetensors","lycoris","DP - Miniature Bonsai Landscaping - Integration Of Architectural Landscapes","DP_style,Miniature bonsai landscapes with architectural elements, tiny pagodas nested in twisted pine branches, soft moss covering curved stone paths, gentle morning light casting shadows.","[""DP_style""]","2025-08-03 11:18:57.949","2025-08-03 11:19:45.989",306430864
+"28280d0a-141a-4ce9-9ca5-00a848747397","blake3:6f5e1cea5dccd9aa7e19dd178a1fc64a66dc38eb717e9972fd67a4efe154e0b3","sdxl","lora","sdxl/lora/ChallengeWinnifierXL-202506.safetensors","lycoris","ChallengeWinnifierXL-202506","sdxl lora model ChallengeWinnifierXL-202506",,"2025-07-19 01:48:35.262","2025-07-19 01:48:35.262",228477092
+"6ce7f354-b343-4387-9c4e-c2118202de94","blake3:9b02fc3b51301c97fcbb5f02cf7717ae60a016cf8a4bbee7e5fb2e414e5ee6ae","sdxl","lora","sdxl/lora/PolygonXL.safetensors","lycoris","PolygonXL","sdxl lora model PolygonXL",,"2025-07-19 01:48:50.045","2025-07-19 01:48:50.045",228459260
+"2d50b6b5-d666-42a4-a879-ce92d0ced109","blake3:c1f1eb5221ebcbc70d673a0b72a9e5b8958269669977be4a2e033646fe599228","sdxl","lora","sdxl/lora/nottheninja - Robloxify.safetensors","lycoris","nottheninja - Robloxify","Turn any character into Roblox models. Make sure that you use the trigger words towards the beginning of your prompts. Refer to the showcase images for prompting ideas. Start with 0.8 and increase strength if doesn't work.
+
+","[""by r0b10x, roblox style,""]","2025-07-28 08:01:48.422","2025-07-28 08:02:17.680",171450028
+"71d28765-e21a-400f-80a8-301372d4095d","blake3:3526c0933b3785988355cc7fcd9a5436ea751b7b73650f68b49ee60087f5f870","sdxl","lora","sdxl/lora/xmattar - Roblox.safetensors","lycoris","xmattar - Roblox","sdxl lora model xmattar - Roblox","[""noob, solo, smile, colored skin, yellow skin, , closed mouth, blue shirt, green pants, solid oval eyes, sleeveless""]","2025-07-28 08:14:57.326","2025-07-28 08:15:13.515",50938988

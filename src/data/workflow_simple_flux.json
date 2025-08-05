@@ -1,0 +1,1038 @@
+{
+    "workflow_id": "d0493045-7665-4444-8544-c18f9203ab33",
+    "name": "Simple Flux Workflow",
+    "created_at": "2025-07-30 07:28:42.820",
+    "updated_at": "2025-08-04 03:17:09.134",
+    "opened_at": "2025-08-04 03:17:09.134",
+    "is_published": null,
+    "workflow": {
+        "name": "Simple Flux Workflow",
+        "author": "",
+        "description": "",
+        "version": "",
+        "contact": "",
+        "tags": "",
+        "notes": "",
+        "exposedFields": [],
+        "meta": {
+            "version": "3.0.0",
+            "category": "user"
+        },
+        "nodes": [
+            {
+                "id": "flux_model_loader:k8ISpXS9A3",
+                "type": "invocation",
+                "data": {
+                    "id": "flux_model_loader:k8ISpXS9A3",
+                    "version": "1.0.6",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "flux_model_loader",
+                    "inputs": {
+                        "model": {
+                            "name": "model",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "54b66417-d8fc-4a56-9b78-5b473687f358",
+                                "hash": "blake3:40ace2cf5d03a95ec710054ec5e4c8e864341a7ebfefe188ed750c41a0463795",
+                                "name": "flux1-dev",
+                                "base": "flux",
+                                "type": "main",
+                                "submodel_type": null
+                            }
+                        },
+                        "t5_encoder_model": {
+                            "name": "t5_encoder_model",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "8cdedeb3-f707-4600-9b60-3faf6a250438",
+                                "hash": "blake3:12f3f5d4856e684c627c0b5c403ace83a8e8baaf0fa6518cd230b5ec1c519107",
+                                "name": "t5_base_encoder",
+                                "base": "any",
+                                "type": "t5_encoder",
+                                "submodel_type": null
+                            }
+                        },
+                        "clip_embed_model": {
+                            "name": "clip_embed_model",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "bc78adeb-ff56-438e-b439-991998adc4d3",
+                                "hash": "blake3:17c19f0ef941c3b7609a9c94a659ca5364de0be364a91d4179f0e39ba17c3b70",
+                                "name": "clip-vit-large-patch14",
+                                "base": "any",
+                                "type": "clip_embed",
+                                "submodel_type": null
+                            }
+                        },
+                        "vae_model": {
+                            "name": "vae_model",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "852d4328-9273-4348-b1a0-0ed96baa3acd",
+                                "hash": "blake3:ce21cb76364aa6e2421311cf4a4b5eb052a76c4f1cd207b50703d8978198a068",
+                                "name": "FLUX.1-VAE",
+                                "base": "flux",
+                                "type": "vae",
+                                "submodel_type": null
+                            }
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            {
+                "id": "positive_prompt:4TWvXlpuH4",
+                "type": "invocation",
+                "data": {
+                    "id": "positive_prompt:4TWvXlpuH4",
+                    "version": "1.0.1",
+                    "nodePack": "invokeai",
+                    "label": "Prompt",
+                    "notes": "",
+                    "type": "string",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Prompt",
+                            "description": "",
+                            "value": "A deconstructed architectural rendering of the Duomo di Milano, presented as a blueprint illustration. The elaborate Gothic cathedral is depicted with overlaid geometric lines, circles, and vibrant color blocks—teal, red, yellow—suggesting technical schematics and structural analysis emphasizing its intricate facade and numerous spires. Weathered stone textures contrast with clean, precise linework. A large semi-circular graphic dominates the background, divided into colored segments. Minimalist details include small icons and annotations scattered around the structure, highlighting architectural features like the statues and stained glass windows. The overall aesthetic is a blend of historical monument and modern design, evoking precision and artistic interpretation. Soft ambient lighting highlights the architectural details while maintaining a flat, illustrative style."
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 0,
+                    "y": 400
+                }
+            },
+            {
+                "id": "flux_text_encoder:KPQM8UfUPX",
+                "type": "invocation",
+                "data": {
+                    "id": "flux_text_encoder:KPQM8UfUPX",
+                    "version": "1.1.2",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "flux_text_encoder",
+                    "inputs": {
+                        "clip": {
+                            "name": "clip",
+                            "label": "",
+                            "description": ""
+                        },
+                        "t5_encoder": {
+                            "name": "t5_encoder",
+                            "label": "",
+                            "description": ""
+                        },
+                        "t5_max_seq_len": {
+                            "name": "t5_max_seq_len",
+                            "label": "",
+                            "description": ""
+                        },
+                        "prompt": {
+                            "name": "prompt",
+                            "label": "",
+                            "description": ""
+                        },
+                        "mask": {
+                            "name": "mask",
+                            "label": "",
+                            "description": ""
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 425,
+                    "y": 0
+                }
+            },
+            {
+                "id": "pos_cond_collect:IkGBxvQ6i5",
+                "type": "invocation",
+                "data": {
+                    "id": "pos_cond_collect:IkGBxvQ6i5",
+                    "version": "1.0.0",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "collect",
+                    "inputs": {
+                        "item": {
+                            "name": "item",
+                            "label": "",
+                            "description": ""
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 650,
+                    "y": -175
+                }
+            },
+            {
+                "id": "seed:2rqiyOUW8o",
+                "type": "invocation",
+                "data": {
+                    "id": "seed:2rqiyOUW8o",
+                    "version": "1.0.1",
+                    "nodePack": "invokeai",
+                    "label": "Seed",
+                    "notes": "",
+                    "type": "integer",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Seed",
+                            "description": "",
+                            "value": 956714087
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 0,
+                    "y": 925
+                }
+            },
+            {
+                "id": "flux_denoise:z0pR7kOYan",
+                "type": "invocation",
+                "data": {
+                    "id": "flux_denoise:z0pR7kOYan",
+                    "version": "4.0.0",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "flux_denoise",
+                    "inputs": {
+                        "latents": {
+                            "name": "latents",
+                            "label": "",
+                            "description": ""
+                        },
+                        "denoise_mask": {
+                            "name": "denoise_mask",
+                            "label": "",
+                            "description": ""
+                        },
+                        "denoising_start": {
+                            "name": "denoising_start",
+                            "label": "",
+                            "description": "",
+                            "value": 0
+                        },
+                        "denoising_end": {
+                            "name": "denoising_end",
+                            "label": "",
+                            "description": "",
+                            "value": 1
+                        },
+                        "add_noise": {
+                            "name": "add_noise",
+                            "label": "",
+                            "description": "",
+                            "value": true
+                        },
+                        "transformer": {
+                            "name": "transformer",
+                            "label": "",
+                            "description": ""
+                        },
+                        "control_lora": {
+                            "name": "control_lora",
+                            "label": "",
+                            "description": ""
+                        },
+                        "positive_text_conditioning": {
+                            "name": "positive_text_conditioning",
+                            "label": "",
+                            "description": ""
+                        },
+                        "negative_text_conditioning": {
+                            "name": "negative_text_conditioning",
+                            "label": "",
+                            "description": ""
+                        },
+                        "redux_conditioning": {
+                            "name": "redux_conditioning",
+                            "label": "",
+                            "description": ""
+                        },
+                        "fill_conditioning": {
+                            "name": "fill_conditioning",
+                            "label": "",
+                            "description": ""
+                        },
+                        "cfg_scale": {
+                            "name": "cfg_scale",
+                            "label": "",
+                            "description": "",
+                            "value": 1
+                        },
+                        "cfg_scale_start_step": {
+                            "name": "cfg_scale_start_step",
+                            "label": "",
+                            "description": "",
+                            "value": 0
+                        },
+                        "cfg_scale_end_step": {
+                            "name": "cfg_scale_end_step",
+                            "label": "",
+                            "description": "",
+                            "value": -1
+                        },
+                        "width": {
+                            "name": "width",
+                            "label": "",
+                            "description": "",
+                            "value": 1360
+                        },
+                        "height": {
+                            "name": "height",
+                            "label": "",
+                            "description": "",
+                            "value": 768
+                        },
+                        "num_steps": {
+                            "name": "num_steps",
+                            "label": "",
+                            "description": "",
+                            "value": 35
+                        },
+                        "guidance": {
+                            "name": "guidance",
+                            "label": "",
+                            "description": "",
+                            "value": 3.5
+                        },
+                        "seed": {
+                            "name": "seed",
+                            "label": "",
+                            "description": "",
+                            "value": 0
+                        },
+                        "control": {
+                            "name": "control",
+                            "label": "",
+                            "description": ""
+                        },
+                        "controlnet_vae": {
+                            "name": "controlnet_vae",
+                            "label": "",
+                            "description": ""
+                        },
+                        "ip_adapter": {
+                            "name": "ip_adapter",
+                            "label": "",
+                            "description": ""
+                        },
+                        "kontext_conditioning": {
+                            "name": "kontext_conditioning",
+                            "label": "",
+                            "description": ""
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 850,
+                    "y": 0
+                }
+            },
+            {
+                "id": "core_metadata:Obo38fYbWQ",
+                "type": "invocation",
+                "data": {
+                    "id": "core_metadata:Obo38fYbWQ",
+                    "version": "2.0.0",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "core_metadata",
+                    "inputs": {
+                        "generation_mode": {
+                            "name": "generation_mode",
+                            "label": "",
+                            "description": "",
+                            "value": "flux_txt2img"
+                        },
+                        "positive_prompt": {
+                            "name": "positive_prompt",
+                            "label": "",
+                            "description": ""
+                        },
+                        "negative_prompt": {
+                            "name": "negative_prompt",
+                            "label": "",
+                            "description": ""
+                        },
+                        "width": {
+                            "name": "width",
+                            "label": "",
+                            "description": "",
+                            "value": 1360
+                        },
+                        "height": {
+                            "name": "height",
+                            "label": "",
+                            "description": "",
+                            "value": 768
+                        },
+                        "seed": {
+                            "name": "seed",
+                            "label": "",
+                            "description": ""
+                        },
+                        "rand_device": {
+                            "name": "rand_device",
+                            "label": "",
+                            "description": ""
+                        },
+                        "cfg_scale": {
+                            "name": "cfg_scale",
+                            "label": "",
+                            "description": ""
+                        },
+                        "cfg_rescale_multiplier": {
+                            "name": "cfg_rescale_multiplier",
+                            "label": "",
+                            "description": ""
+                        },
+                        "steps": {
+                            "name": "steps",
+                            "label": "",
+                            "description": "",
+                            "value": 35
+                        },
+                        "scheduler": {
+                            "name": "scheduler",
+                            "label": "",
+                            "description": ""
+                        },
+                        "seamless_x": {
+                            "name": "seamless_x",
+                            "label": "",
+                            "description": ""
+                        },
+                        "seamless_y": {
+                            "name": "seamless_y",
+                            "label": "",
+                            "description": ""
+                        },
+                        "clip_skip": {
+                            "name": "clip_skip",
+                            "label": "",
+                            "description": ""
+                        },
+                        "model": {
+                            "name": "model",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "54b66417-d8fc-4a56-9b78-5b473687f358",
+                                "hash": "blake3:40ace2cf5d03a95ec710054ec5e4c8e864341a7ebfefe188ed750c41a0463795",
+                                "name": "flux1-dev",
+                                "base": "flux",
+                                "type": "main",
+                                "submodel_type": null
+                            }
+                        },
+                        "controlnets": {
+                            "name": "controlnets",
+                            "label": "",
+                            "description": ""
+                        },
+                        "ipAdapters": {
+                            "name": "ipAdapters",
+                            "label": "",
+                            "description": ""
+                        },
+                        "t2iAdapters": {
+                            "name": "t2iAdapters",
+                            "label": "",
+                            "description": ""
+                        },
+                        "loras": {
+                            "name": "loras",
+                            "label": "",
+                            "description": ""
+                        },
+                        "strength": {
+                            "name": "strength",
+                            "label": "",
+                            "description": ""
+                        },
+                        "init_image": {
+                            "name": "init_image",
+                            "label": "",
+                            "description": ""
+                        },
+                        "vae": {
+                            "name": "vae",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "key": "852d4328-9273-4348-b1a0-0ed96baa3acd",
+                                "hash": "blake3:ce21cb76364aa6e2421311cf4a4b5eb052a76c4f1cd207b50703d8978198a068",
+                                "name": "FLUX.1-VAE",
+                                "base": "flux",
+                                "type": "vae",
+                                "submodel_type": null
+                            }
+                        },
+                        "hrf_enabled": {
+                            "name": "hrf_enabled",
+                            "label": "",
+                            "description": ""
+                        },
+                        "hrf_method": {
+                            "name": "hrf_method",
+                            "label": "",
+                            "description": ""
+                        },
+                        "hrf_strength": {
+                            "name": "hrf_strength",
+                            "label": "",
+                            "description": ""
+                        },
+                        "positive_style_prompt": {
+                            "name": "positive_style_prompt",
+                            "label": "",
+                            "description": ""
+                        },
+                        "negative_style_prompt": {
+                            "name": "negative_style_prompt",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_model": {
+                            "name": "refiner_model",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_cfg_scale": {
+                            "name": "refiner_cfg_scale",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_steps": {
+                            "name": "refiner_steps",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_scheduler": {
+                            "name": "refiner_scheduler",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_positive_aesthetic_score": {
+                            "name": "refiner_positive_aesthetic_score",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_negative_aesthetic_score": {
+                            "name": "refiner_negative_aesthetic_score",
+                            "label": "",
+                            "description": ""
+                        },
+                        "refiner_start": {
+                            "name": "refiner_start",
+                            "label": "",
+                            "description": ""
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true
+                },
+                "position": {
+                    "x": 425,
+                    "y": 200
+                }
+            },
+            {
+                "id": "canvas_output:ylAPm3EBhz",
+                "type": "invocation",
+                "data": {
+                    "id": "canvas_output:ylAPm3EBhz",
+                    "version": "1.0.2",
+                    "nodePack": "invokeai",
+                    "label": "",
+                    "notes": "",
+                    "type": "flux_vae_decode",
+                    "inputs": {
+                        "board": {
+                            "name": "board",
+                            "label": "",
+                            "description": "",
+                            "value": {
+                                "board_id": "ee998bc1-9fe9-4fff-8adf-5b3aacde1ab5"
+                            }
+                        },
+                        "metadata": {
+                            "name": "metadata",
+                            "label": "",
+                            "description": ""
+                        },
+                        "latents": {
+                            "name": "latents",
+                            "label": "",
+                            "description": ""
+                        },
+                        "vae": {
+                            "name": "vae",
+                            "label": "",
+                            "description": ""
+                        }
+                    },
+                    "isOpen": true,
+                    "isIntermediate": false,
+                    "useCache": false
+                },
+                "position": {
+                    "x": 1275,
+                    "y": 0
+                }
+            },
+            {
+                "id": "9606ebad-89d1-41c2-a99d-5d4b44ea04c3",
+                "type": "invocation",
+                "data": {
+                    "id": "9606ebad-89d1-41c2-a99d-5d4b44ea04c3",
+                    "type": "integer",
+                    "version": "1.0.1",
+                    "label": "Steps",
+                    "notes": "",
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true,
+                    "nodePack": "invokeai",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Steps",
+                            "description": "",
+                            "value": 35
+                        }
+                    }
+                },
+                "position": {
+                    "x": 0,
+                    "y": 1075
+                }
+            },
+            {
+                "id": "131d083e-d6c9-4826-92ac-17a0e19950c5",
+                "type": "invocation",
+                "data": {
+                    "id": "131d083e-d6c9-4826-92ac-17a0e19950c5",
+                    "type": "float",
+                    "version": "1.0.1",
+                    "label": "Guidance",
+                    "notes": "",
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true,
+                    "nodePack": "invokeai",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Guidance",
+                            "description": "",
+                            "value": 3.5
+                        }
+                    }
+                },
+                "position": {
+                    "x": 0,
+                    "y": 1225
+                }
+            },
+            {
+                "id": "e5059743-72e9-4c08-bbda-7593f4772aa0",
+                "type": "invocation",
+                "data": {
+                    "id": "e5059743-72e9-4c08-bbda-7593f4772aa0",
+                    "type": "integer",
+                    "version": "1.0.1",
+                    "label": "Width",
+                    "notes": "",
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true,
+                    "nodePack": "invokeai",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Width",
+                            "description": "",
+                            "value": 1360
+                        }
+                    }
+                },
+                "position": {
+                    "x": 0,
+                    "y": 1375
+                }
+            },
+            {
+                "id": "5a142337-7545-4e78-9f53-9cb321889520",
+                "type": "invocation",
+                "data": {
+                    "id": "5a142337-7545-4e78-9f53-9cb321889520",
+                    "type": "integer",
+                    "version": "1.0.1",
+                    "label": "Height",
+                    "notes": "",
+                    "isOpen": true,
+                    "isIntermediate": true,
+                    "useCache": true,
+                    "nodePack": "invokeai",
+                    "inputs": {
+                        "value": {
+                            "name": "value",
+                            "label": "Height",
+                            "description": "",
+                            "value": 768
+                        }
+                    }
+                },
+                "position": {
+                    "x": 0,
+                    "y": 1525
+                }
+            }
+        ],
+        "edges": [
+            {
+                "id": "788a56fd-5962-4463-8897-01c1e867545e",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "transformer",
+                "targetHandle": "transformer"
+            },
+            {
+                "id": "dcd3538a-4ade-4ba0-b291-4e342e23d4cd",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "vae",
+                "targetHandle": "controlnet_vae"
+            },
+            {
+                "id": "5f519e30-78ce-4b26-870d-db8359a6c12e",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "canvas_output:ylAPm3EBhz",
+                "sourceHandle": "vae",
+                "targetHandle": "vae"
+            },
+            {
+                "id": "5534981a-8ff1-423a-8458-4fc9c3d730c3",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "flux_text_encoder:KPQM8UfUPX",
+                "sourceHandle": "clip",
+                "targetHandle": "clip"
+            },
+            {
+                "id": "4679d137-9700-4f16-8cdf-155c27ed1c60",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "flux_text_encoder:KPQM8UfUPX",
+                "sourceHandle": "t5_encoder",
+                "targetHandle": "t5_encoder"
+            },
+            {
+                "id": "92d76c40-f66c-4350-9eb4-b0801086c415",
+                "type": "default",
+                "source": "flux_model_loader:k8ISpXS9A3",
+                "target": "flux_text_encoder:KPQM8UfUPX",
+                "sourceHandle": "max_seq_len",
+                "targetHandle": "t5_max_seq_len"
+            },
+            {
+                "id": "d51f4d8e-526c-49d9-b92f-d5a45951e280",
+                "type": "default",
+                "source": "positive_prompt:4TWvXlpuH4",
+                "target": "flux_text_encoder:KPQM8UfUPX",
+                "sourceHandle": "value",
+                "targetHandle": "prompt"
+            },
+            {
+                "id": "f7b735a0-1f64-45fe-b3eb-143e09cb8e27",
+                "type": "default",
+                "source": "flux_text_encoder:KPQM8UfUPX",
+                "target": "pos_cond_collect:IkGBxvQ6i5",
+                "sourceHandle": "conditioning",
+                "targetHandle": "item"
+            },
+            {
+                "id": "8c93c97a-f82b-4017-a6f9-6039d156852a",
+                "type": "default",
+                "source": "pos_cond_collect:IkGBxvQ6i5",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "collection",
+                "targetHandle": "positive_text_conditioning"
+            },
+            {
+                "id": "2b1736ee-e7fc-4d4f-aa87-f0580f38ec3b",
+                "type": "default",
+                "source": "seed:2rqiyOUW8o",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "value",
+                "targetHandle": "seed"
+            },
+            {
+                "id": "653c3ecf-95b2-4558-a8cc-82d12a49eaa7",
+                "type": "default",
+                "source": "flux_denoise:z0pR7kOYan",
+                "target": "canvas_output:ylAPm3EBhz",
+                "sourceHandle": "latents",
+                "targetHandle": "latents"
+            },
+            {
+                "id": "3cad8b1a-d595-493a-98d2-16f8ff39dafa",
+                "type": "default",
+                "source": "seed:2rqiyOUW8o",
+                "target": "core_metadata:Obo38fYbWQ",
+                "sourceHandle": "value",
+                "targetHandle": "seed"
+            },
+            {
+                "id": "b49faaf5-6e6b-423d-8a92-b6b761113398",
+                "type": "default",
+                "source": "positive_prompt:4TWvXlpuH4",
+                "target": "core_metadata:Obo38fYbWQ",
+                "sourceHandle": "value",
+                "targetHandle": "positive_prompt"
+            },
+            {
+                "id": "f9c31093-a8e2-456d-b043-c5227ed87785",
+                "type": "default",
+                "source": "core_metadata:Obo38fYbWQ",
+                "target": "canvas_output:ylAPm3EBhz",
+                "sourceHandle": "metadata",
+                "targetHandle": "metadata"
+            },
+            {
+                "id": "reactflow__edge-9606ebad-89d1-41c2-a99d-5d4b44ea04c3value-core_metadata:Obo38fYbWQsteps",
+                "type": "default",
+                "source": "9606ebad-89d1-41c2-a99d-5d4b44ea04c3",
+                "target": "core_metadata:Obo38fYbWQ",
+                "sourceHandle": "value",
+                "targetHandle": "steps"
+            },
+            {
+                "id": "reactflow__edge-9606ebad-89d1-41c2-a99d-5d4b44ea04c3value-flux_denoise:z0pR7kOYannum_steps",
+                "type": "default",
+                "source": "9606ebad-89d1-41c2-a99d-5d4b44ea04c3",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "value",
+                "targetHandle": "num_steps"
+            },
+            {
+                "id": "reactflow__edge-131d083e-d6c9-4826-92ac-17a0e19950c5value-flux_denoise:z0pR7kOYanguidance",
+                "type": "default",
+                "source": "131d083e-d6c9-4826-92ac-17a0e19950c5",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "value",
+                "targetHandle": "guidance"
+            },
+            {
+                "id": "reactflow__edge-e5059743-72e9-4c08-bbda-7593f4772aa0value-core_metadata:Obo38fYbWQwidth",
+                "type": "default",
+                "source": "e5059743-72e9-4c08-bbda-7593f4772aa0",
+                "target": "core_metadata:Obo38fYbWQ",
+                "sourceHandle": "value",
+                "targetHandle": "width"
+            },
+            {
+                "id": "reactflow__edge-e5059743-72e9-4c08-bbda-7593f4772aa0value-flux_denoise:z0pR7kOYanwidth",
+                "type": "default",
+                "source": "e5059743-72e9-4c08-bbda-7593f4772aa0",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "value",
+                "targetHandle": "width"
+            },
+            {
+                "id": "reactflow__edge-5a142337-7545-4e78-9f53-9cb321889520value-core_metadata:Obo38fYbWQheight",
+                "type": "default",
+                "source": "5a142337-7545-4e78-9f53-9cb321889520",
+                "target": "core_metadata:Obo38fYbWQ",
+                "sourceHandle": "value",
+                "targetHandle": "height"
+            },
+            {
+                "id": "reactflow__edge-5a142337-7545-4e78-9f53-9cb321889520value-flux_denoise:z0pR7kOYanheight",
+                "type": "default",
+                "source": "5a142337-7545-4e78-9f53-9cb321889520",
+                "target": "flux_denoise:z0pR7kOYan",
+                "sourceHandle": "value",
+                "targetHandle": "height"
+            }
+        ],
+        "form": {
+            "elements": {
+                "root": {
+                    "id": "root",
+                    "data": {
+                        "layout": "column",
+                        "children": ["node-field-Qa29nSKu4f", "container-VeLxFcI7HB", "node-field-pPxFNxLGwd", "divider-66qKyMF1Jr", "container-cXM4hsfeyJ"]
+                    },
+                    "type": "container"
+                },
+                "node-field-Qa29nSKu4f": {
+                    "id": "node-field-Qa29nSKu4f",
+                    "type": "node-field",
+                    "parentId": "root",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "positive_prompt:4TWvXlpuH4",
+                            "fieldName": "value"
+                        },
+                        "settings": {
+                            "type": "string-field-config",
+                            "component": "textarea"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "node-field-pPxFNxLGwd": {
+                    "id": "node-field-pPxFNxLGwd",
+                    "type": "node-field",
+                    "parentId": "root",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "seed:2rqiyOUW8o",
+                            "fieldName": "value"
+                        },
+                        "settings": {
+                            "type": "integer-field-config",
+                            "component": "number-input"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "node-field-A5KQupKchc": {
+                    "id": "node-field-A5KQupKchc",
+                    "type": "node-field",
+                    "parentId": "container-cXM4hsfeyJ",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "core_metadata:Obo38fYbWQ",
+                            "fieldName": "width"
+                        },
+                        "settings": {
+                            "type": "integer-field-config",
+                            "component": "number-input"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "node-field-4IYSyxKjCx": {
+                    "id": "node-field-4IYSyxKjCx",
+                    "type": "node-field",
+                    "parentId": "container-cXM4hsfeyJ",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "core_metadata:Obo38fYbWQ",
+                            "fieldName": "height"
+                        },
+                        "settings": {
+                            "type": "integer-field-config",
+                            "component": "number-input"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "container-cXM4hsfeyJ": {
+                    "id": "container-cXM4hsfeyJ",
+                    "parentId": "root",
+                    "type": "container",
+                    "data": {
+                        "layout": "row",
+                        "children": ["node-field-A5KQupKchc", "node-field-4IYSyxKjCx"]
+                    }
+                },
+                "node-field-Q57T72B6e4": {
+                    "id": "node-field-Q57T72B6e4",
+                    "type": "node-field",
+                    "parentId": "container-VeLxFcI7HB",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "core_metadata:Obo38fYbWQ",
+                            "fieldName": "steps"
+                        },
+                        "settings": {
+                            "type": "integer-field-config",
+                            "component": "number-input"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "node-field-naeUeml02w": {
+                    "id": "node-field-naeUeml02w",
+                    "type": "node-field",
+                    "parentId": "container-VeLxFcI7HB",
+                    "data": {
+                        "fieldIdentifier": {
+                            "nodeId": "131d083e-d6c9-4826-92ac-17a0e19950c5",
+                            "fieldName": "value"
+                        },
+                        "settings": {
+                            "type": "float-field-config",
+                            "component": "number-input"
+                        },
+                        "showDescription": false
+                    }
+                },
+                "container-VeLxFcI7HB": {
+                    "id": "container-VeLxFcI7HB",
+                    "parentId": "root",
+                    "type": "container",
+                    "data": {
+                        "layout": "row",
+                        "children": ["node-field-naeUeml02w", "node-field-Q57T72B6e4"]
+                    }
+                },
+                "divider-66qKyMF1Jr": {
+                    "id": "divider-66qKyMF1Jr",
+                    "parentId": "root",
+                    "type": "divider"
+                }
+            },
+            "rootElementId": "root"
+        },
+        "is_published": null,
+        "id": "d0493045-7665-4444-8544-c18f9203ab33"
+    },
+    "thumbnail_url": null
+}

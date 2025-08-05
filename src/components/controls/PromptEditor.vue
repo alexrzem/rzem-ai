@@ -1,0 +1,19 @@
+<template>
+    <Editor v-model="controls.promptNegative" editorStyle="height: 80px">
+        <template v-slot:toolbar>
+            <span class="ql-formats">
+                <button v-tooltip.bottom="'Bold'" class="ql-bold"></button>
+                <button v-tooltip.bottom="'Italic'" class="ql-italic"></button>
+                <button v-tooltip.bottom="'Underline'" class="ql-underline"></button>
+            </span>
+        </template>
+    </Editor>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import { useControlsStore, useMetadataStore } from '../../store';
+
+const controls = useControlsStore();
+const metadata = useMetadataStore();
+</script>
