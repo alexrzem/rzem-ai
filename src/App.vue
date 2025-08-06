@@ -1,15 +1,23 @@
 <template>
-    <div class="flex flex-col lg:mx-72">
-        <div class="flex justify-center">
-            <div></div>
-            <div>
-                <MegaMenu :model="items">
-                    <template #itemicon="{ item }">
-                        <fa v-if="item.icon" :icon="item.icon" class="text-2xl text-blue-500 hover:text-blue-300" />
-                    </template>
-                </MegaMenu>
+    <div class="main-wrapper">
+        <div class="flex flex-row h-full">
+            <div class="flex-shrink p-0 h-full">
+                <div class="min-w-18 bg-zinc-800 text-zinc-200 h-full rounded-2xl p-2 border border-zinc-500 flex flex-col">
+                    <div v-for="menuItem in menuItems" class="w-full text-center mb-4 hover:bg-zinc-600 rounded-2xl p-2">
+                        <fa v-if="menuItem.icon" :icon="menuItem.icon" class="text-4xl" />
+                        <div class="text-sm">
+                            {{ menuItem.name }}
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div></div>
+            <div class="flex-shrink bg-blue-500 h-full rounded-2xl">
+
+                Alex Rzem
+
+            </div>
+            <div class="flex-grow bg-green-500 h-full rounded-2xl">3</div>
         </div>
     </div>
 </template>
@@ -21,12 +29,12 @@ import { useLayout } from './composables/useLayout';
 
 const { isDarkMode, toggleDarkMode } = useLayout();
 
-const styles = ref([
-    { name: 'Home', code: 'pi pi-home' },
-    { name: 'Bookmark', code: 'pi pi-bookmark' },
-    { name: 'Users', code: 'pi pi-users' },
-    { name: 'Comments', code: 'pi pi-comments' },
-    { name: 'Calendar', code: 'pi pi-calendar' },
+const menuItems = ref([
+    { name: 'Home', icon: ['fa-light', 'fa-passport'], },
+    { name: 'Online', icon: ['fa-light', 'fa-cloud'], },
+    { name: 'Desktop', icon: ['fa-light', 'fa-computer-classic'], },
+    { name: 'Technology', icon: ['fa-light', 'fa-flux-capacitor'], },
+    { name: 'Portfolio', icon: ['fa-light', 'fa-image'], },
 ]);
 
 const items = ref([
