@@ -3,14 +3,28 @@ import Aura from '@primeuix/themes/aura';
 import './assets/styles/main.css';
 
 /* import the fontawesome core */
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { far } from '@fortawesome/pro-regular-svg-icons';
-import { fass } from '@fortawesome/sharp-solid-svg-icons';
-import { fad } from '@fortawesome/pro-duotone-svg-icons';
-import { fadt } from '@fortawesome/duotone-thin-svg-icons';
+/* import icons and add them to the Library */
+import {} from '@awesome.me/kit-a6cc1df5fb/icons/whiteboard/semibold';
 
-library.add(fal, far, fass, fad, fadt);
+import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fal } from '@fortawesome/pro-light-svg-icons';
+// import { far } from '@fortawesome/pro-regular-svg-icons';
+// import { fass } from '@fortawesome/sharp-solid-svg-icons';
+// import { fad } from '@fortawesome/pro-duotone-svg-icons';
+// import { fadt } from '@fortawesome/duotone-thin-svg-icons';
+
+
+//library.add(fal, far, fass, fad, fadt);
+
+/* add icons to the library */
+// library.add(fab);
+// library.add(fad);
+// library.add(fal);
+// library.add(far);
+// library.add(fas);
+//library.add(fonts);
+
+console.log('FontAwesome icons loaded:', fonts);
 
 import type { Preset } from '@primeuix/themes/types';
 
@@ -38,97 +52,19 @@ const preset: Preset = {
             },
             dark: {
                 root: {
-                    background: '{surface.950}',
+                    background: '{surface.600}',
                     color: '{surface.0}',
                 },
             },
         },
     },
     components: {
-        accordion: {
-            header: {
-                padding: '0px 0px 2px 0px',
-            },
-            content: {
-                padding: '0px 0px 2px 0px',
-            },
-            panel: {
-                borderWidth: '0px',
-            },
-        },
-        button: {
+        megamenu: {
             root: {
-                paddingX: '0px',
-                paddingY: '0px',
-            },
-        },
-        card: {
-            body: {
-                padding: '1rem',
-            },
-        },
-        inplace: {
-            root: {
-                padding: '0',
-            },
-        },
-        inputgroup: {
-            addon: {
-                padding: '0px',
-            },
-        },
-        inputnumber: {},
-        inputswitch: {
-            root: {
-                paddingX: '0px',
-                paddingY: '0px',
-            },
-            handle: {
-                width: '1.5rem',
-                height: '1.5rem',
-            },
-        },
-        inputtextarea: {
-            root: {
-                paddingX: '8px',
-                paddingY: '2px',
-            },
-            button: {
-                width: '0rem',
-            },
-        },
-        inputtext: {
-            root: {
-                paddingX: '8px',
-                paddingY: '2px',
-            },
-        },
-        select: {
-            emptyMessage: {
-                padding: '0px',
-            },
-            root: {
-                paddingX: '8px',
-                paddingY: '2px',
-            },
-        },
-        splitter: {
-            handle: {
-                background: '{surface.400}',
-                focusRing: {
-                    color: '{focus.ring.color}',
-                    offset: '{focus.ring.offset}',
-                    shadow: '{focus.ring.shadow}',
-                    style: '{focus.ring.style}',
-                    width: '{focus.ring.width}',
-                },
-                size: '20px',
-            },
-            root: {
-                background: 'transparent',
-                borderColor: 'transparent',
-            },
-        },
+                borderRadius: '1.0rem',
+                background: '{surface.900}',
+            }
+        }
     },
 };
 

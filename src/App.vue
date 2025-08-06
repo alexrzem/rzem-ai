@@ -1,15 +1,15 @@
 <template>
-    <div class="flex relative lg:static bg-surface-200 dark:bg-surface-950 h-full">
-        <AppSidebar />
-        <div class="overflow-auto flex-1 flex flex-col gap-8 transition-all pl-2 pr-2">
-            <Splitter class="h-full" :gutterSize="4">
-                <SplitterPanel class="pr-2" :size="20" :minSize="10">
-                    <AppControls />
-                </SplitterPanel>
-                <SplitterPanel class="flex items-center justify-center" :size="80" :minSize="10">Panel 2
-
-                </SplitterPanel>
-            </Splitter>
+    <div class="flex flex-col lg:mx-72">
+        <div class="flex justify-center">
+            <div></div>
+            <div>
+                <MegaMenu :model="items">
+                    <template #itemicon="{ item }">
+                        <fa v-if="item.icon" :icon="item.icon" class="text-base" />
+                    </template>
+                </MegaMenu>
+            </div>
+            <div></div>
         </div>
     </div>
 </template>
@@ -17,22 +17,9 @@
 <script setup>
 import { ref } from 'vue';
 
-import { useLayout } from "./composables/useLayout";
-
-import AppSidebar from './components/AppSidebar.vue';
-import AppControls from './components/AppControls.vue';
-import StatsWidget from './components/dashboard/StatsWidget.vue';
-import SalesTrendWidget from './components/dashboard/SalesTrendWidget.vue';
-import RecentActivityWidget from './components/dashboard/RecentActivityWidget.vue';
-import ProductOverviewWidget from './components/dashboard/ProductOverviewWidget.vue';
+import { useLayout } from './composables/useLayout';
 
 const { isDarkMode, toggleDarkMode } = useLayout();
-
-const checked1 = ref(false);
-const selectedStyle = ref();
-
-const promptPositive = ref('');
-const promptNegative = ref('');
 
 const styles = ref([
     { name: 'Home', code: 'pi pi-home' },
@@ -40,5 +27,106 @@ const styles = ref([
     { name: 'Users', code: 'pi pi-users' },
     { name: 'Comments', code: 'pi pi-comments' },
     { name: 'Calendar', code: 'pi pi-calendar' },
+]);
+
+const items = ref([
+    {
+        label: '',
+        icon: ['fa-light','fa-home'],
+    },
+    {
+        label: 'Online',
+        icon: ['fa-light','fa-cloud'],
+        items: [
+            [
+                {
+                    label: 'Computer',
+                    items: [{ label: 'Monitor' }, { label: 'Mouse' }, { label: 'Notebook' }, { label: 'Keyboard' }, { label: 'Printer' }, { label: 'Storage' }],
+                },
+            ],
+            [
+                {
+                    label: 'Home Theater',
+                    items: [{ label: 'Projector' }, { label: 'Speakers' }, { label: 'TVs' }],
+                },
+            ],
+            [
+                {
+                    label: 'Gaming',
+                    items: [{ label: 'Accessories' }, { label: 'Console' }, { label: 'PC' }, { label: 'Video Games' }],
+                },
+            ],
+            [
+                {
+                    label: 'Appliances',
+                    items: [{ label: 'Coffee Machine' }, { label: 'Fridge' }, { label: 'Oven' }, { label: 'Vaccum Cleaner' }, { label: 'Washing Machine' }],
+                },
+            ],
+        ],
+    },
+    {
+        label: 'Desktop',
+        icon: ['fa-light','fa-computer-classic'],
+        items: [
+            [
+                {
+                    label: 'Football',
+                    items: [{ label: 'Kits' }, { label: 'Shoes' }, { label: 'Shorts' }, { label: 'Training' }],
+                },
+            ],
+            [
+                {
+                    label: 'Running',
+                    items: [{ label: 'Accessories' }, { label: 'Shoes' }, { label: 'T-Shirts' }, { label: 'Shorts' }],
+                },
+            ],
+            [
+                {
+                    label: 'Swimming',
+                    items: [{ label: 'Kickboard' }, { label: 'Nose Clip' }, { label: 'Swimsuits' }, { label: 'Paddles' }],
+                },
+            ],
+            [
+                {
+                    label: 'Tennis',
+                    items: [{ label: 'Balls' }, { label: 'Rackets' }, { label: 'Shoes' }, { label: 'Training' }],
+                },
+            ],
+        ],
+    },
+    {
+        label: 'Technology',
+        icon: ['fa-light','fa-flux-capacitor'],
+        items: [
+            [
+                {
+                    label: 'Football',
+                    items: [{ label: 'Kits' }, { label: 'Shoes' }, { label: 'Shorts' }, { label: 'Training' }],
+                },
+            ],
+            [
+                {
+                    label: 'Running',
+                    items: [{ label: 'Accessories' }, { label: 'Shoes' }, { label: 'T-Shirts' }, { label: 'Shorts' }],
+                },
+            ],
+            [
+                {
+                    label: 'Swimming',
+                    items: [{ label: 'Kickboard' }, { label: 'Nose Clip' }, { label: 'Swimsuits' }, { label: 'Paddles' }],
+                },
+            ],
+            [
+                {
+                    label: 'Tennis',
+                    items: [{ label: 'Balls' }, { label: 'Rackets' }, { label: 'Shoes' }, { label: 'Training' }],
+                },
+            ],
+        ],
+    },
+    {
+        label: 'Portfolio',
+        icon: ['fa-duotone','fa-solid','fa-image'],
+    },
 ]);
 </script>
