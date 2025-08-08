@@ -42,6 +42,8 @@ declare module 'vue' {
     PromptNegative: typeof import('./src/components/controls/PromptNegative.vue')['default']
     PromptPositive: typeof import('./src/components/controls/PromptPositive.vue')['default']
     RecentActivityWidget: typeof import('./src/components/dashboard/RecentActivityWidget.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
     SalesTrendWidget: typeof import('./src/components/dashboard/SalesTrendWidget.vue')['default']
     SamplerScheduler: typeof import('./src/components/controls/SamplerScheduler.vue')['default']
     ScrollPanel: typeof import('primevue/scrollpanel')['default']

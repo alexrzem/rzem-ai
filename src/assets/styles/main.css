@@ -16,7 +16,7 @@ body {
 }
 
 .main-wrapper {
-    @apply h-full bg-zinc-600 rounded-2xl;
+    @apply h-full bg-zinc-600 rounded-2xl border border-zinc-400;
 }
 
 .p-megamenu {

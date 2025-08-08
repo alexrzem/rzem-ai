@@ -2,22 +2,20 @@
     <div class="main-wrapper">
         <div class="flex flex-row h-full">
             <div class="flex-shrink p-0 h-full">
-                <div class="min-w-18 bg-zinc-800 text-zinc-200 h-full rounded-2xl p-2 border border-zinc-500 flex flex-col">
-                    <div v-for="menuItem in menuItems" class="w-full text-center mb-4 hover:bg-zinc-600 rounded-2xl p-2">
+                <div class="min-w-18 bg-zinc-800 h-full rounded-2xl p-2 flex flex-col">
+                    <RouterLink v-for="menuItem in menuItems" :to="{ name: menuItem.link }" active-class="bg-zinc-900" exact-active-class="bg-zinc-900" class="w-full text-center mb-4 text-sky-100 hover:text-sky-500 hover:bg-zinc-900 rounded-2xl p-2">
                         <fa v-if="menuItem.icon" :icon="menuItem.icon" class="text-4xl" />
                         <div class="text-sm">
                             {{ menuItem.name }}
                         </div>
-
-                    </div>
+                    </RouterLink>
                 </div>
             </div>
-            <div class="flex-shrink bg-blue-500 h-full rounded-2xl">
-
-                Alex Rzem
+            <div class="flex-shrink bg-zinc-600 h-full w-72 rounded-2xl"> Alex Rzem </div>
+            <div class="flex-grow bg-zinc-500 h-full rounded-2xl">
+                <router-view/>
 
             </div>
-            <div class="flex-grow bg-green-500 h-full rounded-2xl">3</div>
         </div>
     </div>
 </template>
@@ -30,11 +28,12 @@ import { useLayout } from './composables/useLayout';
 const { isDarkMode, toggleDarkMode } = useLayout();
 
 const menuItems = ref([
-    { name: 'Home', icon: ['fa-light', 'fa-passport'], },
-    { name: 'Online', icon: ['fa-light', 'fa-cloud'], },
-    { name: 'Desktop', icon: ['fa-light', 'fa-computer-classic'], },
-    { name: 'Technology', icon: ['fa-light', 'fa-flux-capacitor'], },
-    { name: 'Portfolio', icon: ['fa-light', 'fa-image'], },
+    { name: 'Home', link: 'home', icon: ['fa-thin', 'fa-passport'] },
+    { name: 'Online', link: 'online', icon: ['fa-thin', 'fa-cloud'] },
+    { name: 'Desktop', link: 'desktop', icon: ['fa-thin', 'fa-computer-classic'] },
+    { name: 'Technology', link: 'tech', icon: ['fa-thin', 'fa-flux-capacitor'] },
+    { name: 'Prompts', link: 'prompts', icon: ['fa-thin', 'fa-memo'] },
+    { name: 'Portfolio', link: 'portfolio', icon: ['fa-thin', 'fa-image'] },
 ]);
 
 const items = ref([
