@@ -2,7 +2,8 @@ import path from 'node:path';
 
 import { defineUserConfig } from 'vuepress';
 import { viteBundler } from '@vuepress/bundler-vite';
-import { defaultTheme } from '@vuepress/theme-default';
+import { hopeTheme } from 'vuepress-theme-hope';
+
 import { markdownExtended } from './markdown';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
@@ -13,15 +14,6 @@ export default defineUserConfig({
     description: '',
 
     bundler: viteBundler(),
-    theme: defaultTheme({
-        // default theme config
-        navbar: [
-            { text: 'Home', link: '/' },
-            { text: 'Tools', link: '/desktop/' },
-            { text: 'FLUX.1', link: '/tech/flux/' },
-            { text: 'Portfolio', link: 'http://alexrzem.artstation.com/' }
-        ],
-    }),
     pagePatterns: ['**/*.md', '!**/private.*', '!**/*.snippet.md', '!.vuepress', '!node_modules'],
     plugins: [],
     public: path.resolve(__dirname, 'public'),
@@ -41,4 +33,30 @@ export default defineUserConfig({
         ['link', { rel: 'manifest', href: '/assets/favicons/site.webmanifest' }],
         ['link', { rel: 'shortcut icon', href: '/assets/favicons/logo.ico' }],
     ],
+
+    theme: hopeTheme({
+        darkmode: 'enable', // or "toggle", "auto", "enable", "disable", "switch"
+        logo: 'logo.png',
+        navbar: navbar,
+        print: false,
+        //readingTime: false,
+        sidebar: sidebar,
+        toc: false,
+        markdown: {
+            codeTabs: true,
+            component: true,
+            imgMark: true,
+            include: true,
+        },
+        plugins: {
+            docsearch: {
+                // plugin options here
+                // appId, apiKey and indexName are required
+            },
+            icon: {
+                assets: 'iconify', // keywords: "iconify", "fontawesome", "fontawesome-with-brands"
+            },
+            photoSwipe: false,
+        },
+    }),
 });

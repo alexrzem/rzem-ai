@@ -1,7 +1,7 @@
 ---
 home: false
-title: Desktop
-heroText: Desktop
+title: Tools
+heroText: Tools
 icon: 'fluent-color:laptop-48'
 
 highlights:
