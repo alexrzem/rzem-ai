@@ -1,0 +1,104 @@
+* {
+    color: oklch(20.8% .042 265.755);
+}
+
+html {
+    font-size: 14px !important;
+    font-family: 'SF Pro Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0rem 0.1rem 0rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    color: oklch(42.4% .199 265.638);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: oklch(42.4% .199 265.638);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+
+em {
+    color: oklch(37.2% .044 257.287);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+li {
+   font-size: 1rem;
+}
+
+li em {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+li strong {
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+pre {
+    border-radius: 0.4rem;
+    background-color: oklch(96.8% .007 247.896);
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+code {
+    color: oklch(37.2% .044 257.287);
+    font-size: 0.8rem !important;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-weight: 400 !important;
+
+}

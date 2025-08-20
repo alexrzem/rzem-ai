@@ -1,0 +1,517 @@
+<template>
+    <header class="relative bg-zinc-100 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Lesson 2: Advanced Prompting Mastery</h1>
+            <p><em>Session Duration: 2.5 hours</em></p>
+        </div>
+    </header>
+    <main>
+        <Progress :step="2" />
+
+        <div class="content">
+            <h2 id="lesson-overview">Lesson Overview</h2>
+            <p>This advanced session focuses on sophisticated prompting techniques, artistic control, and professional
+                workflows for creating exceptional AI-generated images with FLUX.1.</p>
+
+            <h2 id="learning-objectives">Learning Objectives</h2>
+            <p>By the end of this lesson, participants will:</p>
+            <ul class="list">
+                <li>Master advanced prompting strategies and techniques</li>
+                <li>Control artistic style, mood, and composition effectively</li>
+                <li>Understand lighting, color theory, and visual composition in prompts</li>
+                <li>Develop systematic approaches to prompt refinement</li>
+                <li>Create professional-quality images for specific use cases</li>
+                <li>Build efficient workflows for consistent results</li>
+            </ul>
+            <h2 id="lesson-structure">Lesson Structure</h2>
+            <h3 id="opening-review">Opening &amp; Review</h3>
+            <p><em>15 minutes</em></p>
+            <h4 id="technical-assignment-review">Technical Assignment Review</h4>
+            <ul class="list">
+                <li>Share optimisation profiles and findings</li>
+                <li>Discuss technical challenges and solutions</li>
+                <li>Address questions from advanced exploration</li>
+            </ul>
+            <h4 id="session-focus">Session Focus</h4>
+            <ul class="list">
+                <li>Transition from technical understanding to artistic mastery</li>
+                <li>Emphasis on creative control and professional application</li>
+            </ul>
+            <h3 id="part-1-advanced-prompting-architecture">Part 1: Advanced Prompting Architecture</h3>
+            <p><em>50 minutes</em></p>
+            <h4 id="the-professional-prompt-formula">The Professional Prompt Formula</h4>
+            <p><strong>Master Template Structure</strong>:</p>
+            <pre><code>[STYLE/MEDIUM] + [SUBJECT DESCRIPTION] + [ACTION/POSE] + [ENVIRONMENT/SETTING] + [LIGHTING] + [CAMERA/PERSPECTIVE] + [MOOD/ATMOSPHERE] + [TECHNICAL SPECIFICATIONS] + [QUALITY MODIFIERS]</code></pre>
+            <p><strong>Example Application</strong>:</p>
+            <pre><code>Cinematic digital art portrait of an elderly Japanese craftsman carefully carving wood in his traditional workshop, warm golden hour light streaming through paper windows, shot with 85mm lens, shallow depth of field, contemplative and peaceful mood, hyperrealistic detail, 4K quality</code></pre>
+            <h4 id="advanced-prompt-components">Advanced Prompt Components</h4>
+            <p><strong>1. Style and Medium Control</strong></p>
+            <ul class="list">
+                <li><strong>Photography Styles</strong>: “<em>Street photography</em>”, “<em>Fashion editorial</em>”,
+                    “<em>Documentary style</em>”</li>
+                <li><strong>Art Movements</strong>: “<em>Art nouveau</em>”, “<em>Bauhaus design</em>”,
+                    “<em>Impressionist painting</em>”</li>
+                <li><strong>Digital Art Styles</strong>: “<em>Concept art</em>”, “<em>Matte painting</em>”, “<em>Digital
+                        illustration</em>”</li>
+                <li><strong>Vintage/Film Styles</strong>: “<em>1980s aesthetic</em>”, “<em>Film noir</em>”,
+                    “<em>Polaroid photography</em>”</li>
+            </ul>
+            <p><strong>2. Advanced Subject Description</strong></p>
+            <ul class="list">
+                <li><strong>Character Details</strong>: Age, ethnicity, expression, clothing, accessories</li>
+                <li><strong>Object Specifications</strong>: Materials, condition, size relationships, details</li>
+                <li><strong>Environmental Elements</strong>: Weather, season, time period, cultural context</li>
+            </ul>
+            <p><strong>3. Sophisticated Action and Pose Direction</strong></p>
+            <ul class="list">
+                <li><strong>Dynamic Actions</strong>: “<em>Mid-stride</em>”, “<em>Caught in motion</em>”, “<em>Frozen
+                        moment</em>”</li>
+                <li><strong>Emotional Poses</strong>: “<em>Contemplative stance</em>”, “<em>Confident posture</em>”,
+                    “<em>Vulnerable position</em>”</li>
+                <li><strong>Interactive Elements</strong>: “<em>Reaching for</em>”, “<em>Looking toward</em>”,
+                    “<em>Interacting with</em>”</li>
+            </ul>
+            <h4 id="professional-lighting-techniques">Professional Lighting Techniques</h4>
+            <p><strong>Natural Lighting Scenarios</strong></p>
+            <ul class="list">
+                <li><strong>Golden Hour</strong>: “<em>Warm golden hour light</em>”, “<em>Soft morning sunlight</em>”
+                </li>
+                <li><strong>Blue Hour</strong>: “<em>Twilight atmosphere</em>”, “<em>Cool evening light</em>”</li>
+                <li><strong>Dramatic Natural</strong>: “<em>Storm lighting</em>”, “<em>Harsh midday sun</em>”,
+                    “<em>Filtered forest light</em>”</li>
+            </ul>
+            <p><strong>Studio and Artificial Lighting</strong></p>
+            <ul class="list">
+                <li><strong>Portrait Lighting</strong>: “<em>Rembrandt lighting</em>”, “<em>Butterfly lighting</em>”,
+                    “<em>Split lighting</em>”</li>
+                <li><strong>Cinematic Lighting</strong>: “<em>Film noir shadows</em>”, “<em>High contrast
+                        lighting</em>”, “<em>Backlighting</em>”</li>
+                <li><strong>Environmental Lighting</strong>: “<em>Neon-lit streets</em>”, “<em>Candlelit interior</em>”,
+                    “<em>Industrial lighting</em>”</li>
+            </ul>
+            <p><strong>Advanced Lighting Vocabulary</strong></p>
+            <ul class="list">
+                <li><strong>Quality</strong>: Soft, hard, diffused, directional</li>
+                <li><strong>Color Temperature</strong>: Warm (3000K), neutral (5600K), cool (7000K)</li>
+                <li><strong>Direction</strong>: Front-lit, side-lit, backlit, top-lit, bottom-lit</li>
+                <li><strong>Intensity</strong>: Subtle, moderate, dramatic, extreme</li>
+            </ul>
+            <h3 id="part-2-composition-and-camera-control">Part 2: Composition and Camera Control</h3>
+            <p><em>45 minutes</em></p>
+            <h4 id="camera-and-lens-specifications">Camera and Lens Specifications</h4>
+            <p><strong>Focal Length Effects</strong></p>
+            <ul class="list">
+                <li><strong>Wide Angle (14-35mm)</strong>: “<em>Shot with 24mm lens</em>” - Expansive, environmental
+                </li>
+                <li><strong>Standard (35-85mm)</strong>: “<em>50mm lens perspective</em>” - Natural, balanced</li>
+                <li><strong>Telephoto (85-200mm)</strong>: “<em>135mm portrait lens</em>” - Compressed, isolated</li>
+                <li><strong>Extreme Telephoto (200mm+)</strong>: “<em>300mm telephoto</em>” - Heavy compression</li>
+            </ul>
+            <p><strong>Depth of Field Control</strong></p>
+            <ul class="list">
+                <li><strong>Shallow DOF</strong>: “<em>f/1.4 aperture</em>”, “<em>Bokeh background</em>”, “<em>Sharp
+                        subject, blurred background</em>”</li>
+                <li><strong>Deep DOF</strong>: “<em>f/8 aperture</em>”, “<em>Everything in focus</em>”, “<em>Sharp
+                        foreground to background</em>”</li>
+                <li><strong>Creative DOF</strong>: “<em>Focus pulling</em>”, “<em>Selective focus</em>”, “<em>Tilt-shift
+                        effect</em>”</li>
+            </ul>
+            <p><strong>Camera Angles and Perspectives</strong></p>
+            <ul class="list">
+                <li><strong>Eye Level</strong>: Natural, relatable perspective</li>
+                <li><strong>Low Angle</strong>: “<em>Worm’s eye view</em>”, “<em>Looking up</em>”, dramatic, powerful
+                </li>
+                <li><strong>High Angle</strong>: “<em>Bird’s eye view</em>”, “<em>Looking down</em>”, vulnerable,
+                    comprehensive</li>
+                <li><strong>Dutch Angle</strong>: “<em>Tilted camera</em>”, “<em>Dynamic composition</em>”, unsettling
+                </li>
+            </ul>
+            <h4 id="advanced-composition-techniques">Advanced Composition Techniques</h4>
+            <p><strong>Classical Composition Rules</strong></p>
+            <ul class="list">
+                <li><strong>Rule of Thirds</strong>: “<em>Subject positioned on intersection points</em>”</li>
+                <li><strong>Leading Lines</strong>: “<em>Diagonal lines drawing eye to subject</em>”</li>
+                <li><strong>Framing</strong>: “<em>Natural frame around subject</em>”, “<em>Architectural framing</em>”
+                </li>
+                <li><strong>Symmetry and Patterns</strong>: “<em>Perfect symmetry</em>”, “<em>Breaking the pattern</em>”
+                </li>
+            </ul>
+            <p><strong>Dynamic Composition Elements</strong></p>
+            <ul class="list">
+                <li><strong>Movement and Flow</strong>: “<em>Curved lines</em>”, “<em>S-curve composition</em>”,
+                    “<em>Implied movement</em>”</li>
+                <li><strong>Contrast and Balance</strong>: “<em>Light vs dark areas</em>”, “<em>Color contrast</em>”,
+                    “<em>Textural contrast</em>”</li>
+                <li><strong>Scale and Proportion</strong>: “<em>Human for scale</em>”, “<em>Dramatic size
+                        relationships</em>”</li>
+            </ul>
+            <p><strong>Negative Space and Minimalism</strong></p>
+            <ul class="list">
+                <li><strong>Breathing Room</strong>: “<em>Lots of negative space</em>”, “<em>Minimalist
+                        composition</em>”</li>
+                <li><strong>Isolation</strong>: “<em>Subject isolated in space</em>”, “<em>Single focal point</em>”</li>
+                <li><strong>Simplification</strong>: “<em>Clean, uncluttered</em>”, “<em>Essential elements only</em>”
+                </li>
+            </ul>
+            <h3 id="break">Break</h3>
+            <p><em>15 minutes</em></p>
+            <h3 id="part-3-style-control-and-artistic-direction">Part 3: Style Control and Artistic Direction</h3>
+            <p><em>50 minutes</em></p>
+            <h4 id="advanced-style-techniques">Advanced Style Techniques</h4>
+            <p><strong>Layered Style Descriptions</strong> Instead of single style words, use layered descriptions:</p>
+            <ul class="list">
+                <li>Basic: “<em>Oil painting</em>”</li>
+                <li>Advanced: “<em>Thick impasto oil painting in the style of Van Gogh’s late period, with visible
+                        brushstrokes and vibrant color palette</em>”</li>
+            </ul>
+            <p><strong>Style Mixing and Fusion</strong></p>
+            <ul class="list">
+                <li><strong>Technique Combination</strong>: “<em>watercolour base with ink line art details</em>”</li>
+                <li><strong>Period Fusion</strong>: “<em>Renaissance composition with modern color grading</em>”</li>
+                <li><strong>Medium Hybrid</strong>: “<em>Digital art with traditional painting textures</em>”</li>
+            </ul>
+            <p><strong>Cultural and Historical Accuracy</strong></p>
+            <ul class="list">
+                <li><strong>Time Period Specificity</strong>: “<em>1920s Art Deco poster design</em>”, “<em>Medieval
+                        illuminated manuscript style</em>”</li>
+                <li><strong>Cultural Authenticity</strong>: “<em>Traditional Japanese woodblock print</em>”,
+                    “<em>Mexican folk art style</em>”</li>
+                <li><strong>Regional Variations</strong>: “<em>Northern Renaissance painting</em>”, “<em>California
+                        impressionism</em>”</li>
+            </ul>
+            <h4 id="color-theory-in-prompts">Color Theory in Prompts</h4>
+            <p><strong>Color Palette Control</strong></p>
+            <ul class="list">
+                <li><strong>Monochromatic</strong>: “<em>Shades of blue only</em>”, “<em>Sepia tones</em>”, “<em>Black
+                        and white with red accent</em>”</li>
+                <li><strong>Complementary</strong>: “<em>Blue and orange color scheme</em>”, “<em>Red and green
+                        contrast</em>”</li>
+                <li><strong>Analogous</strong>: “<em>Warm autumn colors</em>”, “<em>Cool ocean tones</em>”</li>
+                <li><strong>Triadic</strong>: “<em>Primary color palette</em>”, “<em>Purple, orange, and green
+                        scheme</em>”</li>
+            </ul>
+            <p><strong>Color Psychology and Mood</strong></p>
+            <ul class="list">
+                <li><strong>Warm Palettes</strong>: Energy, comfort, passion - “<em>Golden yellows and rich reds</em>”
+                </li>
+                <li><strong>Cool Palettes</strong>: Calm, professional, mysterious - “<em>Deep blues and cool
+                        grays</em>”</li>
+                <li><strong>Desaturated</strong>: Sophisticated, vintage, melancholy - “<em>Muted, desaturated
+                        colors</em>”</li>
+                <li><strong>Vibrant</strong>: Energetic, youthful, optimistic - “<em>Saturated, vibrant color
+                        palette</em>”</li>
+            </ul>
+            <p><strong>Advanced Color Vocabulary</strong></p>
+            <ul class="list">
+                <li><strong>Saturation</strong>: “<em>Highly saturated</em>”, “<em>Muted colors</em>”, “<em>Desaturated
+                        palette</em>”</li>
+                <li><strong>Brightness</strong>: “<em>High key lighting</em>”, “<em>Low key shadows</em>”, “<em>Balanced
+                        exposure</em>”</li>
+                <li><strong>Temperature</strong>: “<em>Warm color temperature</em>”, “<em>Cool blue tones</em>”,
+                    “<em>Mixed lighting</em>”</li>
+            </ul>
+            <h4 id="mood-and-atmosphere-creation">Mood and Atmosphere Creation</h4>
+            <p><strong>Emotional Atmospheres</strong></p>
+            <ul class="list">
+                <li><strong>Peaceful</strong>: “Serene”, “Tranquil”, “Meditative”, “Calming presence”</li>
+                <li><strong>Dramatic</strong>: “Intense”, “Powerful”, “Overwhelming”, “Epic scale”</li>
+                <li><strong>Mysterious</strong>: “Enigmatic”, “Shadowy”, “Hidden secrets”, “Uncertain”</li>
+                <li><strong>Nostalgic</strong>: “Wistful”, “Memory-like”, “Faded beauty”, “Time-worn”</li>
+            </ul>
+            <p><strong>Environmental Mood Modifiers</strong></p>
+            <ul class="list">
+                <li><strong>Weather Effects</strong>: “Misty morning fog”, “Dramatic storm clouds”, “Gentle rain”</li>
+                <li><strong>Time Influence</strong>: “Dawn’s first light”, “Midnight shadows”, “Lazy afternoon”</li>
+                <li><strong>Seasonal Character</strong>: “Spring renewal”, “Summer abundance”, “Autumn melancholy”,
+                    “Winter stillness”</li>
+            </ul>
+            <h3 id="part-4-professional-workflow-development">Part 4: Professional Workflow Development</h3>
+            <p><em>35 minutes</em></p>
+            <h4 id="systematic-prompt-development-process">Systematic Prompt Development Process</h4>
+            <p><strong>Phase 1: Concept Development</strong></p>
+            <ol type="1">
+                <li><strong>Vision Statement</strong>: One sentence describing the core idea</li>
+                <li><strong>Reference Gathering</strong>: Collect visual references and inspiration</li>
+                <li><strong>Key Elements List</strong>: Subject, style, mood, technical requirements</li>
+                <li><strong>Success Criteria</strong>: What makes this image successful?</li>
+            </ol>
+            <p><strong>Phase 2: Initial Prompt Construction</strong></p>
+            <ol type="1">
+                <li><strong>Base Prompt</strong>: Simple, clear foundation</li>
+                <li><strong>Style Layer</strong>: Add artistic and technical style elements</li>
+                <li><strong>Mood Layer</strong>: Incorporate atmosphere and emotion</li>
+                <li><strong>Technical Layer</strong>: Camera, lighting, quality specifications</li>
+            </ol>
+            <p><strong>Phase 3: Iterative Refinement</strong></p>
+            <ol type="1">
+                <li><strong>Generation and Assessment</strong>: Create initial versions</li>
+                <li><strong>Gap Analysis</strong>: Compare results to vision</li>
+                <li><strong>Targeted Adjustments</strong>: Modify specific prompt elements</li>
+                <li><strong>A/B Testing</strong>: Compare prompt variations</li>
+            </ol>
+            <p><strong>Phase 4: optimisation and Documentation</strong></p>
+            <ol type="1">
+                <li><strong>Parameter Tuning</strong>: Adjust technical settings</li>
+                <li><strong>Final Generation</strong>: Create final high-quality version</li>
+                <li><strong>Documentation</strong>: Record successful prompt and settings</li>
+                <li><strong>Variation Planning</strong>: Plan related images or series</li>
+            </ol>
+            <h4 id="professional-use-case-applications">Professional Use Case Applications</h4>
+            <p><strong>Commercial Photography Replacement</strong></p>
+            <ul class="list">
+                <li><strong>Product Photography</strong>: “<em>Clean product shot, white background, professional studio
+                        lighting</em>”</li>
+                <li><strong>Lifestyle Photography</strong>: “<em>Candid moment, natural lighting, authentic
+                        emotion</em>”</li>
+                <li><strong>Corporate Portraits</strong>: “<em>Professional headshot, confident expression, business
+                        attire</em>”</li>
+            </ul>
+            <p><strong>Marketing and Advertising</strong></p>
+            <ul class="list">
+                <li><strong>Brand Imagery</strong>: “<em>Lifestyle brand aesthetic, aspirational mood, clean modern
+                        design</em>”</li>
+                <li><strong>Social Media Content</strong>: “<em>Instagram-ready composition, trending aesthetic,
+                        engagement-focused</em>”</li>
+                <li><strong>Advertisement Concepts</strong>: “<em>Hero shot composition, clear focal point, commercial
+                        appeal</em>”</li>
+            </ul>
+            <p><strong>Creative and Artistic Projects</strong></p>
+            <ul class="list">
+                <li><strong>Concept Art</strong>: “<em>Pre-production Visualisation, detailed environment design,
+                        cinematic quality</em>”</li>
+                <li><strong>Editorial Illustration</strong>: “<em>Magazine cover style, bold graphic design,
+                        attention-grabbing</em>”</li>
+                <li><strong>Fine Art Creation</strong>: “<em>Gallery-worthy composition, artistic expression, unique
+                        perspective</em>”</li>
+            </ul>
+            <h4 id="prompt-libraries-and-templates">Prompt Libraries and Templates</h4>
+            <h5 id="portrait-template-collection">Portrait Template Collection</h5>
+            <p><strong>Professional Portrait:</strong></p>
+            <pre><code>Professional headshot of [SUBJECT], [EXPRESSION], wearing [CLOTHING], [LIGHTING TYPE], shot with 85mm lens, shallow depth of field, neutral background, corporate photography style</code></pre>
+            <p><strong>Artistic Portrait:</strong></p>
+            <pre><code>Artistic portrait of [SUBJECT], [MOOD/EMOTION], [ARTISTIC STYLE], [LIGHTING DESCRIPTION], [COMPOSITION NOTES], fine art photography</code></pre>
+            <p><strong>Environmental Portrait:</strong></p>
+            <pre><code>Environmental portrait of [SUBJECT] in [LOCATION], [ACTION], [NATURAL LIGHTING], [CAMERA ANGLE], documentary photography style</code></pre>
+            <h5 id="landscape-template-collection">Landscape Template Collection</h5>
+            <p><strong>Epic Landscape:</strong></p>
+            <pre><code>Dramatic landscape photograph of [LOCATION], [WEATHER/TIME], [FOREGROUND ELEMENT], [LIGHTING CONDITIONS], shot with [WIDE LENS], [COMPOSITION RULE], National Geographic style</code></pre>
+            <p><strong>Minimalist Landscape:</strong></p>
+            <pre><code>Minimalist landscape of [SIMPLE SUBJECT], [NEGATIVE SPACE], [COLOR PALETTE], [PEACEFUL MOOD], clean composition, fine art photography</code></pre>
+            <p><strong>Urban Landscape:</strong></p>
+            <pre><code>Urban landscape of [CITY/ARCHITECTURE], [TIME OF DAY], [LIGHTING TYPE], [PERSPECTIVE], modern architecture photography</code></pre>
+            <h3 id="part-5-advanced-techniques-and-problem-solving">Part 5: Advanced Techniques and Problem Solving</h3>
+            <p><em>40 minutes</em></p>
+            <h4 id="complex-scene-construction">Complex Scene Construction</h4>
+            <p><strong>Multi-Element Coordination</strong></p>
+            <ul class="list">
+                <li><strong>Layered Descriptions</strong>: Build scenes with foreground, midground, background</li>
+                <li><strong>Character Interaction</strong>: Multiple subjects with clear relationships</li>
+                <li><strong>Environmental Storytelling</strong>: Objects and settings that tell a story</li>
+            </ul>
+            <p><strong>Example - Complex Scene Prompt</strong>:</p>
+            <pre><code>Cinematic establishing shot of a bustling 1940s New York newsroom, multiple journalists at typewriters in the foreground, editor reviewing papers at desk in midground, large windows showing city skyline in background, warm tungsten lighting creating dramatic shadows, film noir atmosphere, shot with 24mm lens from elevated angle, high contrast black and white photography with selective color on red telephone, documentary realism style</code></pre>
+            <h4 id="advanced-problem-solving-techniques">Advanced Problem-Solving Techniques</h4>
+            <h5 id="when-prompts-dont-work">When Prompts Don’t Work</h5>
+            <ol type="1">
+                <li><strong>Decomposition Strategy</strong>: Break complex prompts into simpler parts</li>
+                <li><strong>Priority Hierarchy</strong>: Identify most important elements first</li>
+                <li><strong>Alternative Phrasing</strong>: Try different ways to describe the same concept</li>
+                <li><strong>Reference Integration</strong>: Use “in the style of [specific reference]”</li>
+            </ol>
+            <h5 id="common-advanced-challenges">Common Advanced Challenges</h5>
+            <p><strong>Challenge 1: Conflicting Style Elements</strong></p>
+            <ul class="list">
+                <li><strong>Problem</strong>: Mixing incompatible styles (realistic + cartoon)</li>
+                <li><strong>Solution</strong>: Choose dominant style, use modifiers like “subtle” or “hint of”</li>
+                <li><strong>Example</strong>: “Photorealistic portrait with subtle anime-inspired features”</li>
+            </ul>
+            <p><strong>Challenge 2: Complex Lighting Scenarios</strong></p>
+            <ul class="list">
+                <li><strong>Problem</strong>: Multiple light sources causing confusion</li>
+                <li><strong>Solution</strong>: Specify primary and secondary lighting separately</li>
+                <li><strong>Example</strong>: “Primary: soft window light from left, secondary: warm fireplace glow”
+                </li>
+            </ul>
+            <p><strong>Challenge 3: Precise Color Control</strong></p>
+            <ul class="list">
+                <li><strong>Problem</strong>: Getting exact colors consistently</li>
+                <li><strong>Solution</strong>: Use specific color names, hex codes, or reference materials</li>
+                <li><strong>Example</strong>: “Tiffany blue (#0ABAB5) dress”, “Pantone Red 186”</li>
+            </ul>
+            <p><strong>Challenge 4: Anatomical Accuracy</strong></p>
+            <ul class="list">
+                <li><strong>Problem</strong>: Incorrect body proportions or poses</li>
+                <li><strong>Solution</strong>: Use anatomical references and clear pose descriptions</li>
+                <li><strong>Example</strong>: “Anatomically correct proportions, classical contrapposto pose”</li>
+            </ul>
+            <h4 id="professional-quality-control">Professional Quality Control</h4>
+            <h5 id="quality-assessment-criteria">Quality Assessment Criteria</h5>
+            <ol type="1">
+                <li><strong>Technical Quality</strong>: Resolution, sharpness, noise levels</li>
+                <li><strong>Artistic Merit</strong>: Composition, color harmony, visual impact</li>
+                <li><strong>Prompt Adherence</strong>: How well the image matches the description</li>
+                <li><strong>Professional Standards</strong>: Suitable for intended use case</li>
+            </ol>
+            <h5 id="iteration-strategies">Iteration Strategies</h5>
+            <ul class="list">
+                <li><strong>Systematic Variation</strong>: Change one element at a time</li>
+                <li><strong>Comparative Generation</strong>: Multiple versions with slight differences</li>
+                <li><strong>Progressive Refinement</strong>: Gradual improvement through iterations</li>
+                <li><strong>A/B Testing</strong>: Compare different approaches directly</li>
+            </ul>
+            <h3 id="part-6-portfolio-development-exercise">Part 6: Portfolio Development Exercise</h3>
+            <p><em>30 minutes</em></p>
+            <h4 id="capstone-project-professional-image-series">Capstone Project: Professional Image Series</h4>
+            <p><strong>Objective</strong>: Create a cohesive 4-image portfolio demonstrating mastery</p>
+            <p><strong>Project Requirements</strong>:</p>
+            <ol type="1">
+                <li><strong>Consistent Style</strong>: All images should share visual elements</li>
+                <li><strong>Technical Excellence</strong>: Optimized parameters and quality</li>
+                <li><strong>Professional Application</strong>: Suitable for real-world use</li>
+                <li><strong>Prompt Documentation</strong>: Record all prompts and settings</li>
+            </ol>
+            <p><strong>Portfolio Themes</strong> (Choose One):</p>
+            <ul class="list">
+                <li><strong>Corporate Brand Package</strong>: Logo, hero image, team photo, product shot</li>
+                <li><strong>Editorial Story Series</strong>: Beginning, middle, climax, resolution</li>
+                <li><strong>Architectural Showcase</strong>: Exterior, interior, detail, context</li>
+                <li><strong>Character Development</strong>: Different emotions/situations, same character</li>
+            </ul>
+            <p><strong>Individual Coaching Session</strong>:</p>
+            <ul class="list">
+                <li>Work with instructor on personal portfolio concept</li>
+                <li>Refine prompts through collaborative process</li>
+                <li>Address specific technical or creative challenges</li>
+                <li>Document successful techniques for future use</li>
+            </ul>
+            <h4 id="peer-review-and-feedback">Peer Review and Feedback</h4>
+            <p><strong>Review Process</strong>:</p>
+            <ol type="1">
+                <li><strong>Presentation</strong>: Each participant presents their portfolio concept</li>
+                <li><strong>Peer Feedback</strong>: Constructive criticism and suggestions</li>
+                <li><strong>Technical Review</strong>: Instructor evaluates technical execution</li>
+                <li><strong>Refinement</strong>: Incorporate feedback for final versions</li>
+            </ol>
+            <p><strong>Evaluation Criteria</strong>:</p>
+            <ul class="list">
+                <li><strong>Creativity and Originality</strong>: Unique vision and execution</li>
+                <li><strong>Technical Proficiency</strong>: Proper use of parameters and techniques</li>
+                <li><strong>Professional Quality</strong>: Market-ready standards</li>
+                <li><strong>Consistency</strong>: Cohesive visual language across series</li>
+            </ul>
+            <h3 id="wrap-up-and-course-conclusion">Wrap-up and Course Conclusion</h3>
+            <p><em>15 minutes</em></p>
+            <h4 id="master-class-summary">Master Class Summary</h4>
+            <p><strong>Key Advanced Concepts Mastered</strong>:</p>
+            <ul class="list">
+                <li>Professional prompt architecture and systematic development</li>
+                <li>Advanced style control and artistic direction techniques</li>
+                <li>Complex scene construction and problem-solving approaches</li>
+                <li>Quality control and iterative refinement processes</li>
+                <li>Professional workflow development and portfolio creation</li>
+            </ul>
+            <h4 id="next-steps-for-continued-learning">Next Steps for Continued Learning</h4>
+            <p><strong>Immediate Actions</strong>:</p>
+            <ol type="1">
+                <li>Complete and refine portfolio project</li>
+                <li>Document personal prompt library and templates</li>
+                <li>Join FLUX community forums and groups</li>
+                <li>Practice daily with varied subjects and styles</li>
+            </ol>
+            <p><strong>Advanced Development Paths</strong>:</p>
+            <ul class="list">
+                <li><strong>Specialisation</strong>: Focus on specific industries or art styles</li>
+                <li><strong>Technical Integration</strong>: Combine with other AI tools and workflows</li>
+                <li><strong>Commercial Application</strong>: Develop client services and pricing</li>
+                <li><strong>Teaching and Sharing</strong>: Contribute to community knowledge</li>
+            </ul>
+            <p><strong>Resources for Continued Growth</strong>:</p>
+            <ul class="list">
+                <li>Advanced FLUX workshops and masterclasses</li>
+                <li>Professional AI art communities and mentorship</li>
+                <li>Industry-specific applications and case studies</li>
+                <li>Emerging techniques and model updates</li>
+            </ul>
+            <h4 id="course-completion-recognition">Course Completion Recognition</h4>
+            <p><strong>Portfolio Assessment</strong>:</p>
+            <ul class="list">
+                <li>Individual feedback on final portfolio projects</li>
+                <li>Identification of strengths and areas for continued development</li>
+                <li>Recommendations for next learning steps</li>
+                <li>Certificate of completion presentation</li>
+            </ul>
+            <p><strong>Community Building</strong>:</p>
+            <ul class="list">
+                <li>Exchange contact information for ongoing collaboration</li>
+                <li>Plan follow-up sessions or advanced workshops</li>
+                <li>Create shared resource library</li>
+                <li>Establish mentorship opportunities</li>
+            </ul>
+            <h2 id="final-assignment-professional-portfolio">Final Assignment: Professional Portfolio</h2>
+            <p><strong>Deliverables</strong>:</p>
+            <ol type="1">
+                <li><strong>4-Image Professional Portfolio</strong> with consistent theme</li>
+                <li><strong>Complete Prompt Documentation</strong> including all variations tested</li>
+                <li><strong>Technical Settings Report</strong> with optimisation notes</li>
+                <li><strong>Personal Style Guide</strong> documenting preferred techniques</li>
+                <li><strong>Reflection Essay</strong> on learning journey and future goals</li>
+            </ol>
+            <p><strong>Submission Requirements</strong>:</p>
+            <ul class="list">
+                <li>High-resolution final images (minimum 1024x1024)</li>
+                <li>Detailed prompt documentation with parameter settings</li>
+                <li>Brief description of creative decisions and technical choices</li>
+                <li>Plan for continued skill development</li>
+            </ul>
+            <h2 id="advanced-resources-and-references">Advanced Resources and References</h2>
+            <p><strong>Technical Documentation</strong>:</p>
+            <ul class="list">
+                <li>FLUX.1 official model papers and documentation</li>
+                <li>Advanced diffusion model research and techniques</li>
+                <li>Hardware optimisation guides for professional workflows</li>
+                <li>Color theory and composition resources</li>
+            </ul>
+            <p><strong>Creative Inspiration</strong>:</p>
+            <ul class="list">
+                <li>Professional photography and art portfolios</li>
+                <li>Style reference libraries and databases</li>
+                <li>Industry trend reports and forecasts</li>
+                <li>Cross-disciplinary creative techniques</li>
+            </ul>
+            <p><strong>Community and Networking</strong>:</p>
+            <ul class="list">
+                <li>Professional AI art communities and forums</li>
+                <li>Industry conferences and workshop opportunities</li>
+                <li>Collaborative project platforms</li>
+                <li>Commercial application case studies</li>
+            </ul>
+            <h2 id="instructor-final-notes">Instructor Final Notes</h2>
+            <p><strong>Session Management</strong>:</p>
+            <ul class="list">
+                <li>Ensure all participants complete portfolio exercise</li>
+                <li>Provide individual attention during coaching sessions</li>
+                <li>Document successful teaching moments for future courses</li>
+                <li>Collect feedback for course improvement</li>
+            </ul>
+            <p><strong>Follow-up Support</strong>:</p>
+            <ul class="list">
+                <li>Offer optional one-on-one consultation sessions</li>
+                <li>Create alumni network for continued collaboration</li>
+                <li>Plan advanced workshops based on participant interest</li>
+                <li>Maintain resource sharing platform for ongoing learning</li>
+            </ul>
+            <p><strong>Assessment and Certification</strong>:</p>
+            <ul class="list">
+                <li>Evaluate portfolios against professional standards</li>
+                <li>Provide detailed feedback for continued development</li>
+                <li>Issue certificates recognizing completion and achievement</li>
+                <li>Recommend participants for advanced opportunities</li>
+            </ul>
+        </div>
+    </main>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import Progress from './Progress.vue';
+</script>

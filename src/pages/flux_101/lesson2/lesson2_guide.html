@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>lesson2_guide</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1 id="lesson-2-technical-deep-dive-into-flux-technology">Lesson 2:
+Technical Deep Dive into FLUX Technology</h1>
+<p><em>Session Duration: 2.5 hours</em></p>
+<h2 id="lesson-overview">Lesson Overview</h2>
+<p>This session provides an in-depth exploration of FLUX.1’s underlying
+technology, architecture, and technical parameters, giving participants
+the knowledge to optimize their image generation workflow.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lesson, participants will:</p>
+<ul>
+<li>Understand the technical architecture of FLUX.1</li>
+<li>Explain how diffusion models create images</li>
+<li>Navigate and optimize generation parameters</li>
+<li>Make informed decisions about hardware and setup</li>
+<li>Troubleshoot technical issues effectively</li>
+</ul>
+<h2 id="lesson-structure">Lesson Structure</h2>
+<h3 id="opening-recap">Opening Recap</h3>
+<p><em>10 minutes</em></p>
+<h4 id="review-of-session-1">Review of Session 1</h4>
+<ul>
+<li>Quick review of basic concepts</li>
+<li>Share homework results and insights</li>
+<li>Address any questions from practice</li>
+</ul>
+<h3 id="part-1-flux-architecture-training">Part 1: FLUX Architecture
+&amp; Training</h3>
+<p><em>45 minutes</em></p>
+<h4 id="the-science-behind-flux.1">The Science Behind FLUX.1</h4>
+<p><strong>What Makes FLUX Different?</strong></p>
+<ul>
+<li><strong>Rectified Flow Models</strong>: Next-generation approach
+beyond traditional diffusion</li>
+<li><strong>Improved Training Efficiency</strong>: Faster convergence
+and better quality</li>
+<li><strong>Enhanced Text Understanding</strong>: Superior natural
+language processing</li>
+<li><strong>Multimodal Training</strong>: Trained on diverse,
+high-quality datasets</li>
+</ul>
+<h4 id="diffusion-models-explained">Diffusion Models Explained</h4>
+<p><strong>Traditional Image Creation vs. AI Diffusion</strong></p>
+<ul>
+<li><strong>Traditional</strong>: Artist starts with blank canvas, adds
+elements</li>
+<li><strong>Diffusion</strong>: AI starts with noise, gradually removes
+it to reveal image</li>
+</ul>
+<p><strong>The Diffusion Process Step-by-Step</strong>:</p>
+<ol type="1">
+<li><strong>Forward Process (Training)</strong>: Clean image → Add noise
+gradually → Pure noise</li>
+<li><strong>Reverse Process (Generation)</strong>: Pure noise → Remove
+noise gradually → Clean image</li>
+<li><strong>Guidance</strong>: Text prompt guides the denoising
+direction</li>
+</ol>
+<p><strong>Visual Analogy</strong>:</p>
+<p>Think of it like developing a photograph in a darkroom, but in
+reverse - starting with a completely developed (noisy) image and
+gradually revealing the true picture underneath.</p>
+<h4 id="flux.1-technical-innovations">FLUX.1 Technical Innovations</h4>
+<p><strong>Rectified Flow Architecture</strong></p>
+<ul>
+<li><strong>Linear Paths</strong>: More direct routes from noise to
+image</li>
+<li><strong>Fewer Steps</strong>: Higher quality with fewer inference
+steps</li>
+<li><strong>Stability</strong>: More consistent results across different
+prompts</li>
+</ul>
+<p><strong>Advanced Attention Mechanisms</strong></p>
+<ul>
+<li><strong>Cross-Attention</strong>: How text and image information
+interact</li>
+<li><strong>Self-Attention</strong>: How different parts of the image
+relate to each other</li>
+<li><strong>Temporal Attention</strong>: Consistency across generation
+steps</li>
+</ul>
+<p><strong>Training Dataset Characteristics</strong></p>
+<ul>
+<li><strong>Size</strong>: Billions of high-quality image-text
+pairs</li>
+<li><strong>Quality Filtering</strong>: Rigorous curation for aesthetic
+and technical quality</li>
+<li><strong>Diversity</strong>: Wide range of styles, subjects, and
+compositions</li>
+<li><strong>Text Quality</strong>: Detailed, accurate descriptions</li>
+</ul>
+<h3 id="part-2-model-parameters-deep-dive">Part 2: Model Parameters Deep
+Dive</h3>
+<p><em>40 minutes</em></p>
+<h4 id="core-generation-parameters">Core Generation Parameters</h4>
+<p><strong>Steps (Inference Steps)</strong></p>
+<ul>
+<li><strong>Range</strong>: 1-100 (practical: 10-50)</li>
+<li><strong>Default</strong>: 28 for FLUX.1 [dev], 25 for FLUX.1
+[pro]</li>
+<li><strong>Impact</strong>: Quality vs. speed trade-off</li>
+<li><strong>Optimization</strong>: Find sweet spot for your use
+case</li>
+</ul>
+<p><strong>Practical Guidelines</strong>:</p>
+<ul>
+<li><strong>Fast preview</strong>: 10-15 steps</li>
+<li><strong>Good quality</strong>: 20-30 steps</li>
+<li><strong>Maximum quality</strong>: 40-50 steps</li>
+</ul>
+<p><strong>Guidance Scale</strong></p>
+<p><em>CFG - Classifier-Free Guidance</em></p>
+<ul>
+<li><strong>Range</strong>: 1.0-20.0 (practical: 3.0-12.0)</li>
+<li><strong>Default</strong>: 7.0-8.0</li>
+<li><strong>Low values (1-4)</strong>: More creative, less adherent to
+prompt</li>
+<li><strong>Medium values (5-10)</strong>: Balanced creativity and
+adherence</li>
+<li><strong>High values (11-20)</strong>: Strict prompt following,
+potential artifacts</li>
+</ul>
+<p><strong>Seed Control</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Reproducibility and variation</li>
+<li><strong>Range</strong>: 0 to 4,294,967,295 (32-bit integer)</li>
+<li><strong>Usage Strategies</strong>:
+<ul>
+<li>Fixed seed: Consistent base for prompt variations</li>
+<li>Random seed: Maximum diversity</li>
+<li>Seed walking: Gradual variations</li>
+</ul></li>
+</ul>
+<p><strong>Resolution and Aspect Ratios</strong></p>
+<ul>
+<li><strong>Standard Resolutions</strong>:
+<ul>
+<li><code>512x512</code></li>
+<li><code>768x768</code></li>
+<li><code>1024x1024</code></li>
+</ul></li>
+<li><strong>Popular Aspect Ratios</strong>:
+<ul>
+<li><strong>9:16</strong> ( <code>576x1024</code> ) - Mobile, vertical
+content</li>
+<li><strong>3:4</strong> ( <code>768x1024</code> ) - Classic
+photography</li>
+<li><strong>1:1</strong> ( <code>1024x1024</code> ) - Social media,
+portraits</li>
+<li><strong>4:3</strong> ( <code>1024x768</code> ) - Classic
+photography</li>
+<li><strong>16:9</strong> ( <code>1024x576</code> ) - Widescreen,
+landscapes</li>
+</ul></li>
+</ul>
+<h4 id="advanced-parameters">Advanced Parameters</h4>
+<p><strong>Sampler/Scheduler Types</strong></p>
+<ul>
+<li><strong>Euler</strong>: Fast, good for most cases</li>
+<li><strong>DPM++</strong>: Higher quality, slower</li>
+<li><strong>DDIM</strong>: Deterministic, good for consistent
+results</li>
+<li><strong>Heun</strong>: High quality, balanced speed</li>
+</ul>
+<p><strong>Model Precision</strong></p>
+<ul>
+<li><strong>FP16</strong>: Faster, uses less memory, slight quality
+trade-off</li>
+<li><strong>FP32</strong>: Higher precision, more memory intensive</li>
+<li><strong>BF16</strong>: Balanced option for modern hardware</li>
+</ul>
+<h3 id="break">Break</h3>
+<p><em>15 minutes</em></p>
+<h3 id="part-3-hardware-requirements-optimization">Part 3: Hardware
+Requirements &amp; Optimization</h3>
+<p><em>30 minutes</em></p>
+<h4 id="system-requirements">System Requirements</h4>
+<p><strong>Minimum Requirements (FLUX.1 [dev])</strong></p>
+<ul>
+<li><strong>GPU</strong>: 8GB VRAM (RTX 3070, RTX 4060 Ti)</li>
+<li><strong>RAM</strong>: 16GB system memory</li>
+<li><strong>Storage</strong>: 50GB free space</li>
+<li><strong>CPU</strong>: Modern quad-core processor</li>
+</ul>
+<p><strong>Recommended Specifications</strong></p>
+<ul>
+<li><strong>GPU</strong>: 12GB+ VRAM (RTX 4070, RTX 4080, RTX 4090)</li>
+<li><strong>RAM</strong>: 32GB system memory</li>
+<li><strong>Storage</strong>: 100GB SSD space</li>
+<li><strong>CPU</strong>: 8+ core processor</li>
+</ul>
+<p><strong>Professional Setup</strong></p>
+<ul>
+<li><strong>GPU</strong>: 24GB+ VRAM (RTX 4090, A6000, H100)</li>
+<li><strong>RAM</strong>: 64GB+ system memory</li>
+<li><strong>Storage</strong>: 500GB+ NVMe SSD</li>
+<li><strong>CPU</strong>: High-end workstation processor</li>
+</ul>
+<h4 id="optimization-strategies">Optimization Strategies</h4>
+<p><strong>Memory Management</strong></p>
+<ul>
+<li><strong>Batch Size</strong>: Start with 1, increase if memory
+allows</li>
+<li><strong>Precision Settings</strong>: Use FP16 for memory
+savings</li>
+<li><strong>Memory Cleanup</strong>: Clear cache between sessions</li>
+<li><strong>Sequential Generation</strong>: For multiple images</li>
+</ul>
+<p><strong>Speed Optimization</strong></p>
+<ul>
+<li><strong>Step Reduction</strong>: Find minimum acceptable steps</li>
+<li><strong>Resolution Scaling</strong>: Start small, upscale if
+needed</li>
+<li><strong>Model Variants</strong>: Choose appropriate model for
+task</li>
+<li><strong>Hardware Acceleration</strong>: Proper GPU utilization</li>
+</ul>
+<p><strong>Quality vs. Performance Balance</strong></p>
+<ul>
+<li><strong>Preview Workflow</strong>: Low steps for iteration, high
+steps for final</li>
+<li><strong>Batch Processing</strong>: Generate multiple variations
+efficiently</li>
+<li><strong>Parameter Presets</strong>: Save optimal settings for
+different use cases</li>
+</ul>
+<h3 id="part-4-troubleshooting-best-practices">Part 4: Troubleshooting
+&amp; Best Practices</h3>
+<p><em>35 minutes</em></p>
+<h4 id="common-technical-issues">Common Technical Issues</h4>
+<p><strong>Poor Image Quality</strong></p>
+<ul>
+<li><strong>Symptoms</strong>: Blurry, low detail, artifacts</li>
+<li><strong>Solutions</strong>:
+<ul>
+<li>Increase steps (try 35-45)</li>
+<li>Adjust guidance scale (try 6-9)</li>
+<li>Check resolution settings</li>
+<li>Verify model loading</li>
+</ul></li>
+</ul>
+<p><strong>Out of Memory Errors</strong></p>
+<ul>
+<li><strong>Symptoms</strong>: CUDA/GPU memory errors</li>
+<li><strong>Solutions</strong>:
+<ul>
+<li>Reduce resolution</li>
+<li>Lower batch size</li>
+<li>Use FP16 precision</li>
+<li>Close other GPU applications</li>
+</ul></li>
+</ul>
+<p><strong>Slow Generation Times</strong></p>
+<ul>
+<li><strong>Symptoms</strong>: Long wait times between generations</li>
+<li><strong>Solutions</strong>:
+<ul>
+<li>Reduce steps for previews</li>
+<li>Lower resolution for testing</li>
+<li>Check GPU utilization</li>
+<li>Optimize sampler choice</li>
+</ul></li>
+</ul>
+<p><strong>Inconsistent Results</strong></p>
+<ul>
+<li><strong>Symptoms</strong>: Wildly different outputs with same
+prompt</li>
+<li><strong>Solutions</strong>:
+<ul>
+<li>Fix seed for consistency</li>
+<li>Adjust guidance scale</li>
+<li>Refine prompt specificity</li>
+<li>Check model version</li>
+</ul></li>
+</ul>
+<h4 id="advanced-troubleshooting">Advanced Troubleshooting</h4>
+<p><strong>Prompt Interpretation Issues</strong></p>
+<ul>
+<li><strong>Problem</strong>: AI misunderstands complex prompts</li>
+<li><strong>Solution</strong>: Break down into simpler components</li>
+<li><strong>Technique</strong>: Use parentheses for emphasis: “(detailed
+face)”</li>
+</ul>
+<p><strong>Style Consistency Problems</strong></p>
+<ul>
+<li><strong>Problem</strong>: Mixed or unclear artistic styles</li>
+<li><strong>Solution</strong>: Be specific about style references</li>
+<li><strong>Technique</strong>: Use style weights and clear style
+descriptors</li>
+</ul>
+<p><strong>Text Rendering Problems</strong></p>
+<ul>
+<li><strong>Problem</strong>: Garbled or incorrect text in images</li>
+<li><strong>Solution</strong>: Use FLUX’s superior text
+capabilities</li>
+<li><strong>Technique</strong>: Put text in quotes: “text: ‘Hello
+World’”</li>
+</ul>
+<h4 id="performance-monitoring">Performance Monitoring</h4>
+<p><strong>Key Metrics to Track</strong></p>
+<ul>
+<li><strong>Generation Time</strong>: Seconds per image</li>
+<li><strong>Memory Usage</strong>: GPU and system RAM</li>
+<li><strong>Quality Consistency</strong>: Subjective assessment</li>
+<li><strong>Error Rates</strong>: Failed generations</li>
+</ul>
+<p><strong>Optimization Tools</strong></p>
+<ul>
+<li><strong>GPU Monitoring</strong>: nvidia-smi, GPU-Z</li>
+<li><strong>Memory Tracking</strong>: Task Manager, htop</li>
+<li><strong>Performance Profiling</strong>: Built-in timing tools</li>
+</ul>
+<h3 id="part-5-hands-on-technical-exercises">Part 5: Hands-On Technical
+Exercises</h3>
+<p><em>35 minutes</em></p>
+<h4 id="exercise-1-parameter-experimentation">Exercise 1: Parameter
+Experimentation</h4>
+<p><strong>Objective</strong>: Understand parameter impact on
+results</p>
+<p><strong>Base Prompt</strong>: “Portrait of a renaissance nobleman,
+oil painting style”</p>
+<p><strong>Variations to Test</strong>:</p>
+<ol type="1">
+<li><strong>Steps</strong>: <code>10</code>, <code>25</code>,
+<code>50</code> (same seed)</li>
+<li><strong>Guidance</strong>: <code>3</code>, <code>7</code>,
+<code>12</code> (same seed)</li>
+<li><strong>Resolution</strong>: <code>512x512</code>,
+<code>768x768</code>, <code>1024x1024</code></li>
+<li><strong>Samplers</strong>: Different available options</li>
+</ol>
+<p><strong>Observation Template</strong>:</p>
+<ul>
+<li>Image quality assessment</li>
+<li>Generation time</li>
+<li>Notable differences</li>
+<li>Optimal settings identification</li>
+</ul>
+<h4 id="exercise-2-hardware-optimization-challenge">Exercise 2: Hardware
+Optimization Challenge</h4>
+<p><strong>Objective</strong>: Find optimal settings for your
+hardware</p>
+<p><strong>Tasks</strong>:</p>
+<ol type="1">
+<li>Determine maximum resolution without errors</li>
+<li>Find fastest acceptable quality settings</li>
+<li>Test memory limits with batch generation</li>
+<li>Create personal optimization profile</li>
+</ol>
+<h4 id="exercise-3-troubleshooting-scenarios">Exercise 3:
+Troubleshooting Scenarios</h4>
+<p><strong>Objective</strong>: Practice solving common problems</p>
+<p><strong>Scenarios</strong>:</p>
+<ol type="1">
+<li><strong>Low VRAM System</strong>: Optimize for 6GB GPU</li>
+<li><strong>Quality Issues</strong>: Fix blurry outputs</li>
+<li><strong>Speed Requirements</strong>: Generate previews quickly</li>
+<li><strong>Consistency Needs</strong>: Maintain style across
+series</li>
+</ol>
+<h3 id="wrap-up-next-session-preview-10-minutes">Wrap-up &amp; Next
+Session Preview (10 minutes)</h3>
+<h4 id="key-technical-takeaways">Key Technical Takeaways</h4>
+<ul>
+<li>FLUX.1 uses advanced rectified flow technology</li>
+<li>Parameter optimization requires understanding trade-offs</li>
+<li>Hardware capabilities determine optimal workflows</li>
+<li>Systematic troubleshooting solves most issues</li>
+</ul>
+<h4 id="preview-of-session-3">Preview of Session 3</h4>
+<ul>
+<li>Advanced prompting techniques and strategies</li>
+<li>Style control and artistic direction</li>
+<li>Composition and lighting mastery</li>
+<li>Professional workflow development</li>
+</ul>
+<h2 id="technical-assignment">Technical Assignment</h2>
+<p><strong>Optimization Profile Creation</strong>:</p>
+<ol type="1">
+<li>Document your hardware specifications</li>
+<li>Test and record optimal parameter settings</li>
+<li>Create personal troubleshooting checklist</li>
+<li>Identify 3 areas for technical improvement</li>
+</ol>
+<p><strong>Advanced Exploration</strong> (<em>Optional</em>):</p>
+<ul>
+<li>Research FLUX model architecture papers</li>
+<li>Experiment with different samplers</li>
+<li>Test edge cases with extreme parameters</li>
+<li>Document unexpected behaviors or discoveries</li>
+</ul>
+<h2 id="resources-for-technical-learning">Resources for Technical
+Learning</h2>
+<ul>
+<li>FLUX.1 technical documentation</li>
+<li>Diffusion model research papers</li>
+<li>Hardware optimization guides</li>
+<li>Performance benchmarking tools</li>
+<li>Technical community forums</li>
+</ul>
+<h2 id="instructor-notes">Instructor Notes</h2>
+<ul>
+<li>Provide hands-on time for parameter experimentation</li>
+<li>Help students with individual hardware optimization</li>
+<li>Document common technical issues for future reference</li>
+<li>Encourage systematic testing and note-taking</li>
+<li>Prepare for varying technical skill levels in the group</li>
+</ul>
+</body>
+</html>
