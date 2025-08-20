@@ -1,4 +1,4 @@
-# Lesson 4: LoRA Mastery & Model Customization
+# Lesson 4: LoRA Mastery & Model customisation
 
 _Session Duration: 3 hours_
 
@@ -10,10 +10,10 @@ This advanced session introduces LoRA (Low-Rank Adaptation) technology for custo
 
 By the end of this lesson, participants will:
 
--   Understand LoRA technology and its advantages for model customization
+-   Understand LoRA technology and its advantages for model customisation
 -   Find, evaluate, and implement existing LoRAs effectively
 -   Plan and execute custom LoRA training projects
--   Combine multiple LoRAs for complex customizations
+-   Combine multiple LoRAs for complex customisations
 -   Troubleshoot LoRA-related issues and optimize performance
 -   Apply LoRAs in professional workflows and client projects
 
@@ -29,11 +29,11 @@ _20 minutes_
 -   Discuss challenges and breakthroughs from previous session
 -   Identify areas where LoRAs could enhance results
 
-#### Introduction to Model Customization
+#### Introduction to Model customisation
 
 -   Why base models aren't always enough
 -   The need for specialized styles, characters, or concepts
--   Overview of customization approaches: LoRAs vs. fine-tuning vs. embeddings
+-   Overview of customisation approaches: LoRAs vs. fine-tuning vs. embeddings
 
 ### Part 1: Understanding LoRA Technology
 
@@ -466,7 +466,7 @@ _10 minutes_
 -   ✅ FLUX fundamentals and basic prompting
 -   ✅ Technical understanding and optimization
 -   ✅ Advanced prompting and artistic control
--   ✅ LoRA technology and model customization
+-   ✅ LoRA technology and model customisation
 
 **Professional Readiness Indicators**:
 

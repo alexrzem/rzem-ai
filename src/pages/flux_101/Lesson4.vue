@@ -1,7 +1,7 @@
 <template>
     <header class="relative bg-zinc-100 shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Lesson 4: LoRA Mastery &amp; Model Customization
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Lesson 4: LoRA Mastery &amp; Model customisation
             </h1>
             <p><em>Session Duration: 3 hours</em></p>
         </div>
@@ -18,7 +18,7 @@
             <h2 id="learning-objectives">Learning Objectives</h2>
             <p>By the end of this lesson, participants will:</p>
             <ul class="list">
-                <li>Understand LoRA technology and its advantages for model customization</li>
+                <li>Understand LoRA technology and its advantages for model customisation</li>
                 <li>Find, evaluate, and implement existing LoRAs effectively</li>
                 <li>Plan and execute custom LoRA training projects</li>
                 <li>Combine multiple LoRAs for complex customisations</li>
@@ -34,11 +34,11 @@
                 <li>Discuss challenges and breakthroughs from previous session</li>
                 <li>Identify areas where LoRAs could enhance results</li>
             </ul>
-            <h4 id="introduction-to-model-customization">Introduction to Model Customization</h4>
+            <h4 id="introduction-to-model-customisation">Introduction to Model customisation</h4>
             <ul class="list">
                 <li>Why base models aren’t always enough</li>
                 <li>The need for specialised styles, characters, or concepts</li>
-                <li>Overview of customization approaches: LoRAs vs. fine-tuning vs. embeddings</li>
+                <li>Overview of customisation approaches: LoRAs vs. fine-tuning vs. embeddings</li>
             </ul>
             <h3 id="part-1-understanding-lora-technology">Part 1: Understanding LoRA Technology</h3>
             <p><em>45 minutes</em></p>
@@ -446,7 +446,7 @@
                 <li><fa :icon="['far', 'square-check']" class="text-green-500 text-lg" /> FLUX fundamentals and basic prompting</li>
                 <li><fa :icon="['far', 'square-check']" class="text-green-500 text-lg" /> Technical understanding and optimisation</li>
                 <li><fa :icon="['far', 'square-check']" class="text-green-500 text-lg" /> Advanced prompting and artistic control</li>
-                <li><fa :icon="['far', 'square-check']" class="text-green-500 text-lg" /> LoRA technology and model customization</li>
+                <li><fa :icon="['far', 'square-check']" class="text-green-500 text-lg" /> LoRA technology and model customisation</li>
             </ul>
             <p><strong>Professional Readiness Indicators</strong>:</p>
             <ul class="list">
