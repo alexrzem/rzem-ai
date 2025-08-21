@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import { router } from './router.js';
 import { createPinia } from 'pinia';
 import VueLazyload from 'vue-lazyload';
+import Vue3Toastify from 'vue3-toastify';
 
 /* import the fontawesome core */
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome';
@@ -21,11 +22,12 @@ library.add(fal, far, fas, fass, fad, fadt);
 const pinia = createPinia();
 
 import './style.css';
+import 'vue3-toastify/dist/index.css';
 
 import App from './App.vue';
 
-import PromptCard from './components/PromptCard.vue'
-import PromptCards from './components/PromptCards.vue'
+import PromptCard from './components/PromptCard.vue';
+import PromptCards from './components/PromptCards.vue';
 
 const app = createApp(App);
 app.component('fa', FontAwesomeIcon);
@@ -34,6 +36,7 @@ app.component('fat', FontAwesomeLayersText); //
 app.component('PromptCard', PromptCard); //
 app.component('PromptCards', PromptCards); //
 app.use(VueLazyload);
+app.use(Vue3Toastify, { autoClose: 3000 });
 app.use(pinia);
 app.use(router);
 app.mount('#app');

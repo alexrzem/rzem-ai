@@ -10,8 +10,7 @@
 
         <div class="content">
             <h2 id="lesson-overview">Lesson Overview</h2>
-            <p>This advanced session focuses on sophisticated prompting techniques, artistic control, and professional
-                workflows for creating exceptional AI-generated images with FLUX.1.</p>
+            <p>This advanced session focuses on sophisticated prompting techniques, artistic control, and professional workflows for creating exceptional AI-generated images with FLUX.1.</p>
 
             <h2 id="learning-objectives">Learning Objectives</h2>
             <p>By the end of this lesson, participants will:</p>
@@ -39,22 +38,28 @@
             </ul>
             <h3 id="part-1-advanced-prompting-architecture">Part 1: Advanced Prompting Architecture</h3>
             <p><em>50 minutes</em></p>
+
             <h4 id="the-professional-prompt-formula">The Professional Prompt Formula</h4>
-            <p><strong>Master Template Structure</strong>:</p>
-            <pre><code>[STYLE/MEDIUM] + [SUBJECT DESCRIPTION] + [ACTION/POSE] + [ENVIRONMENT/SETTING] + [LIGHTING] + [CAMERA/PERSPECTIVE] + [MOOD/ATMOSPHERE] + [TECHNICAL SPECIFICATIONS] + [QUALITY MODIFIERS]</code></pre>
-            <p><strong>Example Application</strong>:</p>
-            <pre><code>Cinematic digital art portrait of an elderly Japanese craftsman carefully carving wood in his traditional workshop, warm golden hour light streaming through paper windows, shot with 85mm lens, shallow depth of field, contemplative and peaceful mood, hyperrealistic detail, 4K quality</code></pre>
+            <div class="flex flex-col divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
+                <div class="px-3 pb-3 pt-4 text-lg bg-zinc-50 flex-shrink leading-3 rounded-t-lg font-semibold"> Master Template Structure </div>
+                <div class="p-4">
+                    <code>[STYLE/MEDIUM] + [SUBJECT DESCRIPTION] + [ACTION/POSE] + [ENVIRONMENT/SETTING] + [LIGHTING] + [CAMERA/PERSPECTIVE] + [MOOD/ATMOSPHERE] + [TECHNICAL SPECIFICATIONS] + [QUALITY MODIFIERS]</code>
+                </div>
+            </div>
+
+            <PromptCards>
+                <PromptCard
+                    img="/flux_101/lesson2/bbbe56d6-aaa3-49a5-8dbd-d22fd33acd2e.png"
+                    prompt="Cinematic digital art portrait of an elderly Japanese craftsman carefully carving wood in his traditional workshop, warm golden hour light streaming through paper windows, shot with 85mm lens, shallow depth of field, contemplative and peaceful mood, hyperrealistic detail, 4K quality" />
+            </PromptCards>
+
             <h4 id="advanced-prompt-components">Advanced Prompt Components</h4>
             <p><strong>1. Style and Medium Control</strong></p>
             <ul class="list">
-                <li><strong>Photography Styles</strong>: “<em>Street photography</em>”, “<em>Fashion editorial</em>”,
-                    “<em>Documentary style</em>”</li>
-                <li><strong>Art Movements</strong>: “<em>Art nouveau</em>”, “<em>Bauhaus design</em>”,
-                    “<em>Impressionist painting</em>”</li>
-                <li><strong>Digital Art Styles</strong>: “<em>Concept art</em>”, “<em>Matte painting</em>”, “<em>Digital
-                        illustration</em>”</li>
-                <li><strong>Vintage/Film Styles</strong>: “<em>1980s aesthetic</em>”, “<em>Film noir</em>”,
-                    “<em>Polaroid photography</em>”</li>
+                <li><strong>Photography Styles</strong>: “<em>Street photography</em>”, “<em>Fashion editorial</em>”, “<em>Documentary style</em>”</li>
+                <li><strong>Art Movements</strong>: “<em>Art nouveau</em>”, “<em>Bauhaus design</em>”, “<em>Impressionist painting</em>”</li>
+                <li><strong>Digital Art Styles</strong>: “<em>Concept art</em>”, “<em>Matte painting</em>”, “<em>Digital illustration</em>”</li>
+                <li><strong>Vintage/Film Styles</strong>: “<em>1980s aesthetic</em>”, “<em>Film noir</em>”, “<em>Polaroid photography</em>”</li>
             </ul>
             <p><strong>2. Advanced Subject Description</strong></p>
             <ul class="list">
@@ -64,30 +69,22 @@
             </ul>
             <p><strong>3. Sophisticated Action and Pose Direction</strong></p>
             <ul class="list">
-                <li><strong>Dynamic Actions</strong>: “<em>Mid-stride</em>”, “<em>Caught in motion</em>”, “<em>Frozen
-                        moment</em>”</li>
-                <li><strong>Emotional Poses</strong>: “<em>Contemplative stance</em>”, “<em>Confident posture</em>”,
-                    “<em>Vulnerable position</em>”</li>
-                <li><strong>Interactive Elements</strong>: “<em>Reaching for</em>”, “<em>Looking toward</em>”,
-                    “<em>Interacting with</em>”</li>
+                <li><strong>Dynamic Actions</strong>: “<em>Mid-stride</em>”, “<em>Caught in motion</em>”, “<em>Frozen moment</em>”</li>
+                <li><strong>Emotional Poses</strong>: “<em>Contemplative stance</em>”, “<em>Confident posture</em>”, “<em>Vulnerable position</em>”</li>
+                <li><strong>Interactive Elements</strong>: “<em>Reaching for</em>”, “<em>Looking toward</em>”, “<em>Interacting with</em>”</li>
             </ul>
             <h4 id="professional-lighting-techniques">Professional Lighting Techniques</h4>
             <p><strong>Natural Lighting Scenarios</strong></p>
             <ul class="list">
-                <li><strong>Golden Hour</strong>: “<em>Warm golden hour light</em>”, “<em>Soft morning sunlight</em>”
-                </li>
+                <li><strong>Golden Hour</strong>: “<em>Warm golden hour light</em>”, “<em>Soft morning sunlight</em>” </li>
                 <li><strong>Blue Hour</strong>: “<em>Twilight atmosphere</em>”, “<em>Cool evening light</em>”</li>
-                <li><strong>Dramatic Natural</strong>: “<em>Storm lighting</em>”, “<em>Harsh midday sun</em>”,
-                    “<em>Filtered forest light</em>”</li>
+                <li><strong>Dramatic Natural</strong>: “<em>Storm lighting</em>”, “<em>Harsh midday sun</em>”, “<em>Filtered forest light</em>”</li>
             </ul>
             <p><strong>Studio and Artificial Lighting</strong></p>
             <ul class="list">
-                <li><strong>Portrait Lighting</strong>: “<em>Rembrandt lighting</em>”, “<em>Butterfly lighting</em>”,
-                    “<em>Split lighting</em>”</li>
-                <li><strong>Cinematic Lighting</strong>: “<em>Film noir shadows</em>”, “<em>High contrast
-                        lighting</em>”, “<em>Backlighting</em>”</li>
-                <li><strong>Environmental Lighting</strong>: “<em>Neon-lit streets</em>”, “<em>Candlelit interior</em>”,
-                    “<em>Industrial lighting</em>”</li>
+                <li><strong>Portrait Lighting</strong>: “<em>Rembrandt lighting</em>”, “<em>Butterfly lighting</em>”, “<em>Split lighting</em>”</li>
+                <li><strong>Cinematic Lighting</strong>: “<em>Film noir shadows</em>”, “<em>High contrast lighting</em>”, “<em>Backlighting</em>”</li>
+                <li><strong>Environmental Lighting</strong>: “<em>Neon-lit streets</em>”, “<em>Candlelit interior</em>”, “<em>Industrial lighting</em>”</li>
             </ul>
             <p><strong>Advanced Lighting Vocabulary</strong></p>
             <ul class="list">
@@ -101,57 +98,43 @@
             <h4 id="camera-and-lens-specifications">Camera and Lens Specifications</h4>
             <p><strong>Focal Length Effects</strong></p>
             <ul class="list">
-                <li><strong>Wide Angle (14-35mm)</strong>: “<em>Shot with 24mm lens</em>” - Expansive, environmental
-                </li>
+                <li><strong>Wide Angle (14-35mm)</strong>: “<em>Shot with 24mm lens</em>” - Expansive, environmental </li>
                 <li><strong>Standard (35-85mm)</strong>: “<em>50mm lens perspective</em>” - Natural, balanced</li>
                 <li><strong>Telephoto (85-200mm)</strong>: “<em>135mm portrait lens</em>” - Compressed, isolated</li>
                 <li><strong>Extreme Telephoto (200mm+)</strong>: “<em>300mm telephoto</em>” - Heavy compression</li>
             </ul>
             <p><strong>Depth of Field Control</strong></p>
             <ul class="list">
-                <li><strong>Shallow DOF</strong>: “<em>f/1.4 aperture</em>”, “<em>Bokeh background</em>”, “<em>Sharp
-                        subject, blurred background</em>”</li>
-                <li><strong>Deep DOF</strong>: “<em>f/8 aperture</em>”, “<em>Everything in focus</em>”, “<em>Sharp
-                        foreground to background</em>”</li>
-                <li><strong>Creative DOF</strong>: “<em>Focus pulling</em>”, “<em>Selective focus</em>”, “<em>Tilt-shift
-                        effect</em>”</li>
+                <li><strong>Shallow DOF</strong>: “<em>f/1.4 aperture</em>”, “<em>Bokeh background</em>”, “<em>Sharp subject, blurred background</em>”</li>
+                <li><strong>Deep DOF</strong>: “<em>f/8 aperture</em>”, “<em>Everything in focus</em>”, “<em>Sharp foreground to background</em>”</li>
+                <li><strong>Creative DOF</strong>: “<em>Focus pulling</em>”, “<em>Selective focus</em>”, “<em>Tilt-shift effect</em>”</li>
             </ul>
             <p><strong>Camera Angles and Perspectives</strong></p>
             <ul class="list">
                 <li><strong>Eye Level</strong>: Natural, relatable perspective</li>
-                <li><strong>Low Angle</strong>: “<em>Worm’s eye view</em>”, “<em>Looking up</em>”, dramatic, powerful
-                </li>
-                <li><strong>High Angle</strong>: “<em>Bird’s eye view</em>”, “<em>Looking down</em>”, vulnerable,
-                    comprehensive</li>
-                <li><strong>Dutch Angle</strong>: “<em>Tilted camera</em>”, “<em>Dynamic composition</em>”, unsettling
-                </li>
+                <li><strong>Low Angle</strong>: “<em>Worm’s eye view</em>”, “<em>Looking up</em>”, dramatic, powerful </li>
+                <li><strong>High Angle</strong>: “<em>Bird’s eye view</em>”, “<em>Looking down</em>”, vulnerable, comprehensive</li>
+                <li><strong>Dutch Angle</strong>: “<em>Tilted camera</em>”, “<em>Dynamic composition</em>”, unsettling </li>
             </ul>
             <h4 id="advanced-composition-techniques">Advanced Composition Techniques</h4>
             <p><strong>Classical Composition Rules</strong></p>
             <ul class="list">
                 <li><strong>Rule of Thirds</strong>: “<em>Subject positioned on intersection points</em>”</li>
                 <li><strong>Leading Lines</strong>: “<em>Diagonal lines drawing eye to subject</em>”</li>
-                <li><strong>Framing</strong>: “<em>Natural frame around subject</em>”, “<em>Architectural framing</em>”
-                </li>
-                <li><strong>Symmetry and Patterns</strong>: “<em>Perfect symmetry</em>”, “<em>Breaking the pattern</em>”
-                </li>
+                <li><strong>Framing</strong>: “<em>Natural frame around subject</em>”, “<em>Architectural framing</em>” </li>
+                <li><strong>Symmetry and Patterns</strong>: “<em>Perfect symmetry</em>”, “<em>Breaking the pattern</em>” </li>
             </ul>
             <p><strong>Dynamic Composition Elements</strong></p>
             <ul class="list">
-                <li><strong>Movement and Flow</strong>: “<em>Curved lines</em>”, “<em>S-curve composition</em>”,
-                    “<em>Implied movement</em>”</li>
-                <li><strong>Contrast and Balance</strong>: “<em>Light vs dark areas</em>”, “<em>Color contrast</em>”,
-                    “<em>Textural contrast</em>”</li>
-                <li><strong>Scale and Proportion</strong>: “<em>Human for scale</em>”, “<em>Dramatic size
-                        relationships</em>”</li>
+                <li><strong>Movement and Flow</strong>: “<em>Curved lines</em>”, “<em>S-curve composition</em>”, “<em>Implied movement</em>”</li>
+                <li><strong>Contrast and Balance</strong>: “<em>Light vs dark areas</em>”, “<em>Color contrast</em>”, “<em>Textural contrast</em>”</li>
+                <li><strong>Scale and Proportion</strong>: “<em>Human for scale</em>”, “<em>Dramatic size relationships</em>”</li>
             </ul>
             <p><strong>Negative Space and Minimalism</strong></p>
             <ul class="list">
-                <li><strong>Breathing Room</strong>: “<em>Lots of negative space</em>”, “<em>Minimalist
-                        composition</em>”</li>
+                <li><strong>Breathing Room</strong>: “<em>Lots of negative space</em>”, “<em>Minimalist composition</em>”</li>
                 <li><strong>Isolation</strong>: “<em>Subject isolated in space</em>”, “<em>Single focal point</em>”</li>
-                <li><strong>Simplification</strong>: “<em>Clean, uncluttered</em>”, “<em>Essential elements only</em>”
-                </li>
+                <li><strong>Simplification</strong>: “<em>Clean, uncluttered</em>”, “<em>Essential elements only</em>” </li>
             </ul>
             <h3 id="break">Break</h3>
             <p><em>15 minutes</em></p>
@@ -161,8 +144,7 @@
             <p><strong>Layered Style Descriptions</strong> Instead of single style words, use layered descriptions:</p>
             <ul class="list">
                 <li>Basic: “<em>Oil painting</em>”</li>
-                <li>Advanced: “<em>Thick impasto oil painting in the style of Van Gogh’s late period, with visible
-                        brushstrokes and vibrant color palette</em>”</li>
+                <li>Advanced: “<em>Thick impasto oil painting in the style of Van Gogh’s late period, with visible brushstrokes and vibrant color palette</em>”</li>
             </ul>
             <p><strong>Style Mixing and Fusion</strong></p>
             <ul class="list">
@@ -172,43 +154,30 @@
             </ul>
             <p><strong>Cultural and Historical Accuracy</strong></p>
             <ul class="list">
-                <li><strong>Time Period Specificity</strong>: “<em>1920s Art Deco poster design</em>”, “<em>Medieval
-                        illuminated manuscript style</em>”</li>
-                <li><strong>Cultural Authenticity</strong>: “<em>Traditional Japanese woodblock print</em>”,
-                    “<em>Mexican folk art style</em>”</li>
-                <li><strong>Regional Variations</strong>: “<em>Northern Renaissance painting</em>”, “<em>California
-                        impressionism</em>”</li>
+                <li><strong>Time Period Specificity</strong>: “<em>1920s Art Deco poster design</em>”, “<em>Medieval illuminated manuscript style</em>”</li>
+                <li><strong>Cultural Authenticity</strong>: “<em>Traditional Japanese woodblock print</em>”, “<em>Mexican folk art style</em>”</li>
+                <li><strong>Regional Variations</strong>: “<em>Northern Renaissance painting</em>”, “<em>California impressionism</em>”</li>
             </ul>
             <h4 id="color-theory-in-prompts">Color Theory in Prompts</h4>
             <p><strong>Color Palette Control</strong></p>
             <ul class="list">
-                <li><strong>Monochromatic</strong>: “<em>Shades of blue only</em>”, “<em>Sepia tones</em>”, “<em>Black
-                        and white with red accent</em>”</li>
-                <li><strong>Complementary</strong>: “<em>Blue and orange color scheme</em>”, “<em>Red and green
-                        contrast</em>”</li>
+                <li><strong>Monochromatic</strong>: “<em>Shades of blue only</em>”, “<em>Sepia tones</em>”, “<em>Black and white with red accent</em>”</li>
+                <li><strong>Complementary</strong>: “<em>Blue and orange color scheme</em>”, “<em>Red and green contrast</em>”</li>
                 <li><strong>Analogous</strong>: “<em>Warm autumn colors</em>”, “<em>Cool ocean tones</em>”</li>
-                <li><strong>Triadic</strong>: “<em>Primary color palette</em>”, “<em>Purple, orange, and green
-                        scheme</em>”</li>
+                <li><strong>Triadic</strong>: “<em>Primary color palette</em>”, “<em>Purple, orange, and green scheme</em>”</li>
             </ul>
             <p><strong>Color Psychology and Mood</strong></p>
             <ul class="list">
-                <li><strong>Warm Palettes</strong>: Energy, comfort, passion - “<em>Golden yellows and rich reds</em>”
-                </li>
-                <li><strong>Cool Palettes</strong>: Calm, professional, mysterious - “<em>Deep blues and cool
-                        grays</em>”</li>
-                <li><strong>Desaturated</strong>: Sophisticated, vintage, melancholy - “<em>Muted, desaturated
-                        colors</em>”</li>
-                <li><strong>Vibrant</strong>: Energetic, youthful, optimistic - “<em>Saturated, vibrant color
-                        palette</em>”</li>
+                <li><strong>Warm Palettes</strong>: Energy, comfort, passion - “<em>Golden yellows and rich reds</em>” </li>
+                <li><strong>Cool Palettes</strong>: Calm, professional, mysterious - “<em>Deep blues and cool grays</em>”</li>
+                <li><strong>Desaturated</strong>: Sophisticated, vintage, melancholy - “<em>Muted, desaturated colors</em>”</li>
+                <li><strong>Vibrant</strong>: Energetic, youthful, optimistic - “<em>Saturated, vibrant color palette</em>”</li>
             </ul>
             <p><strong>Advanced Color Vocabulary</strong></p>
             <ul class="list">
-                <li><strong>Saturation</strong>: “<em>Highly saturated</em>”, “<em>Muted colors</em>”, “<em>Desaturated
-                        palette</em>”</li>
-                <li><strong>Brightness</strong>: “<em>High key lighting</em>”, “<em>Low key shadows</em>”, “<em>Balanced
-                        exposure</em>”</li>
-                <li><strong>Temperature</strong>: “<em>Warm color temperature</em>”, “<em>Cool blue tones</em>”,
-                    “<em>Mixed lighting</em>”</li>
+                <li><strong>Saturation</strong>: “<em>Highly saturated</em>”, “<em>Muted colors</em>”, “<em>Desaturated palette</em>”</li>
+                <li><strong>Brightness</strong>: “<em>High key lighting</em>”, “<em>Low key shadows</em>”, “<em>Balanced exposure</em>”</li>
+                <li><strong>Temperature</strong>: “<em>Warm color temperature</em>”, “<em>Cool blue tones</em>”, “<em>Mixed lighting</em>”</li>
             </ul>
             <h4 id="mood-and-atmosphere-creation">Mood and Atmosphere Creation</h4>
             <p><strong>Emotional Atmospheres</strong></p>
@@ -222,8 +191,7 @@
             <ul class="list">
                 <li><strong>Weather Effects</strong>: “Misty morning fog”, “Dramatic storm clouds”, “Gentle rain”</li>
                 <li><strong>Time Influence</strong>: “Dawn’s first light”, “Midnight shadows”, “Lazy afternoon”</li>
-                <li><strong>Seasonal Character</strong>: “Spring renewal”, “Summer abundance”, “Autumn melancholy”,
-                    “Winter stillness”</li>
+                <li><strong>Seasonal Character</strong>: “Spring renewal”, “Summer abundance”, “Autumn melancholy”, “Winter stillness”</li>
             </ul>
             <h3 id="part-4-professional-workflow-development">Part 4: Professional Workflow Development</h3>
             <p><em>35 minutes</em></p>
@@ -259,30 +227,21 @@
             <h4 id="professional-use-case-applications">Professional Use Case Applications</h4>
             <p><strong>Commercial Photography Replacement</strong></p>
             <ul class="list">
-                <li><strong>Product Photography</strong>: “<em>Clean product shot, white background, professional studio
-                        lighting</em>”</li>
-                <li><strong>Lifestyle Photography</strong>: “<em>Candid moment, natural lighting, authentic
-                        emotion</em>”</li>
-                <li><strong>Corporate Portraits</strong>: “<em>Professional headshot, confident expression, business
-                        attire</em>”</li>
+                <li><strong>Product Photography</strong>: “<em>Clean product shot, white background, professional studio lighting</em>”</li>
+                <li><strong>Lifestyle Photography</strong>: “<em>Candid moment, natural lighting, authentic emotion</em>”</li>
+                <li><strong>Corporate Portraits</strong>: “<em>Professional headshot, confident expression, business attire</em>”</li>
             </ul>
             <p><strong>Marketing and Advertising</strong></p>
             <ul class="list">
-                <li><strong>Brand Imagery</strong>: “<em>Lifestyle brand aesthetic, aspirational mood, clean modern
-                        design</em>”</li>
-                <li><strong>Social Media Content</strong>: “<em>Instagram-ready composition, trending aesthetic,
-                        engagement-focused</em>”</li>
-                <li><strong>Advertisement Concepts</strong>: “<em>Hero shot composition, clear focal point, commercial
-                        appeal</em>”</li>
+                <li><strong>Brand Imagery</strong>: “<em>Lifestyle brand aesthetic, aspirational mood, clean modern design</em>”</li>
+                <li><strong>Social Media Content</strong>: “<em>Instagram-ready composition, trending aesthetic, engagement-focused</em>”</li>
+                <li><strong>Advertisement Concepts</strong>: “<em>Hero shot composition, clear focal point, commercial appeal</em>”</li>
             </ul>
             <p><strong>Creative and Artistic Projects</strong></p>
             <ul class="list">
-                <li><strong>Concept Art</strong>: “<em>Pre-production Visualisation, detailed environment design,
-                        cinematic quality</em>”</li>
-                <li><strong>Editorial Illustration</strong>: “<em>Magazine cover style, bold graphic design,
-                        attention-grabbing</em>”</li>
-                <li><strong>Fine Art Creation</strong>: “<em>Gallery-worthy composition, artistic expression, unique
-                        perspective</em>”</li>
+                <li><strong>Concept Art</strong>: “<em>Pre-production Visualisation, detailed environment design, cinematic quality</em>”</li>
+                <li><strong>Editorial Illustration</strong>: “<em>Magazine cover style, bold graphic design, attention-grabbing</em>”</li>
+                <li><strong>Fine Art Creation</strong>: “<em>Gallery-worthy composition, artistic expression, unique perspective</em>”</li>
             </ul>
             <h4 id="prompt-libraries-and-templates">Prompt Libraries and Templates</h4>
             <h5 id="portrait-template-collection">Portrait Template Collection</h5>
@@ -329,8 +288,7 @@
             <ul class="list">
                 <li><strong>Problem</strong>: Multiple light sources causing confusion</li>
                 <li><strong>Solution</strong>: Specify primary and secondary lighting separately</li>
-                <li><strong>Example</strong>: “Primary: soft window light from left, secondary: warm fireplace glow”
-                </li>
+                <li><strong>Example</strong>: “Primary: soft window light from left, secondary: warm fireplace glow” </li>
             </ul>
             <p><strong>Challenge 3: Precise Color Control</strong></p>
             <ul class="list">

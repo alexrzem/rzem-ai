@@ -2,54 +2,54 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-	font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 .content {
-	@apply mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8;
 }
 
 h1 {
-	@apply text-4xl font-semibold text-zinc-950;
-	@apply mx-0 my-2;
+    @apply text-4xl font-semibold text-zinc-950;
+    @apply mx-0 my-2;
 }
 
 h2 {
-	@apply text-3xl font-semibold text-zinc-800;
-	@apply first:mt-0 mt-6 mb-0 my-2;
+    @apply text-3xl font-semibold text-zinc-800;
+    @apply first:mt-0 mt-6 mb-0 my-2;
 }
 
 h3 {
-	@apply text-2xl font-semibold text-zinc-600;
-	@apply mt-2 mb-1 my-2;
+    @apply text-2xl font-semibold text-zinc-600;
+    @apply mt-2 mb-1 my-2;
 }
 
 h4 {
-	@apply text-xl font-semibold text-zinc-600;
-	@apply mt-6 mb-0 my-2;
+    @apply text-xl font-semibold text-zinc-600;
+    @apply mt-6 mb-0 my-2;
 }
 
 h5 {
-	@apply text-lg font-semibold;
-	@apply mt-6 mb-0 my-2;
+    @apply text-lg font-semibold;
+    @apply mt-6 mb-0 my-2;
 }
 
 h6 {
-	@apply text-base font-semibold;
-	@apply mt-6 mb-0 my-2;
+    @apply text-lg font-semibold;
+    @apply mt-2 mb-0 my-2;
 }
 
 p {
-	@apply text-base font-normal leading-6;
-	@apply mx-0 my-0;
+    @apply text-base font-normal leading-6;
+    @apply mx-0 my-0;
 }
 
 .list {
-	@apply list-disc list-inside ml-4;
+    @apply list-disc list-inside ml-4;
 }
 
 .nlist {
-	@apply list-decimal list-inside ml-4;
+    @apply list-decimal list-inside ml-4;
 }
 
 .prompt-seed {
@@ -88,16 +88,34 @@ p {
     @apply font-medium;
 }
 
-table.infotable {
-	
+th.data {
+    @apply px-4 py-2 text-left text-base font-semibold text-gray-900;
 }
 
-table.infotable thead {
-	/*@apply border border-2 border-zinc-400 rounded-t-4xl;*/
+td.keydata {
+    @apply px-4 py-2 text-base font-medium whitespace-nowrap text-gray-900;
 }
 
-table.infotable tbody {
-	/*@apply border border-t-0 border-r-0 border-b-0 border-l-0 border-zinc-400;*/
+td.data {
+    @apply px-4 py-2 text-base whitespace-nowrap text-gray-500;
+}
+
+dl {
+    @apply text-base ml-2;
+}
+
+dt {
+    @apply text-base font-semibold text-gray-950 italic;
+    @apply before:content-['▪️'] after:content-[':'];
+}
+
+dd {
+    @apply text-base font-normal text-gray-900 ml-5;
+}
+
+.quote {
+    @apply italic;
+    @apply before:content-['"'] after:content-['"'];
 }
 
 /*
