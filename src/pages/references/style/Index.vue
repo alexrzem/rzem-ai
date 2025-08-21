@@ -22,27 +22,35 @@
                     class="pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-600" />
             </div>
 
-            <div class="mt-4">
-                <ul role="list"
-                    class="grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-                    <template v-for="artist in filteredArtists" :key="artist">
-                        <li class="relative col-span-4">
-                            <div class="text-lg font-medium text-gray-900 border-b-1 border-zinc-400">{{
-                                artist.name }}</div>
-                        </li>
-                        <template v-for="index in 4" :key="artist">
-                            <li class="relative mb-4">
-                                <div
-                                    class="group overflow-hidden rounded-lg bg-gray-100 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-indigo-600">
-                                    <img v-lazy="'/references/style/artists/' + artist.code + '_' + (index - 1) + '.jpeg'"
-                                        alt=""
-                                        class="pointer-events-none aspect-10/7 rounded-lg object-cover outline -outline-offset-1 outline-black/5 group-hover:opacity-75" />
+            <!--  md:grid-cols-3 md:gap-x-6 lg:grid-cols-4 lg:gap-x-8 -->
 
-                                </div>
-                            </li>
-                        </template>
+            <div class="mt-4">
+                <div class="grid gap-y-1 grid-cols-2 md:grid-cols-3 gap-x-6">
+                    <template v-for="artist in filteredArtists" :key="artist">
+                        <div class="text-lg col-span-4 font-medium text-gray-900 border-b-1 border-zinc-400">{{
+                            artist.name }}</div>
+
+                        <div class="">
+                            <img v-lazy="'/references/style/artists/' + artist.code + '_0.jpeg'"
+                                class="rounded-lg object-scale-down" />
+                        </div>
+
+                        <div class="">
+                            <img v-lazy="'/references/style/artists/' + artist.code + '_1.jpeg'"
+                                class="rounded-lg object-scale-down" />
+                        </div>
+
+                        <div class="">
+                            <img v-lazy="'/references/style/artists/' + artist.code + '_2.jpeg'"
+                                class="rounded-lg object-scale-down" />
+                        </div>
+
+                        <div class="">
+                            <img v-lazy="'/references/style/artists/' + artist.code + '_3.jpeg'"
+                                class="rounded-lg object-scale-down" />
+                        </div>
                     </template>
-                </ul>
+                </div>
             </div>
         </div>
     </main>
@@ -74,7 +82,7 @@ const filteredArtists = computed(() => {
     if (_.isEmpty(filter.value)) {
         return artistsStore.artists;
     } else {
-        const results =  fuse.search(filter.value);
+        const results = fuse.search(filter.value);
         return _.map(results, 'item');;
     }
 

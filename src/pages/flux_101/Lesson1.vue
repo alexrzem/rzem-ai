@@ -1,7 +1,8 @@
 <template>
     <header class="relative bg-zinc-100 shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Lesson 1: Foundation &amp; Introduction to FLUX</h1>
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900">Lesson 1: Foundation &amp; Introduction to FLUX
+            </h1>
             <p><em>Session Duration: 2 hours</em></p>
         </div>
     </header>
@@ -11,7 +12,8 @@
         <div class="content">
             <h2 id="lesson-overview">Lesson Overview</h2>
             <p>
-                This foundational session introduces participants to the world of AI image generation through FLUX.1, covering essential concepts, terminology, and basic prompting
+                This foundational session introduces participants to the world of AI image generation through FLUX.1,
+                covering essential concepts, terminology, and basic prompting
                 techniques.
             </p>
 
@@ -72,23 +74,35 @@
                 <table class="relative min-w-full divide-y divide-gray-300">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th scope="col" class="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">Model</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Best For</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Access</th>
+                            <th scope="col"
+                                class="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">Model
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                Description</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Best For
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Access
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
                         <tr>
-                            <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-6"><strong>FLUX.1 [pro]</strong></td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Commercial, highest quality</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Professional work, commercial use</td>
+                            <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-6">
+                                <strong>FLUX.1 [pro]</strong>
+                            </td>
+                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Commercial, highest quality
+                            </td>
+                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Professional work, commercial
+                                use</td>
                             <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Paid API</td>
                         </tr>
                         <tr>
-                            <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-6"><strong>FLUX.1 [dev]</strong></td>
+                            <td class="py-4 pr-3 pl-4 text-sm font-medium whitespace-nowrap text-gray-900 sm:pl-6">
+                                <strong>FLUX.1 [dev]</strong>
+                            </td>
                             <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Open-source, high quality</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Learning, experimentation, non-commercial</td>
+                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Learning, experimentation,
+                                non-commercial</td>
                             <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-500">Free/Open</td>
                         </tr>
                     </tbody>
@@ -131,16 +145,12 @@
                 </li>
             </ul>
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/f7eecd94-7176-45f4-ae6e-50383e3714f1.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>A golden retriever puppy playing in a sunlit garden</em>
-                    ”
-                </div>
-            </div>
+            <PromptCards>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" img="/flux_101/lesson1/f7eecd94-7176-45f4-ae6e-50383e3714f1.png"
+                    prompt="A golden retriever puppy playing in a sunlit garden" />
+            </PromptCards>
+
 
             <p><strong>Diffusion Model</strong></p>
             <ul class="list">
@@ -153,6 +163,7 @@
                     : Like sculpting by removing unwanted material
                 </li>
             </ul>
+
             <p><strong>Inference Steps</strong></p>
             <ul class="list">
                 <li>
@@ -168,6 +179,7 @@
                     : More steps = better quality but slower generation
                 </li>
             </ul>
+
             <p><strong>Guidance Scale (CFG)</strong></p>
             <ul class="list">
                 <li>
@@ -183,6 +195,7 @@
                     : Higher = more literal, Lower = more creative freedom
                 </li>
             </ul>
+
             <p><strong>Seed</strong></p>
             <ul class="list">
                 <li>
@@ -198,6 +211,7 @@
                     : Reproducibility and variation control
                 </li>
             </ul>
+
             <p><strong>Aspect Ratio</strong></p>
             <ul class="list">
                 <li>
@@ -209,6 +223,7 @@
                     : 1:1 (square), 16:9 (landscape), 9:16 (portrait)
                 </li>
             </ul>
+
             <h4 id="advanced-terms-brief-introduction">Advanced Terms (Brief Introduction)</h4>
             <ul class="list">
                 <li>
@@ -228,10 +243,12 @@
                     : Lightweight model modifications
                 </li>
             </ul>
+
             <h3 id="break">Break</h3>
             <p><em>10 minutes</em></p>
             <h3 id="part-3-basic-prompting-principles">Part 3: Basic Prompting Principles</h3>
             <p><em>35 minutes</em></p>
+
             <h4 id="the-anatomy-of-a-good-prompt">The Anatomy of a Good Prompt</h4>
             <p>
                 <strong><em>Structure</em></strong>
@@ -283,57 +300,22 @@
             <h4 id="essential-prompting-guidelines">Essential Prompting Guidelines</h4>
             <p><strong>Be Specific but Balanced</strong></p>
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="px-4 py-5 text-2xl">
-                    <fa :icon="['fad', 'clipboard-check']" class="text-green-500" />
-                    <span class="font-semibold">Good</span>
-                </div>
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/287a3746-8f38-412e-82f7-53984eab0df5.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>
-                        A graceful springbok mid-leap across the African savanna at golden hour, detailed wildlife photography style, dynamic pose showing characteristic pronking
-                        behavior, warm sunset lighting, shallow depth of field, professional nature photography, high detail, 4K quality
-                    </em>
-                    ”
-                </div>
-            </div>
+            <PromptCards>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" icon="memo" iconColour="text-green-500" title="Good"
+                    img="/flux_101/lesson1/287a3746-8f38-412e-82f7-53984eab0df5.png"
+                    prompt="A graceful springbok mid-leap across the African savanna at golden hour, detailed wildlife photography style, dynamic pose showing characteristic pronking behavior, warm sunset lighting, shallow depth of field, professional nature photography, high detail, 4K quality" />
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="px-4 py-5 text-2xl">
-                    <fa :icon="['fad', 'clipboard-question']" class="text-red-500" />
-                    <span class="font-semibold">Too vague</span>
-                </div>
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/cc6f1c8c-e243-45b7-a5cc-eb040886365c.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 not-[]: bg-zinc-200 text-base">
-                    “
-                    <em>A springbok</em>
-                    ”
-                </div>
-            </div>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" icon="memo" iconColour="text-rose-600" title="Too vague"
+                    img="/flux_101/lesson1/cc6f1c8c-e243-45b7-a5cc-eb040886365c.png" prompt="A springbok" />
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="px-4 py-5 sm:px-6 text-2xl">
-                    <fa :icon="['fad', 'clipboard-question']" class="text-red-500" />
-                    <span class="font-semibold">Too complex</span>
-                </div>
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/3eb2073e-dae2-4635-acae-3d1275d809e0.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>
-                        realistic photographic springbok in abstract expressionist painting style, medieval fantasy cyberpunk setting, bright sunny day dark stormy night, close-up
-                        macro shot wide landscape view, minimalist maximalist composition, black and white colourful rainbow palette, ancient historical modern futuristic, peaceful
-                        aggressive mood, soft focus sharp detail everywhere
-                    </em>
-                    ”
-                </div>
-            </div>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" icon="memo" iconColour="text-rose-600" title="Too complex"
+                    img="/flux_101/lesson1/3eb2073e-dae2-4635-acae-3d1275d809e0.png"
+                    prompt="realistic photographic springbok in abstract expressionist painting style, medieval fantasy cyberpunk setting, bright sunny day dark stormy night, close-up macro shot wide landscape view, minimalist maximalist composition, black and white colourful rainbow palette, ancient historical modern futuristic, peaceful aggressive mood, soft focus sharp detail everywhere" />
+            </PromptCards>
+
 
             <p><strong>Use Visual Language</strong></p>
             <ul>
@@ -425,7 +407,9 @@
                     - Always have a clear main subject
                 </li>
             </ol>
-            <h3 id="part-4-hands-on-practice-20-minutes">Part 4: Hands-On Practice (20 minutes)</h3>
+            <h3 id="part-4-hands-on-practice-20-minutes">Part 4: Hands-On Practice</h3>
+            <p><em>20 minutes</em></p>
+
             <h4 id="exercise-1-basic-prompt-construction">Exercise 1: Basic Prompt Construction</h4>
             <p>
                 <strong>Task</strong>
@@ -441,38 +425,21 @@
                 <strong>Sample Solutions</strong>
                 :
             </p>
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/22e8956c-55f1-4ae6-9b38-540a6c603a0f.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>Professional chef in white uniform, smiling while preparing pasta in a modern restaurant kitchen, warm lighting, documentary photography style</em>
-                    ”
-                </div>
-            </div>
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/4d90c714-1d1e-4f0a-973e-dae3894dfeb6.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>Serene mountain lake reflecting snow-capped peaks, surrounded by pine forests, golden hour lighting, landscape photography</em>
-                    ”
-                </div>
-            </div>
+            <PromptCards>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" img="/flux_101/lesson1/22e8956c-55f1-4ae6-9b38-540a6c603a0f.png"
+                    prompt="Professional chef in white uniform, smiling while preparing pasta in a modern restaurant kitchen, warm lighting, documentary photography style" />
 
-            <div class="divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="p-4 place-items-center">
-                    <img src="/flux_101/lesson1/0bfcfaf0-44d0-43a2-ba1b-eb24b9505010.png" alt="" class="rounded-2xl shadow-xl bg-gray-100 w-[50%] h-[50%]" />
-                </div>
-                <div class="px-4 py-4 bg-zinc-200 text-base">
-                    “
-                    <em>Futuristic cyberpunk cityscape at night, neon lights reflecting on wet streets, flying cars, towering skyscrapers, cinematic lighting</em>
-                    ”
-                </div>
-            </div>
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" img="/flux_101/lesson1/4d90c714-1d1e-4f0a-973e-dae3894dfeb6.png"
+                    prompt="Serene mountain lake reflecting snow-capped peaks, surrounded by pine forests, golden hour lighting, landscape photography" />
+
+                <PromptCard @promptCopied="promptCopied" @seedCopied="seedCopied" @stepsCopied="stepsCopied"
+                    @cfgCopied="cfgCopied" img="/flux_101/lesson1/0bfcfaf0-44d0-43a2-ba1b-eb24b9505010.png"
+                    prompt="Futuristic cyberpunk cityscape at night, neon lights reflecting on wet streets, flying cars, towering skyscrapers, cinematic lighting" />
+            </PromptCards>
+
 
             <h4 id="exercise-2-first-image-generation">Exercise 2: First Image Generation</h4>
             <p>
@@ -492,7 +459,10 @@
                 <li>Observe results and discuss</li>
                 <li>Try variations with different styles</li>
             </ul>
-            <h3 id="part-5-wrap-up-preview-15-minutes">Part 5: Wrap-up &amp; Preview (15 minutes)</h3>
+
+            <h3 id="part-5-wrap-up-preview-15-minutes">Part 5: Wrap-up &amp; Preview</h3>
+            <p><em>15 minutes</em></p>
+
             <h4 id="key-takeaways">Key Takeaways</h4>
             <ul>
                 <li>FLUX.1 is a powerful, accessible AI image generation tool</li>
@@ -500,6 +470,7 @@
                 <li>Practice and experimentation lead to better results</li>
                 <li>Understanding terminology helps communicate with the AI</li>
             </ul>
+
             <h4 id="common-questions-troubleshooting">Common Questions &amp; Troubleshooting</h4>
             <ul>
                 <li>
@@ -585,9 +556,64 @@
             </ul>
         </div>
     </main>
+    <!-- Global notification live region, render this permanently at the end of the document -->
+    <div aria-live="assertive" class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
+        <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+            <!-- Notification panel, dynamically insert this into the live region when it needs to be displayed -->
+            <transition enter-active-class="transform ease-out duration-300 transition"
+                enter-from-class="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
+                enter-to-class="translate-y-0 sm:translate-x-0" leave-active-class="transition ease-in duration-100"
+                leave-from-class="" leave-to-class="opacity-0">
+                <div v-if="notificationShow"
+                    class="pointer-events-auto w-full max-w-sm rounded-lg bg-white shadow-lg outline-1 outline-black/5">
+                    <div class="p-4">
+                        <div class="flex items-start">
+                            <div class="shrink-0">
+                                <fa :icon="['far', 'circle-check']" class="text-green-400" />
+                            </div>
+                            <div class="ml-3 w-0 flex-1 pt-0.5">
+                                <p class="text-sm font-medium text-gray-900">{{ notificationMsg }}</p>
+                            </div>
+                            <div class="ml-4 flex shrink-0">
+                                <button type="button" @click="notificationShow = false"
+                                    class="inline-flex rounded-md text-gray-400 hover:text-gray-500 focus:outline-2 focus:outline-offset-2 focus:outline-blue-600">
+                                    <span class="sr-only">Close</span>
+                                    <fa :icon="['far', 'xmark']" class="text-xl" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </div>
+    </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import Progress from './Progress.vue';
+
+const notificationShow = ref(false)
+const notificationMsg = ref('');
+
+const promptCopied = function () {
+    notificationMsg.value = 'Prompt copied to clipboard.';
+    notificationShow.value = true;
+}
+
+const seedCopied = function () {
+    notificationMsg.value = 'Seed copied to clipboard.';
+    notificationShow.value = true;
+}
+
+const stepsCopied = function () {
+    notificationMsg.value = 'Steps copied to clipboard.';
+    notificationShow.value = true;
+}
+
+const cfgCopied = function () {
+    notificationMsg.value = 'Guidance copied to clipboard.';
+    notificationShow.value = true;
+}
+
 </script>
