@@ -26,6 +26,7 @@ import 'vue3-toastify/dist/index.css';
 
 import App from './App.vue';
 
+import CodeCard from './components/CodeCard.vue';
 import PromptCard from './components/PromptCard.vue';
 import PromptCards from './components/PromptCards.vue';
 
@@ -33,6 +34,7 @@ const app = createApp(App);
 app.component('fa', FontAwesomeIcon);
 app.component('fal', FontAwesomeLayers); //
 app.component('fat', FontAwesomeLayersText); //
+app.component('CodeCard', CodeCard); //
 app.component('PromptCard', PromptCard); //
 app.component('PromptCards', PromptCards); //
 app.use(VueLazyload);

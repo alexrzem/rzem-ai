@@ -183,20 +183,15 @@
             </dl>
 
             <div class="my-8 p-8 border rounded-xl border-blue-400 bg-blue-50 justify-items-center">
-                <h3 id="break">Break</h3>
-                <p><span class="quote">10 minutes</span></p>
+                <div class="text-3xl font-bold">Break</div>
+                <div class="italic">10 minutes</div>
             </div>
 
             <h3 id="part-3-basic-prompting-principles">Part 3: Basic Prompting Principles</h3>
             <p><span class="quote">35 minutes</span></p>
 
             <h4 id="the-anatomy-of-a-good-prompt">The Anatomy of a Good Prompt</h4>
-            <div class="flex flex-col divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="px-3 py-3 text-lg bg-zinc-50 flex-shrink leading-3 rounded-t-lg font-semibold"> Structure </div>
-                <div class="p-4">
-                    <code>[Subject] + [Action/Pose] + [Environment] + [Style] + [Technical details]</code>
-                </div>
-            </div>
+            <CodeCard title="Structure" prompt="[Subject] + [Action/Pose] + [Environment] + [Style] + [Technical details]" />
 
             <h6>Example Breakdown:</h6>
             <dl>
@@ -255,8 +250,10 @@
             <dl>
                 <dt>Quality boosters</dt>
                 <dd><span class="quote">high quality</span>, <span class="quote">detailed</span>, <span class="quote">professional</span></dd>
+
                 <dt>Resolution terms</dt>
                 <dd><span class="quote">4K</span>, <span class="quote">8K</span>, <span class="quote">ultra-high resolution</span></dd>
+
                 <dt>Clarity terms</dt>
                 <dd><span class="quote">sharp focus</span>, <span class="quote">crisp</span>, <span class="quote">clear</span></dd>
             </dl>
@@ -280,7 +277,6 @@
             <p><span class="quote">20 minutes</span></p>
 
             <h4 id="exercise-1-basic-prompt-construction">Exercise 1: Basic Prompt Construction</h4>
-            <h5>Task</h5>
             <h6>Create prompts for these scenarios:</h6>
             <ol class="nlist">
                 <li>A portrait of a chef in their kitchen</li>
@@ -355,7 +351,7 @@
                 <li>Hardware optimisation techniques</li>
             </ul>
 
-            <h2 id="homework-assignment">Homework Assignment</h2>
+            <h4 id="homework-assignment">Homework Assignment</h4>
 
             <h5> Practice Prompts: </h5>
 
@@ -396,5 +392,4 @@
 <script setup>
 import { ref } from 'vue';
 import Progress from './Progress.vue';
-
 </script>

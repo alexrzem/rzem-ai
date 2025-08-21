@@ -6,13 +6,13 @@
  */
 const config = {
   arrowParens: 'always',
-  bracketSpacing: true,
+  bracketSpacing: false,
   endOfLine: 'lf',
   htmlWhitespaceSensitivity: 'strict',
   insertPragma: false,
   singleAttributePerLine: false,
-  bracketSameLine: true,
-  jsxBracketSameLine: true,
+  bracketSameLine: false,
+  jsxBracketSameLine: false,
   jsxSingleQuote: true,
   printWidth: 240,
   proseWrap: 'preserve',

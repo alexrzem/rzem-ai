@@ -40,12 +40,10 @@
             <p><em>50 minutes</em></p>
 
             <h4 id="the-professional-prompt-formula">The Professional Prompt Formula</h4>
-            <div class="flex flex-col divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
-                <div class="px-3 pb-3 pt-4 text-lg bg-zinc-50 flex-shrink leading-3 rounded-t-lg font-semibold"> Master Template Structure </div>
-                <div class="p-4">
-                    <code>[STYLE/MEDIUM] + [SUBJECT DESCRIPTION] + [ACTION/POSE] + [ENVIRONMENT/SETTING] + [LIGHTING] + [CAMERA/PERSPECTIVE] + [MOOD/ATMOSPHERE] + [TECHNICAL SPECIFICATIONS] + [QUALITY MODIFIERS]</code>
-                </div>
-            </div>
+
+            <CodeCard
+                title="Master Template Structure"
+                code="[STYLE/MEDIUM] + [SUBJECT DESCRIPTION] + [ACTION/POSE] + [ENVIRONMENT/SETTING] + [LIGHTING] + [CAMERA/PERSPECTIVE] + [MOOD/ATMOSPHERE] + [TECHNICAL SPECIFICATIONS] + [QUALITY MODIFIERS]" />
 
             <PromptCards>
                 <PromptCard
@@ -93,8 +91,10 @@
                 <li><strong>Direction</strong>: Front-lit, side-lit, backlit, top-lit, bottom-lit</li>
                 <li><strong>Intensity</strong>: Subtle, moderate, dramatic, extreme</li>
             </ul>
+
             <h3 id="part-2-composition-and-camera-control">Part 2: Composition and Camera Control</h3>
             <p><em>45 minutes</em></p>
+
             <h4 id="camera-and-lens-specifications">Camera and Lens Specifications</h4>
             <p><strong>Focal Length Effects</strong></p>
             <ul class="list">
@@ -116,6 +116,7 @@
                 <li><strong>High Angle</strong>: “<em>Bird’s eye view</em>”, “<em>Looking down</em>”, vulnerable, comprehensive</li>
                 <li><strong>Dutch Angle</strong>: “<em>Tilted camera</em>”, “<em>Dynamic composition</em>”, unsettling </li>
             </ul>
+
             <h4 id="advanced-composition-techniques">Advanced Composition Techniques</h4>
             <p><strong>Classical Composition Rules</strong></p>
             <ul class="list">
@@ -136,10 +137,15 @@
                 <li><strong>Isolation</strong>: “<em>Subject isolated in space</em>”, “<em>Single focal point</em>”</li>
                 <li><strong>Simplification</strong>: “<em>Clean, uncluttered</em>”, “<em>Essential elements only</em>” </li>
             </ul>
-            <h3 id="break">Break</h3>
-            <p><em>15 minutes</em></p>
+
+            <div class="my-8 p-8 border rounded-xl border-blue-400 bg-blue-50 justify-items-center">
+                <div class="text-3xl font-bold">Break</div>
+                <div class="italic">15 minutes</div>
+            </div>
+
             <h3 id="part-3-style-control-and-artistic-direction">Part 3: Style Control and Artistic Direction</h3>
             <p><em>50 minutes</em></p>
+
             <h4 id="advanced-style-techniques">Advanced Style Techniques</h4>
             <p><strong>Layered Style Descriptions</strong> Instead of single style words, use layered descriptions:</p>
             <ul class="list">
@@ -245,19 +251,23 @@
             </ul>
             <h4 id="prompt-libraries-and-templates">Prompt Libraries and Templates</h4>
             <h5 id="portrait-template-collection">Portrait Template Collection</h5>
-            <p><strong>Professional Portrait:</strong></p>
-            <pre><code>Professional headshot of [SUBJECT], [EXPRESSION], wearing [CLOTHING], [LIGHTING TYPE], shot with 85mm lens, shallow depth of field, neutral background, corporate photography style</code></pre>
-            <p><strong>Artistic Portrait:</strong></p>
-            <pre><code>Artistic portrait of [SUBJECT], [MOOD/EMOTION], [ARTISTIC STYLE], [LIGHTING DESCRIPTION], [COMPOSITION NOTES], fine art photography</code></pre>
-            <p><strong>Environmental Portrait:</strong></p>
-            <pre><code>Environmental portrait of [SUBJECT] in [LOCATION], [ACTION], [NATURAL LIGHTING], [CAMERA ANGLE], documentary photography style</code></pre>
+
+            <CodeCard
+                title="Professional Portrait"
+                code="Professional headshot of [SUBJECT], [EXPRESSION], wearing [CLOTHING], [LIGHTING TYPE], shot with 85mm lens, shallow depth of field, neutral background, corporate photography style" />
+
+            <CodeCard title="Artistic Portrait" code="Artistic portrait of [SUBJECT], [MOOD/EMOTION], [ARTISTIC STYLE], [LIGHTING DESCRIPTION], [COMPOSITION NOTES], fine art photography" />
+
+            <CodeCard title="Environmental Portrait" code="Environmental portrait of [SUBJECT] in [LOCATION], [ACTION], [NATURAL LIGHTING], [CAMERA ANGLE], documentary photography style" />
+
             <h5 id="landscape-template-collection">Landscape Template Collection</h5>
-            <p><strong>Epic Landscape:</strong></p>
-            <pre><code>Dramatic landscape photograph of [LOCATION], [WEATHER/TIME], [FOREGROUND ELEMENT], [LIGHTING CONDITIONS], shot with [WIDE LENS], [COMPOSITION RULE], National Geographic style</code></pre>
-            <p><strong>Minimalist Landscape:</strong></p>
-            <pre><code>Minimalist landscape of [SIMPLE SUBJECT], [NEGATIVE SPACE], [COLOR PALETTE], [PEACEFUL MOOD], clean composition, fine art photography</code></pre>
-            <p><strong>Urban Landscape:</strong></p>
-            <pre><code>Urban landscape of [CITY/ARCHITECTURE], [TIME OF DAY], [LIGHTING TYPE], [PERSPECTIVE], modern architecture photography</code></pre>
+
+            <CodeCard title="Epic Landscape" code="Dramatic landscape photograph of [LOCATION], [WEATHER/TIME], [FOREGROUND ELEMENT], [LIGHTING CONDITIONS], shot with [WIDE LENS], [COMPOSITION RULE], National Geographic style" />
+
+            <CodeCard title="Minimalist Landscape" code="Minimalist landscape of [SIMPLE SUBJECT], [NEGATIVE SPACE], [COLOR PALETTE], [PEACEFUL MOOD], clean composition, fine art photography" />
+
+            <CodeCard title="Urban Landscape" code="Urban landscape of [CITY/ARCHITECTURE], [TIME OF DAY], [LIGHTING TYPE], [PERSPECTIVE], modern architecture photography" />
+
             <h3 id="part-5-advanced-techniques-and-problem-solving">Part 5: Advanced Techniques and Problem Solving</h3>
             <p><em>40 minutes</em></p>
             <h4 id="complex-scene-construction">Complex Scene Construction</h4>
@@ -267,8 +277,14 @@
                 <li><strong>Character Interaction</strong>: Multiple subjects with clear relationships</li>
                 <li><strong>Environmental Storytelling</strong>: Objects and settings that tell a story</li>
             </ul>
-            <p><strong>Example - Complex Scene Prompt</strong>:</p>
-            <pre><code>Cinematic establishing shot of a bustling 1940s New York newsroom, multiple journalists at typewriters in the foreground, editor reviewing papers at desk in midground, large windows showing city skyline in background, warm tungsten lighting creating dramatic shadows, film noir atmosphere, shot with 24mm lens from elevated angle, high contrast black and white photography with selective color on red telephone, documentary realism style</code></pre>
+
+            <PromptCards>
+                <PromptCard
+                    title="Example - Complex Scene Prompt"
+                    img="/flux_101/lesson2/2eb3760d-d4ad-49ec-aedb-a1058716d2c7.png"
+                    prompt="Cinematic establishing shot of a bustling 1940s New York newsroom, multiple journalists at typewriters in the foreground, editor reviewing papers at desk in midground, large windows showing city skyline in background, warm tungsten lighting creating dramatic shadows, film noir atmosphere, shot with 24mm lens from elevated angle, high contrast black and white photography with selective color on red telephone, documentary realism style" />
+            </PromptCards>
+
             <h4 id="advanced-problem-solving-techniques">Advanced Problem-Solving Techniques</h4>
             <h5 id="when-prompts-dont-work">When Prompts Don’t Work</h5>
             <ol type="1">

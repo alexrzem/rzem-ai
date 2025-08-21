@@ -9,8 +9,8 @@
         <div class="content">
             <h2 id="introduction">Introduction</h2>
             <p
-                >This guide will help you maximise the benefits of FLUX.1, an AI tool for creating high-quality images. Whether you’re new to AI image generation or have some experience, this guide will walk you through the basics of
-                crafting effective prompts. You’ll learn how to create images that are visually stunning, detailed, and aligned with your vision.</p
+                >This guide will help you maximise the benefits of FLUX.1, an AI tool for creating high-quality images. Whether you're new to AI image generation or have some experience, this guide will walk you through the basics of
+                crafting effective prompts. You'll learn how to create images that are visually stunning, detailed, and aligned with your vision.</p
             >
 
             <div class="rounded-md bg-blue-50 p-4 m-4">
@@ -22,9 +22,9 @@
                         <div class="text-lg font-medium text-blue-700">Note on Model Variability</div>
                         <div class="mt-2 text-sm text-blue-600">
                             <p>
-                                FLUX.1 is a versatile tool, but it’s important to remember that different FLUX models (e.g., FLUX.1 [<strong>pro</strong>], [<strong>dev</strong>], [<strong>schnell</strong>]) may produce varying results from
+                                FLUX.1 is a versatile tool, but it's important to remember that different FLUX models (e.g., FLUX.1 [<strong>pro</strong>], [<strong>dev</strong>], [<strong>schnell</strong>]) may produce varying results from
                                 the same prompt. Additionally, factors such as LoRAs (Low-Rank Adaptations) and other variables can also influence the output. Experimentation is key to understanding how your chosen model interprets prompts,
-                                so don’t be afraid to tweak and refine your approach based on the results you get.
+                                so don't be afraid to tweak and refine your approach based on the results you get.
                             </p>
                         </div>
                     </div>
@@ -33,28 +33,44 @@
 
             <h3 id="variants">Variants</h3>
             <p>FLUX.1 is available in three main variants:</p>
-            <ol class="nlist">
-                <li
-                    ><strong>FLUX.1 [pro]</strong>: The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for
-                    professional use and high-end applications.</li
-                >
-                <li
-                    ><strong>FLUX.1 [dev]</strong>: An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for
-                    developers and researchers.</li
-                >
-                <li><strong>FLUX.1 [schnell]</strong>: The fastest model in the suite, optimised for local development and personal use. It’s openly available under an Apache 2.0 license, making it accessible for a wide range of users.</li>
-            </ol>
+
+            <dl>
+                <dt>FLUX.1 [pro]</dt>
+                <dd>The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for
+                    professional use and high-end applications.</dd>
+
+                <dt>FLUX.1 [dev]</dt>
+                <dd>An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for
+                    developers and researchers.</dd>
+
+                <dt>FLUX.1 [schnell]</dt>
+                <dd>The fastest model in the suite, optimised for local development and personal use. It's openly available under an Apache 2.0 license, making it accessible for a wide range of users.</dd>
+            </dl>
 
             <h3 id="configuration-settings">Configuration Settings</h3>
-            <p>While a well-crafted prompt is essential, optimising <strong>FLUX.1 [dev]</strong>’s settings is equally important to be able to achieve high-quality results.</p>
-            <p>Here’s a breakdown of key configuration parameters:</p>
+            <p>While a well-crafted prompt is essential, optimising <strong>FLUX.1 [dev]</strong>'s settings is equally important to be able to achieve high-quality results.</p>
+            <p>Here's a breakdown of key configuration parameters:</p>
+
+			<dl>
+                <dt>FLUX.1 [pro]</dt>
+                <dd>The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for
+                    professional use and high-end applications.</dd>
+
+                <dt>FLUX.1 [dev]</dt>
+                <dd>An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for
+                    developers and researchers.</dd>
+
+                <dt>FLUX.1 [schnell]</dt>
+                <dd>The fastest model in the suite, optimised for local development and personal use. It's openly available under an Apache 2.0 license, making it accessible for a wide range of users.</dd>
+            </dl>
+
             <ul class="list">
                 <li><strong>Seed Value</strong>: The seed value ensures consistency in generated images. A random, but fixed value can be reused to replicate specific outputs. In this guide, we use a seed value of 42.</li>
                 <li><strong>Image Dimensions</strong>: Set dimensions, such as <strong>1024</strong> x <strong>1024</strong> pixels, for optimal image quality and file size.</li>
                 <li><strong>Guidance Scale</strong>: A guidance scale of <strong>3.5</strong> strikes a balance between creativity and adherence to prompt specificity.</li>
                 <li><strong>Inference Steps</strong>: Setting <strong>50</strong> inference steps ensures detailed images, with the model given enough iterations to fine-tune the visual output.</li>
                 <li
-                    ><strong>Number of Images</strong>: Start with a single image generation (Num Images = 1) to iterate efficiently. These settings allow <strong>FLUX.1 [dev]</strong> to maintain focus on your prompt’s specific elements
+                    ><strong>Number of Images</strong>: Start with a single image generation (Num Images = 1) to iterate efficiently. These settings allow <strong>FLUX.1 [dev]</strong> to maintain focus on your prompt's specific elements
                     while also delivering creative outputs.</li
                 >
             </ul>
@@ -99,16 +115,16 @@
 
             <p>The revised prompt uses active language to create a sense of movement and drama in the image.</p>
             <h3 id="use-artistic-references">Use Artistic References</h3>
-            <p>Referencing specific artists, art movements, or styles can help guide FLUX.1’s output.</p>
+            <p>Referencing specific artists, art movements, or styles can help guide FLUX.1's output.</p>
             <h4 id="example-prompt-2">Example Prompt</h4>
             <PromptCards>
                 <PromptCard
                     img="/guides/prompt/25ce5522-9ce8-4cc2-ac34-c5ea4628512b.png"
-                    prompt="A painting of a futuristic cityscape with tall glowing skyscrapers in the style of Vincent van Gogh’s “Starry Night”. Swirling, expressive brushstrokes and vibrant colour palette of the original, emphasising deep blues and bright yellows" />
+                    prompt="A painting of a futuristic cityscape with tall glowing skyscrapers in the style of Vincent van Gogh's “Starry Night”. Swirling, expressive brushstrokes and vibrant colour palette of the original, emphasising deep blues and bright yellows" />
                 <PromptCard
                     img="/guides/prompt/8e2c72ba-e359-4926-b614-b36a0f92793e.png"
                     seed="793918921"
-                    prompt="A painting of a futuristic cityscape with tall glowing skyscrapers in the style of Vincent van Gogh’s “Starry Night”. Swirling, expressive brushstrokes and vibrant colour palette of the original, emphasising deep blues and bright yellows" />
+                    prompt="A painting of a futuristic cityscape with tall glowing skyscrapers in the style of Vincent van Gogh's “Starry Night”. Swirling, expressive brushstrokes and vibrant colour palette of the original, emphasising deep blues and bright yellows" />
             </PromptCards>
 
             <h3 id="blend-concepts">Blend Concepts</h3>
@@ -125,7 +141,7 @@
             <PromptCards>
                 <PromptCard
                     img="/guides/prompt/bd4e090c-0b94-4456-98a8-f2cc49abc51c.png"
-                    prompt="A sketch that fuses the precision of M.C. Escher’s impossible geometries with the bold colours and shapes of Wassily Kandinsky’s abstract compositions. The subject should be a surreal cityscape where buildings seamlessly transform into musical instruments. Use Escher’s techniques to create paradoxical perspectives and interconnected structures, but render them in Kandinsky’s vibrant, non-representational style. Incorporate musical notations and abstract shapes that flow through the scene, connecting the architectural elements seamlessly. The colour palette should be rich and varied, with particular emphasis on deep blues, vibrant reds, and golden yellows" />
+                    prompt="A sketch that fuses the precision of M.C. Escher's impossible geometries with the bold colours and shapes of Wassily Kandinsky's abstract compositions. The subject should be a surreal cityscape where buildings seamlessly transform into musical instruments. Use Escher's techniques to create paradoxical perspectives and interconnected structures, but render them in Kandinsky's vibrant, non-representational style. Incorporate musical notations and abstract shapes that flow through the scene, connecting the architectural elements seamlessly. The colour palette should be rich and varied, with particular emphasis on deep blues, vibrant reds, and golden yellows" />
             </PromptCards>
 
             <h3 id="temporal-narratives">Temporal Narratives</h3>
@@ -147,7 +163,7 @@
             <PromptCards>
                 <PromptCard
                     img="/guides/prompt/a83b40b9-5a28-492c-b7a5-67ede413e344.png"
-                    prompt="A panoramic image that depicts the progression of a person’s emotional journey from despair to hope. The scene should be a long, winding road that starts in a dark, stormy landscape and gradually transitions to a bright, sunlit meadow." />
+                    prompt="A panoramic image that depicts the progression of a person's emotional journey from despair to hope. The scene should be a long, winding road that starts in a dark, stormy landscape and gradually transitions to a bright, sunlit meadow." />
             </PromptCards>
 
             <h3 id="use-contrast-and-juxtaposition">Use Contrast and Juxtaposition</h3>
@@ -177,7 +193,7 @@
             <PromptCards>
                 <PromptCard
                     img="/guides/prompt/30b6c3e7-62d1-4521-a703-74f41350ac56.png"
-                    prompt="A “bug’s-eye view” of a picnic in a lush garden. The perspective should be from ground level, looking up at towering blades of grass and wildflowers that frame the scene. In the distance, show the underside of a red and white checkered picnic blanket with the silhouettes of picnic foods and human figures visible through the semi-transparent fabric. Include a few ants in the foreground carrying crumbs, and a ladybug climbing a blade of grass. The lighting should be warm and dappled, as if filtering through leaves." />
+                    prompt="A “bug's-eye view” of a picnic in a lush garden. The perspective should be from ground level, looking up at towering blades of grass and wildflowers that frame the scene. In the distance, show the underside of a red and white checkered picnic blanket with the silhouettes of picnic foods and human figures visible through the semi-transparent fabric. Include a few ants in the foreground carrying crumbs, and a ladybug climbing a blade of grass. The lighting should be warm and dappled, as if filtering through leaves." />
             </PromptCards>
 
             <h2 id="hierarchical-structure">Hierarchical Structure</h2>
@@ -196,14 +212,14 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/a13b4e45-c45d-4770-8870-22e00a4e67bc.png"
-                    prompt="A hanging glass terrarium featuring a miniature rainforest scene with colourful orchids and tiny waterfalls (foreground). Just beyond the glass, a neon sign reads ‘Rainforest Retreat’ in bright green and yellow letters (middle ground). The rain-soaked glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colours (background)." />
+                    prompt="A hanging glass terrarium featuring a miniature rainforest scene with colourful orchids and tiny waterfalls (foreground). Just beyond the glass, a neon sign reads ‘Rainforest Retreat' in bright green and yellow letters (middle ground). The rain-soaked glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colours (background)." />
             </PromptCards>
 
             <p>The revised prompt clearly defines the placement of each element, creating a layered and visually rich composition.</p>
             <h2 id="contrasting-colors-and-aesthetics">Contrasting Colors and Aesthetics</h2>
             <h3 id="using-contrasts-for-visual-impact">Using Contrasts for Visual Impact</h3>
             <p>Contrasting colours and aesthetics can make your images more striking and memorable. For example, you can create a scene where one side is bright and cheerful, while the other is dark and moody.</p>
-            <p>Contrasts draw the viewer’s attention and add depth to your images, making them more engaging.</p>
+            <p>Contrasts draw the viewer's attention and add depth to your images, making them more engaging.</p>
             <p>Describe the contrasting elements clearly and specify how they interact (e.g., sharp transition or soft blending).</p>
 
             <h4 id="example-prompt-11">Example Prompt</h4>
@@ -249,7 +265,7 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/fb8efe96-7bf7-4ac3-bf67-696997c2ccc9.png"
-                    prompt="A neon sign reading ‘Rainforest Retreat’ is visible through a rain-soaked glass window. The glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colours." />
+                    prompt="A neon sign reading ‘Rainforest Retreat' is visible through a rain-soaked glass window. The glass creates a beautiful distortion, adding a soft glow to the sign's vibrant colours." />
             </PromptCards>
 
             <p>The revised prompt uses a transparent material (glass) to create a visually interesting effect.</p>
@@ -273,7 +289,7 @@
             <p><strong>Note on Technical Parameters</strong></p>
             <p>
                 This section explores advanced techniques for enhancing realism and control in your images. However, keep in mind that the effectiveness of these parameters (e.g., camera devices, lenses, settings) can vary depending on the
-                FLUX model you’re using, as well as other factors like LoRAs and training data. These tips are highly experimental, so feel free to adjust or omit them based on your specific needs and the model’s behaviour.
+                FLUX model you're using, as well as other factors like LoRAs and training data. These tips are highly experimental, so feel free to adjust or omit them based on your specific needs and the model's behaviour.
             </p>
             <h3 id="camera-devices">Camera Devices</h3>
             <p>Different cameras produce different looks and feels in images. For example, a smartphone camera may convey a casual, everyday vibe, while a professional DSLR camera can produce sharp, high-quality images.</p>
@@ -374,20 +390,20 @@
                     iconColour="text-zinc-600"
                     title="50mm Standard Lens"
                     img="/guides/prompt/67dea24c-ec48-4e25-9ab9-a73301a6e6b8.png"
-                    prompt="A portrait shot with a 50mm lens, capturing the subject’s face in sharp focus with a softly blurred background" />
+                    prompt="A portrait shot with a 50mm lens, capturing the subject's face in sharp focus with a softly blurred background" />
             </PromptCards>
 
             <h3 id="settings">Settings</h3>
-            <p>Camera settings like aperture, ISO, and shutter speed control how light is captured, affecting the image’s brightness, focus, and motion.</p>
+            <p>Camera settings like aperture, ISO, and shutter speed control how light is captured, affecting the image's brightness, focus, and motion.</p>
 
             <h4 id="aperture-f-stop">Aperture (f-stop)</h4>
             <p>Controls how much light enters the camera and how much of the image is in focus. A low f-stop (e.g., f/2.8) creates a blurred background, while a high f-stop (e.g., f/16) keeps everything sharp.</p>
 
             <h4 id="iso">ISO</h4>
-            <p>Controls the camera’s sensitivity to light. Low ISO (e.g., 100) is best for bright scenes, while high ISO (e.g., 1600) is used in low-light conditions but can add grain or noise.</p>
+            <p>Controls the camera's sensitivity to light. Low ISO (e.g., 100) is best for bright scenes, while high ISO (e.g., 1600) is used in low-light conditions but can add grain or noise.</p>
 
             <h4 id="shutter-speed">Shutter Speed</h4>
-            <p>Controls how long the camera’s shutter stays open. Fast shutter speeds (e.g., 1/1000s) freeze motion, while slow shutter speeds (e.g., 30s) create motion blur or light trails.</p>
+            <p>Controls how long the camera's shutter stays open. Fast shutter speeds (e.g., 1/1000s) freeze motion, while slow shutter speeds (e.g., 30s) create motion blur or light trails.</p>
             <p>These settings help FLUX.1 mimic real-world photography techniques, adding realism to your images.</p>
             <p>Use settings to achieve specific effects. For example:</p>
             <ul class="list">
@@ -422,7 +438,7 @@
                 <li>Medium shots focus on a specific area, ideal for portraits or detailed scenes.</li>
                 <li>Close-up shots zoom in on a subject, highlighting details like textures or expressions.</li>
             </ul>
-            <p>The shot type affects the composition and focus of your image, guiding the viewer’s attention.</p>
+            <p>The shot type affects the composition and focus of your image, guiding the viewer's attention.</p>
             <p>Specify the shot type to frame your image correctly.</p>
             <p>For example:</p>
             <ul class="list">
@@ -441,11 +457,11 @@
             </PromptCards>
 
             <h2 id="integrating-text">Integrating Text</h2>
-            <p>FLUX.1’s superior text rendering allows for creative use of text within images.</p>
+            <p>FLUX.1's superior text rendering allows for creative use of text within images.</p>
             <h3 id="font-selection">Font Selection</h3>
-            <p>Specifying the font ensures that text is legible and fits the image’s aesthetic.</p>
+            <p>Specifying the font ensures that text is legible and fits the image's aesthetic.</p>
             <p>Different fonts convey different moods and styles, and choosing the right font enhances the overall composition.</p>
-            <p>Specify the font type (e.g., Art Deco, cursive, sans-serif) to match the image’s theme.</p>
+            <p>Specify the font type (e.g., Art Deco, cursive, sans-serif) to match the image's theme.</p>
             <h4 id="example-prompt-19">Example Prompt</h4>
             <PromptCards>
                 <PromptCard icon="message-xmark" iconColour="text-rose-800" title="Before" img="/guides/prompt/a348e78c-1027-4b42-81dd-0325cc1f839f.png" prompt="A travel poster for Paris" />
@@ -454,7 +470,7 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/c8cb9066-8cc8-4e76-9124-d64f3e5b3053.png"
-                    prompt="A vintage travel poster for Paris. The Eiffel Tower silhouette dominates the centre, painted in warm sunset colours. At the top, ‘PARIS’ is written in large, elegant Art Deco font." />
+                    prompt="A vintage travel poster for Paris. The Eiffel Tower silhouette dominates the centre, painted in warm sunset colours. At the top, ‘PARIS' is written in large, elegant Art Deco font." />
             </PromptCards>
 
             <p>The revised prompt specifies the font, ensuring the text complements the vintage aesthetic of the poster.</p>
@@ -470,12 +486,12 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/e578161a-8a65-4f9f-968d-edacf14f0e7c.png"
-                    prompt="A neon sign reading ‘Rainforest Retreat’ in bright green and yellow letters, with a soft glow effect, placed against a dark background" />
+                    prompt="A neon sign reading ‘Rainforest Retreat' in bright green and yellow letters, with a soft glow effect, placed against a dark background" />
             </PromptCards>
             <p>The revised prompt specifies the text style and effects, ensuring the sign is visually striking and legible. </p>
 
             <h3 id="color-palette">Color Palette</h3>
-            <p>Choosing colours that harmonise with the image’s overall aesthetic enhances visual appeal.</p>
+            <p>Choosing colours that harmonise with the image's overall aesthetic enhances visual appeal.</p>
             <p>Colour harmony creates a cohesive and visually pleasing image.</p>
             <p>Specify the colours for text and other elements to ensure they complement the image effectively.</p>
             <h4 id="example-prompt-21">Example Prompt</h4>
@@ -486,7 +502,7 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/109faf7a-1824-4fd6-8f06-e0411af74501.png"
-                    prompt="A neon sign reading ‘Rainforest Retreat’ in bright green and yellow letters against a dark background, with a soft glow effect" />
+                    prompt="A neon sign reading ‘Rainforest Retreat' in bright green and yellow letters against a dark background, with a soft glow effect" />
             </PromptCards>
 
             <h3 id="text-effects">Text Effects</h3>
@@ -501,7 +517,7 @@
                     iconColour="text-emerald-700"
                     title="After"
                     img="/guides/prompt/55f8dceb-5813-4249-a124-a6d158c4772f.png"
-                    prompt="A neon sign reading ‘Rainforest Retreat’ in bright green and yellow letters, with a soft glow effect and a subtle shadow, placed against a dark background" />
+                    prompt="A neon sign reading ‘Rainforest Retreat' in bright green and yellow letters, with a soft glow effect and a subtle shadow, placed against a dark background" />
             </PromptCards>
             <p>The revised prompt specifies the text effects, ensuring the sign is visually striking and legible.</p>
 
@@ -525,14 +541,14 @@
                 part of the prompt.</p
             >
             <p>Using incorrect syntax can confuse FLUX.1 and lead to unexpected results.</p>
-            <p>Stick to FLUX.1’s preferred syntax and avoid importing syntax from other tools. Use phrases such as “with emphasis on” or “with a focus on” in your prompt to guide the AI in the right direction.</p>
+            <p>Stick to FLUX.1's preferred syntax and avoid importing syntax from other tools. Use phrases such as “with emphasis on” or “with a focus on” in your prompt to guide the AI in the right direction.</p>
 
             <h4 id="example-prompt-24">Example Prompt</h4>
             <PromptCards>
                 <PromptCard icon="message-xmark" iconColour="text-rose-800" title="Before" img="/guides/prompt/9fb888e2-1d3d-47e5-8c3b-c1ff155cb010.png" prompt="A teddy bear (best quality, ultra-detailed)" />
                 <PromptCard icon="message-check" iconColour="text-emerald-700" title="After" img="/guides/prompt/589ac31a-d33d-4b2c-8e03-c4f0b4e711cc.png" prompt="A teddy bear Highly detailed and vibrant" />
             </PromptCards>
-            <p>The revised prompt uses FLUX.1’s preferred syntax, ensuring clarity and accuracy.</p>
+            <p>The revised prompt uses FLUX.1's preferred syntax, ensuring clarity and accuracy.</p>
 
             <h3 id="overcomplicating-prompts">Overcomplicating Prompts</h3>
             <p>Keep prompts concise and focused. Avoid listing unnecessary details that may confuse the model.</p>
@@ -558,14 +574,14 @@
             <p>The revised prompt is concise and focused, ensuring FLUX.1 generates a clear and visually appealing image.</p>
             <h3 id="white-background-in-dev">“White background” in [dev]</h3>
             <p
-                >Are you getting fuzzy outputs from FLUX.1? If your prompt has a “white background,” it might be to blame. It’s worth noting that this issue only affects the [<strong>dev</strong>] variant; it doesn’t occur in
+                >Are you getting fuzzy outputs from FLUX.1? If your prompt has a “white background,” it might be to blame. It's worth noting that this issue only affects the [<strong>dev</strong>] variant; it doesn't occur in
                 [<strong>schnell</strong>].</p
             >
             <p>https://getimg.ai/blog/flux-1-generating-blurry-images-heres-how-to-fix-it</p>
             <p>Do not use the “white background” phrase in your prompt.</p>
             <h2 id="conclusion">Conclusion</h2>
             <p>
-                By following this manual, you can unlock FLUX.1’s full potential and create stunning, precise images. Remember to be clear, detailed, and organised in your prompts. With practice, you’ll master the art of prompting for
+                By following this manual, you can unlock FLUX.1's full potential and create stunning, precise images. Remember to be clear, detailed, and organised in your prompts. With practice, you'll master the art of prompting for
                 FLUX.1 and achieve results that exceed your expectations. However, please note that this guide is not exhaustive. FLUX.1 is a complex tool, and experimentation is key to discovering its full capabilities. Happy prompting!
             </p>
         </div>
