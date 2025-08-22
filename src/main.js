@@ -3,6 +3,7 @@ import {router} from './router.js';
 import {createPinia} from 'pinia';
 import VueLazyload from 'vue-lazyload';
 import Vue3Toastify from 'vue3-toastify';
+import {TippyPlugin} from 'tippy.vue';
 
 /* import the fontawesome core */
 import {FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText} from '@fortawesome/vue-fontawesome';
@@ -37,6 +38,9 @@ app.component('fat', FontAwesomeLayersText); //
 app.component('CodeCard', CodeCard); //
 app.component('PromptCard', PromptCard); //
 app.component('PromptCards', PromptCards); //
+app.use(TippyPlugin, {
+    tippyDefaults: {}, // convenience to set tippy.js default props
+});
 app.use(VueLazyload, {
     error: '/images/404.png',
     loading: '/images/100.png',

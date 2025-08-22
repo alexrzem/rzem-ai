@@ -47,29 +47,53 @@
 
             <div class="mt-4">
                 <div class="grid grid-cols-4 gap-4">
-                    <div v-for="lora in filteredLoras" :key="lora" class="box-decoration-clone">
-                        <div class="text-lg font-medium text-gray-900">{{ lora.name }}</div>
-                        <img v-lazy="'/references/loras/' + lora.id + '.png'" class="rounded-lg w-64 h-64 mx-2 my-2 shadow" />
+                    <div v-for="lora in filteredLoras" :key="lora" class="flex flex-col divide-y divide-gray-200 rounded-lg bg-white shadow-lg border border-zinc-300 my-4">
+                        <div class="text-base p-2 font-medium text-gray-900 bg-gray-100 truncate" v-tippy="{content: lora.name, placement: 'top'}" :title="lora.name">{{ lora.name }}</div>
+                        <div class="text-center justify-items-center p-2 object-contain" @click="showImage(lora)">
+                            <img v-lazy="'/references/loras/' + lora.id + '.png'" class="rounded-lg mx-2 my-2 w-64 shadow aspect-square" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <TransitionRoot as="template" :show="open">
+            <Dialog class="relative z-10" @close="open = false">
+                <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0" enter-to="" leave="ease-in duration-200" leave-from="" leave-to="opacity-0">
+                    <div class="fixed inset-0 bg-gray-500/75 transition-opacity" />
+                </TransitionChild>
+
+                <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <TransitionChild
+                            as="template"
+                            enter="ease-out duration-300"
+                            enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            enter-to=" translate-y-0 sm:scale-100"
+                            leave="ease-in duration-200"
+                            leave-from=" translate-y-0 sm:scale-100"
+                            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                            <DialogPanel class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                                <div> <img :src="'/references/loras/' + lora.id + '.png'" class="" /> </div>
+                            </DialogPanel>
+                        </TransitionChild>
+                    </div>
+                </div>
+            </Dialog>
+        </TransitionRoot>
     </main>
 </template>
 
 <script setup>
 import _ from 'lodash';
 import {computed, ref, useTemplateRef} from 'vue';
+import {Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot} from '@headlessui/vue';
 import Fuse from 'fuse.js';
-import VueHorizontal from 'vue-horizontal';
-import VueMultiselect from 'vue-multiselect';
 
-import {storeToRefs} from 'pinia';
 import {useArtistsStore} from '../../../store';
 const horizontal = useTemplateRef('horizontal');
 
 const artistsStore = useArtistsStore();
-const {artists, tags, loras} = storeToRefs(artistsStore);
 
 const filter = ref('');
 const left = ref(0);
@@ -77,6 +101,13 @@ const originX = ref(0);
 const originLeft = ref(0);
 
 const selected = ref([]);
+const open = ref(false);
+const lora = ref(null);
+
+const showImage = function (selectedLora) {
+	lora.value = selectedLora;
+    open.value = true;
+};
 
 const onScroll = function (e) {
     left.value = e.left;
@@ -116,6 +147,5 @@ const filteredLoras = computed(() => {
         const results = fuse.search('all');
         return _.map(results, 'item');
     }
-
 });
 </script>
