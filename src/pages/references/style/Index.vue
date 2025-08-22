@@ -63,10 +63,10 @@
                         </div>
                         <div @mousedown.left="onMouseDown">
                             <vue-horizontal responsive class="horizontal" ref="horizontal" snap="none" :button="false" @scroll="onScroll">
-                                <img v-lazy="'/references/style/artists/' + artist.code + '_0.jpeg'" class="rounded-lg w-64 h-64 mx-2 my-2 shadow" />
-                                <img v-lazy="'/references/style/artists/' + artist.code + '_1.jpeg'" class="rounded-lg w-64 h-64 mx-2 my-2 shadow" />
-                                <img v-lazy="'/references/style/artists/' + artist.code + '_2.jpeg'" class="rounded-lg w-64 h-64 mx-2 my-2 shadow" />
-                                <img v-lazy="'/references/style/artists/' + artist.code + '_3.jpeg'" class="rounded-lg w-64 h-64 mx-2 my-2 shadow" />
+                                <img v-lazy="'/references/style/artists/' + artist.code + '_0.jpeg'" class="rounded-lg w-96 h-96 mx-2 my-2 shadow" />
+                                <img v-lazy="'/references/style/artists/' + artist.code + '_1.jpeg'" class="rounded-lg w-96 h-96 mx-2 my-2 shadow" />
+                                <img v-lazy="'/references/style/artists/' + artist.code + '_2.jpeg'" class="rounded-lg w-96 h-96 mx-2 my-2 shadow" />
+                                <img v-lazy="'/references/style/artists/' + artist.code + '_3.jpeg'" class="rounded-lg w-96 h-96 mx-2 my-2 shadow" />
                             </vue-horizontal>
                         </div>
                     </template>
