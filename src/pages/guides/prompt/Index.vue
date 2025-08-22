@@ -36,12 +36,13 @@
 
             <dl>
                 <dt>FLUX.1 [pro]</dt>
-                <dd>The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for
-                    professional use and high-end applications.</dd>
+                <dd
+                    >The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for professional use and high-end
+                    applications.</dd
+                >
 
                 <dt>FLUX.1 [dev]</dt>
-                <dd>An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for
-                    developers and researchers.</dd>
+                <dd>An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for developers and researchers.</dd>
 
                 <dt>FLUX.1 [schnell]</dt>
                 <dd>The fastest model in the suite, optimised for local development and personal use. It's openly available under an Apache 2.0 license, making it accessible for a wide range of users.</dd>
@@ -51,36 +52,31 @@
             <p>While a well-crafted prompt is essential, optimising <strong>FLUX.1 [dev]</strong>'s settings is equally important to be able to achieve high-quality results.</p>
             <p>Here's a breakdown of key configuration parameters:</p>
 
-			<dl>
-                <dt>FLUX.1 [pro]</dt>
-                <dd>The flagship model, offering state-of-the-art performance in image generation. It excels in prompt following, visual quality, image detail, and output diversity. This version is ideal for
-                    professional use and high-end applications.</dd>
+            <dl>
+                <dt>Seed Value</dt>
+                <dd>The seed value ensures consistency in generated images. A random, but fixed value can be reused to replicate specific outputs. In this guide, we use a seed value of 42.</dd>
 
-                <dt>FLUX.1 [dev]</dt>
-                <dd>An open-weight, guidance-distilled model designed for non-commercial applications. It offers similar quality to the Pro version but with improved efficiency, making it suitable for
-                    developers and researchers.</dd>
+                <dt>Image Dimensions</dt>
+                <dd>Set dimensions, such as <strong>1024</strong> x <strong>1024</strong> pixels, for optimal image quality and file size.</dd>
 
-                <dt>FLUX.1 [schnell]</dt>
-                <dd>The fastest model in the suite, optimised for local development and personal use. It's openly available under an Apache 2.0 license, making it accessible for a wide range of users.</dd>
-            </dl>
+                <dt>Guidance Scale</dt>
+                <dd>A guidance scale of <strong>3.5</strong> strikes a balance between creativity and adherence to prompt specificity.</dd>
 
-            <ul class="list">
-                <li><strong>Seed Value</strong>: The seed value ensures consistency in generated images. A random, but fixed value can be reused to replicate specific outputs. In this guide, we use a seed value of 42.</li>
-                <li><strong>Image Dimensions</strong>: Set dimensions, such as <strong>1024</strong> x <strong>1024</strong> pixels, for optimal image quality and file size.</li>
-                <li><strong>Guidance Scale</strong>: A guidance scale of <strong>3.5</strong> strikes a balance between creativity and adherence to prompt specificity.</li>
-                <li><strong>Inference Steps</strong>: Setting <strong>50</strong> inference steps ensures detailed images, with the model given enough iterations to fine-tune the visual output.</li>
-                <li
-                    ><strong>Number of Images</strong>: Start with a single image generation (Num Images = 1) to iterate efficiently. These settings allow <strong>FLUX.1 [dev]</strong> to maintain focus on your prompt's specific elements
-                    while also delivering creative outputs.</li
+                <dt>Inference Scale</dt>
+                <dd>Setting <strong>50</strong> inference steps ensures detailed images, with the model given enough iterations to fine-tune the visual output.</dd>
+
+                <dt>Number of Images</dt>
+                <dd
+                    >Start with a single image generation (Num Images = 1) to iterate efficiently. These settings allow <strong>FLUX.1 [dev]</strong> to maintain focus on your prompt's specific elements while also delivering creative
+                    outputs.</dd
                 >
-            </ul>
+            </dl>
 
             <h2 id="descriptive-language">Descriptive Language</h2>
             <h3 id="precision-and-clarity">Precision and Clarity</h3>
-            <p
-                >FLUX.1 responds best to precise and explicit language. Vague terms like “<em>nice</em>” or “<em>beautiful</em>” can lead to ambiguous results. Instead, use specific descriptors that clearly define the image you want to
-                create.</p
-            >
+            <p>
+                FLUX.1 responds best to precise and explicit language. Vague terms like <em>nice</em> or <em>beautiful</em> can lead to ambiguous results. Instead, use specific descriptors that clearly define the image you want to create.
+            </p>
             <p>Precision helps FLUX.1 understand your intent, reducing the likelihood of unexpected or off-target results.</p>
             <p>Focus on details such as colours, textures, styles, and specific elements in your prompt.</p>
 
@@ -296,35 +292,63 @@
             <p>Specifying a camera helps FLUX.1 mimic the style and quality of real-world photography.</p>
 
             <h4 id="common-cameras-and-their-uses">Common Cameras and Their Uses</h4>
+
             <div class="overflow-hidden outline-1 outline-black/5 sm:rounded-lg shadow-lg">
                 <table class="relative min-w-full divide-y divide-gray-300">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th scope="col" class="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">Camera</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Best for</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Example</th>
+                            <th scope="col" class="data">Model </th>
+                            <th scope="col" class="data">Description</th>
+                            <th scope="col" class="data">Best For </th>
+                            <th scope="col" class="data">Access </th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                        <tr>
+                            <td class="keydata">FLUX.1 [pro]</td>
+                            <td class="data">Commercial, highest quality </td>
+                            <td class="data">Professional work, commercial use</td>
+                            <td class="data">Paid API</td>
+                        </tr>
+                        <tr>
+                            <td class="keydata">FLUX.1 [dev]</td>
+                            <td class="data">Open-source, high quality</td>
+                            <td class="data">Learning, experimentation, non-commercial</td>
+                            <td class="data">Free/Open</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="overflow-hidden outline-1 outline-black/5 sm:rounded-lg shadow-lg">
+                <table class="relative min-w-full divide-y divide-gray-300">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="data">Camera</th>
+                            <th scope="col" class="data">Best for</th>
+                            <th scope="col" class="data">Example</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
                         <tr class="odd">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">iPhone (e.g., iPhone 15)</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Casual, modern, and everyday shots.</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700"><em>Social media posts, relatable scenes, or casual portraits</em></td>
+                            <td class="keydata">iPhone (e.g., iPhone 15)</td>
+                            <td class="data">Casual, modern, and everyday shots.</td>
+                            <td class="data"><em>Social media posts, relatable scenes, or casual portraits</em></td>
                         </tr>
                         <tr class="even">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Canon EOS R5</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Professional, high-detail images with vibrant colors and sharp focus.</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700"><em>Landscapes, portraits, or high-quality product shots</em></td>
+                            <td class="keydata">Canon EOS R5</td>
+                            <td class="data">Professional, high-detail images with vibrant colors and sharp focus.</td>
+                            <td class="data"><em>Landscapes, portraits, or high-quality product shots</em></td>
                         </tr>
                         <tr class="odd">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Sony Alpha 7R IV</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">High-resolution images with rich textures and fine details.</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700"><em>Nature photography, architecture, or detailed close-ups</em></td>
+                            <td class="keydata">Sony Alpha 7R IV</td>
+                            <td class="data">High-resolution images with rich textures and fine details.</td>
+                            <td class="data"><em>Nature photography, architecture, or detailed close-ups</em></td>
                         </tr>
                         <tr class="even">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Polaroid Instant Camera</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Vintage, nostalgic shots with soft colors and slight imperfections.</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700"><em>Retro or artistic scenes</em></td>
+                            <td class="keydata">Polaroid Instant Camera</td>
+                            <td class="data">Vintage, nostalgic shots with soft colors and slight imperfections.</td>
+                            <td class="data"><em>Retro or artistic scenes</em></td>
                         </tr>
                     </tbody>
                 </table>
@@ -348,36 +372,36 @@
                 <table class="relative min-w-full divide-y divide-gray-300">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th scope="col" class="py-3.5 pr-3 pl-4 text-left text-sm font-semibold text-gray-900 sm:pl-6">Lense</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Length</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Best for</th>
+                            <th scope="col" class="data">Lense</th>
+                            <th scope="col" class="data">Length</th>
+                            <th scope="col" class="data">Best for</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200 bg-white">
                         <tr class="odd">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">iPhone (e.g., iPhone 15)</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Casual, modern, and everyday shots.</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700"><em>Social media posts, relatable scenes, or casual portraits</em></td>
+                            <td class="keydata">iPhone (e.g., iPhone 15)</td>
+                            <td class="data">Casual, modern, and everyday shots.</td>
+                            <td class="data"><em>Social media posts, relatable scenes, or casual portraits</em></td>
                         </tr>
                         <tr class="odd">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Wide-Angle Lens</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">16-35mm</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Capturing a broad view, perfect for landscapes, cityscapes, or large interiors.</td>
+                            <td class="keydata">Wide-Angle Lens</td>
+                            <td class="data">16-35mm</td>
+                            <td class="data">Capturing a broad view, perfect for landscapes, cityscapes, or large interiors.</td>
                         </tr>
                         <tr class="even">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Standard Lens</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">50mm</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Everyday shots, portraits, and scenes where you want a natural perspective. It also creates a nice blurred background (bokeh).</td>
+                            <td class="keydata">Standard Lens</td>
+                            <td class="data">50mm</td>
+                            <td class="data">Everyday shots, portraits, and scenes where you want a natural perspective. It also creates a nice blurred background (bokeh).</td>
                         </tr>
                         <tr class="odd">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Telephoto Lens</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">70-200mm</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Zooming in on distant subjects, ideal for close-ups, wildlife, or isolating a subject from the background.</td>
+                            <td class="keydata">Telephoto Lens</td>
+                            <td class="data">70-200mm</td>
+                            <td class="data">Zooming in on distant subjects, ideal for close-ups, wildlife, or isolating a subject from the background.</td>
                         </tr>
                         <tr class="even">
-                            <td class="py-4 pr-3 pl-4 text-sm font-bold whitespace-nowrap text-gray-900 sm:pl-6">Macro Lens</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">100mm</td>
-                            <td class="px-3 py-4 text-sm whitespace-nowrap text-gray-700">Extreme close-ups, perfect for capturing small details like insects, flowers, or textures.</td>
+                            <td class="keydata">Macro Lens</td>
+                            <td class="data">100mm</td>
+                            <td class="data">Extreme close-ups, perfect for capturing small details like insects, flowers, or textures.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -407,18 +431,9 @@
             <p>These settings help FLUX.1 mimic real-world photography techniques, adding realism to your images.</p>
             <p>Use settings to achieve specific effects. For example:</p>
             <ul class="list">
-                <li>
-                    Use “<strong><em>low f-stop</em></strong
-                    >” for a blurred background in portraits.
-                </li>
-                <li>
-                    Use “<strong><em>high ISO</em></strong
-                    >” for low-light scenes like night cityscapes.
-                </li>
-                <li>
-                    Use “<strong><em>slow shutter speed</em></strong
-                    >” to capture motion blur or light trails.
-                </li>
+                <li> Use <em class="font-semibold">low f-stop</em> for a blurred background in portraits. </li>
+                <li> Use <em class="font-semibold">high ISO</em> for low-light scenes like night cityscapes. </li>
+                <li> Use <em class="font-semibold">slow shutter speed</em> to capture motion blur or light trails. </li>
             </ul>
 
             <h4 id="example-prompt-17">Example Prompt</h4>
@@ -589,5 +604,5 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 </script>
