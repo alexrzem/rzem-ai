@@ -133,7 +133,6 @@ const filteredArtists = computed(() => {
         return artistsStore.artists;
     } else {
         const results = fuse.search(filter.value);
-
         return _.map(results, 'item');
     }
 });

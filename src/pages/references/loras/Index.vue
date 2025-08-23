@@ -144,7 +144,7 @@ const filteredLoras = computed(() => {
     if (_.isEmpty(filter.value)) {
         return _.orderBy(artistsStore.loras, ['name'], ['asc']);
     } else {
-        const results = fuse.search('all');
+        const results = fuse.search(filter.value);
         return _.map(results, 'item');
     }
 });
