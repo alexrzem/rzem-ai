@@ -62,7 +62,7 @@ const navigation = [
     {name: 'Home', to: 'home', hidden: false},
     {name: 'Flux 101', to: 'flux101', hidden: false},
     {name: 'Flux 201', to: 'flux201', hidden: true},
-    {name: 'Prompt Guide', to: 'promptGuide', hidden: false},
+    {name: 'Guides', to: 'guides', hidden: false},
     {name: 'Style Reference', to: 'styleReferences', hidden: false},
 ];
 </script>

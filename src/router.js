@@ -8,7 +8,7 @@ import Flux101Lesson2 from './pages/flux_101/Lesson2.vue';
 import Flux101Lesson3 from './pages/flux_101/Lesson3.vue';
 import Flux101Lesson4 from './pages/flux_101/Lesson4.vue';
 import Flux201 from './pages/flux_201/Index.vue';
-import PromptGuide from './pages/guides/prompt/Index.vue';
+import FluxGuide from './pages/guides/flux/Index.vue';
 import References from './pages/references/Index.vue';
 import LoraReferences from './pages/references/loras/Index.vue';
 import StyleReferences from './pages/references/style/Index.vue';
@@ -32,7 +32,13 @@ const routes = [
 
     {name: 'flux201', path: '/flux201', component: Flux201},
 
-    {name: 'promptGuide', path: '/guides/prompt', component: PromptGuide},
+    {
+        name: 'guides',
+        path: '/guides',
+        component: FluxGuide,
+        redirect: {name: 'flux1PromptGuide'},
+        children: [{name: 'flux1PromptGuide', path: 'flux', component: FluxGuide}],
+    },
 
     {
         name: 'references',
