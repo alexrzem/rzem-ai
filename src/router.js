@@ -8,7 +8,9 @@ import Flux101Lesson2 from './pages/flux_101/Lesson2.vue';
 import Flux101Lesson3 from './pages/flux_101/Lesson3.vue';
 import Flux101Lesson4 from './pages/flux_101/Lesson4.vue';
 import Flux201 from './pages/flux_201/Index.vue';
+import Guides from './pages/guides/Index.vue';
 import FluxGuide from './pages/guides/flux/Index.vue';
+import KontextGuide from './pages/guides/kontext/Index.vue';
 import References from './pages/references/Index.vue';
 import LoraReferences from './pages/references/loras/Index.vue';
 import StyleReferences from './pages/references/style/Index.vue';
@@ -22,11 +24,11 @@ const routes = [
         component: Flux101,
         redirect: {name: 'flux101Intro'},
         children: [
-            {name: 'flux101Intro', path: 'intro', component: Flux101Intro},
-            {name: 'flux101Lesson1', path: 'lesson1', component: Flux101Lesson1},
-            {name: 'flux101Lesson2', path: 'lesson2', component: Flux101Lesson2},
-            {name: 'flux101Lesson3', path: 'lesson3', component: Flux101Lesson3},
-            {name: 'flux101Lesson4', path: 'lesson4', component: Flux101Lesson4},
+            {name: 'flux101Intro', path: '/flux101/intro', component: Flux101Intro},
+            {name: 'flux101Lesson1', path: '/flux101/lesson1', component: Flux101Lesson1},
+            {name: 'flux101Lesson2', path: '/flux101/lesson2', component: Flux101Lesson2},
+            {name: 'flux101Lesson3', path: '/flux101/lesson3', component: Flux101Lesson3},
+            {name: 'flux101Lesson4', path: '/flux101/lesson4', component: Flux101Lesson4},
         ],
     },
 
@@ -34,20 +36,23 @@ const routes = [
 
     {
         name: 'guides',
-        path: '/guides',
-        component: FluxGuide,
+        path: '/guides/',
+        component: Guides,
         redirect: {name: 'flux1PromptGuide'},
-        children: [{name: 'flux1PromptGuide', path: 'flux', component: FluxGuide}],
+        children: [
+			{name: 'flux1PromptGuide', path: '/guides/flux', component: FluxGuide},
+			{name: 'kontextPromptGuide', path: '/guides/kontext', component: KontextGuide}
+		],
     },
 
     {
         name: 'references',
-        path: '/references',
+        path: '/references/',
         component: References,
         redirect: {name: 'styleReferences'},
         children: [
-            {name: 'styleReferences', path: 'style', component: StyleReferences},
-            {name: 'loraReferences', path: 'loras', component: LoraReferences},
+            {name: 'styleReferences', path: '/references/style', component: StyleReferences},
+            {name: 'loraReferences', path: '/references/loras', component: LoraReferences},
         ],
     },
 ];

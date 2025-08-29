@@ -1,68 +1,57 @@
 <template>
-    <div class="min-h-full">
-        <Disclosure as="nav" class="bg-gray-800" v-slot="{open}">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                    <div class="flex items-center">
-                        <div class="hidden md:block">
-                            <div class="flex items-baseline space-x-4">
-                                <template v-for="item in navigation">
-                                    <RouterLink
-                                        v-if="!item.hidden"
-                                        :to="{name: item.to}"
-                                        :key="item.name"
-                                        class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
-                                        active-class="bg-gray-600 text-white"
-                                        exact-active-class="bg-gray-900 text-white">
-                                        {{ item.name }}
-                                    </RouterLink>
-                                </template>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden md:block">
-                        <div class="ml-4 flex items-center md:ml-6"> </div>
-                    </div>
-                    <div class="-mr-2 flex md:hidden">
-                        <!-- Mobile menu button -->
-                        <DisclosureButton class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
-                            <span class="absolute -inset-0.5" />
-                            <span class="sr-only">Open main menu</span>
-                            <fa v-if="!open" :icon="['far', 'bars']" class="" />
-                            <fa v-else :icon="['far', 'xmark']" class="" />
-                        </DisclosureButton>
-                    </div>
+    <div class="min-h-screen w-full bg-zinc-950 text-zinc-50">
+        <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-zinc-950/60 bg-zinc-950/80 border-b border-zinc-800">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-fuchsia-500 via-violet-500 to-cyan-400" />
+                    <RouterLink :to="{name: 'home'}">
+                        <span class="font-semibold tracking-tight">rzem.ai</span>
+                    </RouterLink>
+                    <span class="hidden sm:inline text-xs text-zinc-400 ml-2">FLUX.1 Learning Hub</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-300">
+                    <template v-for="item in navigation">
+                        <RouterLink v-if="!item.hidden" :to="{name: item.to}" :key="item.name" class="hover:text-white transition" active-class="text-white" exact-active-class="text-white">
+                            {{ item.name }}
+                        </RouterLink>
+                    </template>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <RouterView />
+        </main>
+
+        <footer class="border-t border-zinc-800/80 py-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-400 text-sm">
+                <p>© 2025 rzem.ai</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-white">Contact</a>
+                    <a href="#" class="hover:text-white">Privacy</a>
                 </div>
             </div>
-
-            <DisclosurePanel class="md:hidden">
-                <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-                    <RouterLink
-                        v-for="item in navigation"
-                        v-if="!item.hidden"
-                        :key="item.name"
-                        :to="{name: item.to}"
-                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
-                        active-class="bg-gray-900 text-white"
-                        exact-active-class="bg-gray-900 text-white">
-                        {{ item.name }}A
-                    </RouterLink>
-                </div>
-            </DisclosurePanel>
-        </Disclosure>
-
-        <RouterView />
+        </footer>
     </div>
 </template>
 
 <script setup>
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/vue';
 
+/**
+ * 
+ *                     <a class="hover:text-white transition" href="#">Lessons</a>
+                    <a class="hover:text-white transition" href="#">Guides</a>
+                    <a class="hover:text-white transition" href="#">Prompt Library</a>
+                    <a class="hover:text-white transition" href="#">Workflows</a>
+                    <a class="hover:text-white transition" href="#">Benchmarks</a>
+ */
+
 const navigation = [
-    {name: 'Home', to: 'home', hidden: false},
     {name: 'Flux 101', to: 'flux101', hidden: false},
     {name: 'Flux 201', to: 'flux201', hidden: true},
     {name: 'Guides', to: 'guides', hidden: false},
+	{name: 'Prompt Library', to: 'guides', hidden: false},
     {name: 'Style Reference', to: 'styleReferences', hidden: false},
 ];
 </script>

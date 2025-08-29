@@ -9,6 +9,7 @@ html {
 	@apply mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8;
 }
 
+/**
 h1 {
 	@apply text-4xl font-semibold text-zinc-950;
 	@apply mx-0 my-2;
@@ -43,7 +44,7 @@ p {
 	@apply text-base font-normal leading-6;
 	@apply mx-0 my-0;
 }
-
+*/
 .list {
 	@apply list-disc list-inside ml-4;
 }

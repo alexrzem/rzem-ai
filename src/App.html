@@ -1,0 +1,2387 @@
+<html lang="en" data-ready="">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+      @layer properties;
+      @layer theme, base, components, utilities;
+
+      @layer theme {
+        :root,
+        :host {
+          --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+          --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+          --color-cyan-300: oklch(86.5% 0.127 207.078);
+          --color-cyan-400: oklch(78.9% 0.154 211.53);
+          --color-violet-400: oklch(70.2% 0.183 293.541);
+          --color-violet-500: oklch(60.6% 0.25 292.717);
+          --color-fuchsia-300: oklch(83.3% 0.145 321.434);
+          --color-fuchsia-400: oklch(74% 0.238 322.16);
+          --color-fuchsia-500: oklch(66.7% 0.295 322.15);
+          --color-zinc-50: oklch(98.5% 0 0);
+          --color-zinc-100: oklch(96.7% 0.001 286.375);
+          --color-zinc-200: oklch(92% 0.004 286.32);
+          --color-zinc-300: oklch(87.1% 0.006 286.286);
+          --color-zinc-400: oklch(70.5% 0.015 286.067);
+          --color-zinc-500: oklch(55.2% 0.016 285.938);
+          --color-zinc-600: oklch(44.2% 0.017 285.786);
+          --color-zinc-700: oklch(37% 0.013 285.805);
+          --color-zinc-800: oklch(27.4% 0.006 286.033);
+          --color-zinc-900: oklch(21% 0.006 285.885);
+          --color-zinc-950: oklch(14.1% 0.005 285.823);
+          --color-white: #fff;
+          --spacing: 0.25rem;
+          --container-2xl: 42rem;
+          --container-4xl: 56rem;
+          --container-5xl: 64rem;
+          --container-7xl: 80rem;
+          --text-xs: 0.75rem;
+          --text-xs--line-height: calc(1 / 0.75);
+          --text-sm: 0.875rem;
+          --text-sm--line-height: calc(1.25 / 0.875);
+          --text-lg: 1.125rem;
+          --text-lg--line-height: calc(1.75 / 1.125);
+          --text-xl: 1.25rem;
+          --text-xl--line-height: calc(1.75 / 1.25);
+          --text-2xl: 1.5rem;
+          --text-2xl--line-height: calc(2 / 1.5);
+          --text-3xl: 1.875rem;
+          --text-3xl--line-height: calc(2.25 / 1.875);
+          --text-4xl: 2.25rem;
+          --text-4xl--line-height: calc(2.5 / 2.25);
+          --text-6xl: 3.75rem;
+          --text-6xl--line-height: 1;
+          --font-weight-medium: 500;
+          --font-weight-semibold: 600;
+          --font-weight-bold: 700;
+          --font-weight-extrabold: 800;
+          --font-weight-black: 900;
+          --tracking-tight: -0.025em;
+          --tracking-widest: 0.1em;
+          --radius-lg: 0.5rem;
+          --radius-xl: 0.75rem;
+          --radius-2xl: 1rem;
+          --radius-3xl: 1.5rem;
+          --blur-3xl: 64px;
+          --aspect-video: 16 / 9;
+          --default-transition-duration: 150ms;
+          --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          --default-font-family: var(--font-sans);
+          --default-mono-font-family: var(--font-mono);
+          --color-border: hsl(var(--border));
+        }
+      }
+
+      @layer base {
+        *,
+        ::after,
+        ::before,
+        ::backdrop,
+        ::file-selector-button {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          border: 0 solid;
+        }
+
+        html,
+        :host {
+          line-height: 1.5;
+          -webkit-text-size-adjust: 100%;
+          tab-size: 4;
+          font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+          font-feature-settings: var(--default-font-feature-settings, normal);
+          font-variation-settings: var(--default-font-variation-settings, normal);
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        hr {
+          height: 0;
+          color: inherit;
+          border-top-width: 1px;
+        }
+
+        abbr:where([title]) {
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+
+        a {
+          color: inherit;
+          -webkit-text-decoration: inherit;
+          text-decoration: inherit;
+        }
+
+        b,
+        strong {
+          font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        samp,
+        pre {
+          font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+          font-feature-settings: var(--default-mono-font-feature-settings, normal);
+          font-variation-settings: var(--default-mono-font-variation-settings, normal);
+          font-size: 1em;
+        }
+
+        small {
+          font-size: 80%;
+        }
+
+        sub,
+        sup {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline;
+        }
+
+        sub {
+          bottom: -0.25em;
+        }
+
+        sup {
+          top: -0.5em;
+        }
+
+        table {
+          text-indent: 0;
+          border-color: inherit;
+          border-collapse: collapse;
+        }
+
+        :-moz-focusring {
+          outline: auto;
+        }
+
+        progress {
+          vertical-align: baseline;
+        }
+
+        summary {
+          display: list-item;
+        }
+
+        ol,
+        ul,
+        menu {
+          list-style: none;
+        }
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+          display: block;
+          vertical-align: middle;
+        }
+
+        img,
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+
+        button,
+        input,
+        select,
+        optgroup,
+        textarea,
+        ::file-selector-button {
+          font: inherit;
+          font-feature-settings: inherit;
+          font-variation-settings: inherit;
+          letter-spacing: inherit;
+          color: inherit;
+          border-radius: 0;
+          background-color: transparent;
+          opacity: 1;
+        }
+
+        :where(select:is([multiple], [size])) optgroup {
+          font-weight: bolder;
+        }
+
+        :where(select:is([multiple], [size])) optgroup option {
+          padding-inline-start: 20px;
+        }
+
+        ::file-selector-button {
+          margin-inline-end: 4px;
+        }
+
+        ::placeholder {
+          opacity: 1;
+        }
+
+        @supports (not (-webkit-appearance: -apple-pay-button)) or (contain-intrinsic-size: 1px) {
+          ::placeholder {
+            color: currentcolor;
+
+            @supports (color: color-mix(in lab, red, red)) {
+              color: color-mix(in oklab, currentcolor 50%, transparent);
+            }
+          }
+        }
+
+        textarea {
+          resize: vertical;
+        }
+
+        ::-webkit-search-decoration {
+          -webkit-appearance: none;
+        }
+
+        ::-webkit-date-and-time-value {
+          min-height: 1lh;
+          text-align: inherit;
+        }
+
+        ::-webkit-datetime-edit {
+          display: inline-flex;
+        }
+
+        ::-webkit-datetime-edit-fields-wrapper {
+          padding: 0;
+        }
+
+        ::-webkit-datetime-edit,
+        ::-webkit-datetime-edit-year-field,
+        ::-webkit-datetime-edit-month-field,
+        ::-webkit-datetime-edit-day-field,
+        ::-webkit-datetime-edit-hour-field,
+        ::-webkit-datetime-edit-minute-field,
+        ::-webkit-datetime-edit-second-field,
+        ::-webkit-datetime-edit-millisecond-field,
+        ::-webkit-datetime-edit-meridiem-field {
+          padding-block: 0;
+        }
+
+        :-moz-ui-invalid {
+          box-shadow: none;
+        }
+
+        button,
+        input:where([type='button'], [type='reset'], [type='submit']),
+        ::file-selector-button {
+          appearance: button;
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+          height: auto;
+        }
+
+        [hidden]:where(:not([hidden='until-found'])) {
+          display: none !important;
+        }
+      }
+
+      @layer utilities {
+        .absolute {
+          position: absolute;
+        }
+
+        .relative {
+          position: relative;
+        }
+
+        .sticky {
+          position: sticky;
+        }
+
+        .inset-0 {
+          inset: calc(var(--spacing) * 0);
+        }
+
+        .-top-24 {
+          top: calc(var(--spacing) * -24);
+        }
+
+        .top-0 {
+          top: calc(var(--spacing) * 0);
+        }
+
+        .-right-10 {
+          right: calc(var(--spacing) * -10);
+        }
+
+        .-right-24 {
+          right: calc(var(--spacing) * -24);
+        }
+
+        .-bottom-10 {
+          bottom: calc(var(--spacing) * -10);
+        }
+
+        .-bottom-24 {
+          bottom: calc(var(--spacing) * -24);
+        }
+
+        .-left-10 {
+          left: calc(var(--spacing) * -10);
+        }
+
+        .z-50 {
+          z-index: 50;
+        }
+
+        .mx-auto {
+          margin-inline: auto;
+        }
+
+        .mt-1 {
+          margin-top: calc(var(--spacing) * 1);
+        }
+
+        .mt-2 {
+          margin-top: calc(var(--spacing) * 2);
+        }
+
+        .mt-3 {
+          margin-top: calc(var(--spacing) * 3);
+        }
+
+        .mt-4 {
+          margin-top: calc(var(--spacing) * 4);
+        }
+
+        .mt-5 {
+          margin-top: calc(var(--spacing) * 5);
+        }
+
+        .mt-6 {
+          margin-top: calc(var(--spacing) * 6);
+        }
+
+        .mt-8 {
+          margin-top: calc(var(--spacing) * 8);
+        }
+
+        .mt-12 {
+          margin-top: calc(var(--spacing) * 12);
+        }
+
+        .ml-1 {
+          margin-left: calc(var(--spacing) * 1);
+        }
+
+        .ml-2 {
+          margin-left: calc(var(--spacing) * 2);
+        }
+
+        .block {
+          display: block;
+        }
+
+        .flex {
+          display: flex;
+        }
+
+        .grid {
+          display: grid;
+        }
+
+        .hidden {
+          display: none;
+        }
+
+        .inline-flex {
+          display: inline-flex;
+        }
+
+        .aspect-\[16\/7\] {
+          aspect-ratio: 16/7;
+        }
+
+        .aspect-video {
+          aspect-ratio: var(--aspect-video);
+        }
+
+        .h-4 {
+          height: calc(var(--spacing) * 4);
+        }
+
+        .h-5 {
+          height: calc(var(--spacing) * 5);
+        }
+
+        .h-8 {
+          height: calc(var(--spacing) * 8);
+        }
+
+        .h-10 {
+          height: calc(var(--spacing) * 10);
+        }
+
+        .h-16 {
+          height: calc(var(--spacing) * 16);
+        }
+
+        .h-40 {
+          height: calc(var(--spacing) * 40);
+        }
+
+        .h-80 {
+          height: calc(var(--spacing) * 80);
+        }
+
+        .h-96 {
+          height: calc(var(--spacing) * 96);
+        }
+
+        .min-h-screen {
+          min-height: 100vh;
+        }
+
+        .w-4 {
+          width: calc(var(--spacing) * 4);
+        }
+
+        .w-5 {
+          width: calc(var(--spacing) * 5);
+        }
+
+        .w-8 {
+          width: calc(var(--spacing) * 8);
+        }
+
+        .w-10 {
+          width: calc(var(--spacing) * 10);
+        }
+
+        .w-40 {
+          width: calc(var(--spacing) * 40);
+        }
+
+        .w-80 {
+          width: calc(var(--spacing) * 80);
+        }
+
+        .w-96 {
+          width: calc(var(--spacing) * 96);
+        }
+
+        .w-full {
+          width: 100%;
+        }
+
+        .max-w-2xl {
+          max-width: var(--container-2xl);
+        }
+
+        .max-w-4xl {
+          max-width: var(--container-4xl);
+        }
+
+        .max-w-5xl {
+          max-width: var(--container-5xl);
+        }
+
+        .max-w-7xl {
+          max-width: var(--container-7xl);
+        }
+
+        .grid-cols-1 {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        .grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .flex-col {
+          flex-direction: column;
+        }
+
+        .flex-wrap {
+          flex-wrap: wrap;
+        }
+
+        .items-center {
+          align-items: center;
+        }
+
+        .items-end {
+          align-items: flex-end;
+        }
+
+        .items-start {
+          align-items: flex-start;
+        }
+
+        .justify-between {
+          justify-content: space-between;
+        }
+
+        .justify-center {
+          justify-content: center;
+        }
+
+        .gap-2 {
+          gap: calc(var(--spacing) * 2);
+        }
+
+        .gap-3 {
+          gap: calc(var(--spacing) * 3);
+        }
+
+        .gap-4 {
+          gap: calc(var(--spacing) * 4);
+        }
+
+        .gap-6 {
+          gap: calc(var(--spacing) * 6);
+        }
+
+        .gap-8 {
+          gap: calc(var(--spacing) * 8);
+        }
+
+        .space-y-3 {
+          :where(& > :not(:last-child)) {
+            --tw-space-y-reverse: 0;
+            margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+            margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+          }
+        }
+
+        .space-y-4 {
+          :where(& > :not(:last-child)) {
+            --tw-space-y-reverse: 0;
+            margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+            margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+          }
+        }
+
+        .overflow-hidden {
+          overflow: hidden;
+        }
+
+        .rounded-2xl {
+          border-radius: var(--radius-2xl);
+        }
+
+        .rounded-3xl {
+          border-radius: var(--radius-3xl);
+        }
+
+        .rounded-full {
+          border-radius: calc(infinity * 1px);
+        }
+
+        .rounded-lg {
+          border-radius: var(--radius-lg);
+        }
+
+        .rounded-xl {
+          border-radius: var(--radius-xl);
+        }
+
+        .border {
+          border-style: var(--tw-border-style);
+          border-width: 1px;
+        }
+
+        .border-y {
+          border-block-style: var(--tw-border-style);
+          border-block-width: 1px;
+        }
+
+        .border-t {
+          border-top-style: var(--tw-border-style);
+          border-top-width: 1px;
+        }
+
+        .border-b {
+          border-bottom-style: var(--tw-border-style);
+          border-bottom-width: 1px;
+        }
+
+        .border-white {
+          border-color: var(--color-white);
+        }
+
+        .border-zinc-200 {
+          border-color: var(--color-zinc-200);
+        }
+
+        .border-zinc-300 {
+          border-color: var(--color-zinc-300);
+        }
+
+        .border-zinc-700 {
+          border-color: var(--color-zinc-700);
+        }
+
+        .border-zinc-800 {
+          border-color: var(--color-zinc-800);
+        }
+
+        .border-zinc-800\/80 {
+          border-color: color-mix(in srgb, oklch(27.4% 0.006 286.033) 80%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            border-color: color-mix(in oklab, var(--color-zinc-800) 80%, transparent);
+          }
+        }
+
+        .bg-cyan-400 {
+          background-color: var(--color-cyan-400);
+        }
+
+        .bg-fuchsia-500 {
+          background-color: var(--color-fuchsia-500);
+        }
+
+        .bg-fuchsia-500\/20 {
+          background-color: color-mix(in srgb, oklch(66.7% 0.295 322.15) 20%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-fuchsia-500) 20%, transparent);
+          }
+        }
+
+        .bg-white {
+          background-color: var(--color-white);
+        }
+
+        .bg-white\/80 {
+          background-color: color-mix(in srgb, #fff 80%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-white) 80%, transparent);
+          }
+        }
+
+        .bg-zinc-50 {
+          background-color: var(--color-zinc-50);
+        }
+
+        .bg-zinc-100 {
+          background-color: var(--color-zinc-100);
+        }
+
+        .bg-zinc-800\/60 {
+          background-color: color-mix(in srgb, oklch(27.4% 0.006 286.033) 60%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-zinc-800) 60%, transparent);
+          }
+        }
+
+        .bg-zinc-900 {
+          background-color: var(--color-zinc-900);
+        }
+
+        .bg-zinc-900\/30 {
+          background-color: color-mix(in srgb, oklch(21% 0.006 285.885) 30%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-zinc-900) 30%, transparent);
+          }
+        }
+
+        .bg-zinc-900\/50 {
+          background-color: color-mix(in srgb, oklch(21% 0.006 285.885) 50%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-zinc-900) 50%, transparent);
+          }
+        }
+
+        .bg-zinc-950 {
+          background-color: var(--color-zinc-950);
+        }
+
+        .bg-zinc-950\/80 {
+          background-color: color-mix(in srgb, oklch(14.1% 0.005 285.823) 80%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-zinc-950) 80%, transparent);
+          }
+        }
+
+        .bg-gradient-to-b {
+          --tw-gradient-position: to bottom in oklab;
+          background-image: linear-gradient(var(--tw-gradient-stops));
+        }
+
+        .bg-gradient-to-br {
+          --tw-gradient-position: to bottom right in oklab;
+          background-image: linear-gradient(var(--tw-gradient-stops));
+        }
+
+        .bg-gradient-to-r {
+          --tw-gradient-position: to right in oklab;
+          background-image: linear-gradient(var(--tw-gradient-stops));
+        }
+
+        .from-fuchsia-400 {
+          --tw-gradient-from: var(--color-fuchsia-400);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .from-fuchsia-500 {
+          --tw-gradient-from: var(--color-fuchsia-500);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .from-zinc-200 {
+          --tw-gradient-from: var(--color-zinc-200);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .from-zinc-900 {
+          --tw-gradient-from: var(--color-zinc-900);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .from-zinc-900\/60 {
+          --tw-gradient-from: color-mix(in srgb, oklch(21% 0.006 285.885) 60%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            --tw-gradient-from: color-mix(in oklab, var(--color-zinc-900) 60%, transparent);
+          }
+
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .via-violet-400 {
+          --tw-gradient-via: var(--color-violet-400);
+          --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+          --tw-gradient-stops: var(--tw-gradient-via-stops);
+        }
+
+        .via-violet-500 {
+          --tw-gradient-via: var(--color-violet-500);
+          --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+          --tw-gradient-stops: var(--tw-gradient-via-stops);
+        }
+
+        .to-cyan-300 {
+          --tw-gradient-to: var(--color-cyan-300);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .to-cyan-400 {
+          --tw-gradient-to: var(--color-cyan-400);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .to-zinc-100 {
+          --tw-gradient-to: var(--color-zinc-100);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .to-zinc-900\/20 {
+          --tw-gradient-to: color-mix(in srgb, oklch(21% 0.006 285.885) 20%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            --tw-gradient-to: color-mix(in oklab, var(--color-zinc-900) 20%, transparent);
+          }
+
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .to-zinc-950 {
+          --tw-gradient-to: var(--color-zinc-950);
+          --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+        }
+
+        .bg-clip-text {
+          background-clip: text;
+        }
+
+        .p-4 {
+          padding: calc(var(--spacing) * 4);
+        }
+
+        .p-5 {
+          padding: calc(var(--spacing) * 5);
+        }
+
+        .p-6 {
+          padding: calc(var(--spacing) * 6);
+        }
+
+        .px-3 {
+          padding-inline: calc(var(--spacing) * 3);
+        }
+
+        .px-4 {
+          padding-inline: calc(var(--spacing) * 4);
+        }
+
+        .px-5 {
+          padding-inline: calc(var(--spacing) * 5);
+        }
+
+        .py-1\.5 {
+          padding-block: calc(var(--spacing) * 1.5);
+        }
+
+        .py-2 {
+          padding-block: calc(var(--spacing) * 2);
+        }
+
+        .py-3 {
+          padding-block: calc(var(--spacing) * 3);
+        }
+
+        .py-10 {
+          padding-block: calc(var(--spacing) * 10);
+        }
+
+        .py-12 {
+          padding-block: calc(var(--spacing) * 12);
+        }
+
+        .py-14 {
+          padding-block: calc(var(--spacing) * 14);
+        }
+
+        .py-16 {
+          padding-block: calc(var(--spacing) * 16);
+        }
+
+        .py-20 {
+          padding-block: calc(var(--spacing) * 20);
+        }
+
+        .text-center {
+          text-align: center;
+        }
+
+        .text-2xl {
+          font-size: var(--text-2xl);
+          line-height: var(--tw-leading, var(--text-2xl--line-height));
+        }
+
+        .text-4xl {
+          font-size: var(--text-4xl);
+          line-height: var(--tw-leading, var(--text-4xl--line-height));
+        }
+
+        .text-lg {
+          font-size: var(--text-lg);
+          line-height: var(--tw-leading, var(--text-lg--line-height));
+        }
+
+        .text-sm {
+          font-size: var(--text-sm);
+          line-height: var(--tw-leading, var(--text-sm--line-height));
+        }
+
+        .text-xl {
+          font-size: var(--text-xl);
+          line-height: var(--tw-leading, var(--text-xl--line-height));
+        }
+
+        .text-xs {
+          font-size: var(--text-xs);
+          line-height: var(--tw-leading, var(--text-xs--line-height));
+        }
+
+        .font-black {
+          --tw-font-weight: var(--font-weight-black);
+          font-weight: var(--font-weight-black);
+        }
+
+        .font-bold {
+          --tw-font-weight: var(--font-weight-bold);
+          font-weight: var(--font-weight-bold);
+        }
+
+        .font-extrabold {
+          --tw-font-weight: var(--font-weight-extrabold);
+          font-weight: var(--font-weight-extrabold);
+        }
+
+        .font-medium {
+          --tw-font-weight: var(--font-weight-medium);
+          font-weight: var(--font-weight-medium);
+        }
+
+        .font-semibold {
+          --tw-font-weight: var(--font-weight-semibold);
+          font-weight: var(--font-weight-semibold);
+        }
+
+        .tracking-tight {
+          --tw-tracking: var(--tracking-tight);
+          letter-spacing: var(--tracking-tight);
+        }
+
+        .tracking-widest {
+          --tw-tracking: var(--tracking-widest);
+          letter-spacing: var(--tracking-widest);
+        }
+
+        .text-cyan-300 {
+          color: var(--color-cyan-300);
+        }
+
+        .text-fuchsia-300\/90 {
+          color: color-mix(in srgb, oklch(83.3% 0.145 321.434) 90%, transparent);
+
+          @supports (color: color-mix(in lab, red, red)) {
+            color: color-mix(in oklab, var(--color-fuchsia-300) 90%, transparent);
+          }
+        }
+
+        .text-transparent {
+          color: transparent;
+        }
+
+        .text-white {
+          color: var(--color-white);
+        }
+
+        .text-zinc-50 {
+          color: var(--color-zinc-50);
+        }
+
+        .text-zinc-100 {
+          color: var(--color-zinc-100);
+        }
+
+        .text-zinc-200 {
+          color: var(--color-zinc-200);
+        }
+
+        .text-zinc-300 {
+          color: var(--color-zinc-300);
+        }
+
+        .text-zinc-400 {
+          color: var(--color-zinc-400);
+        }
+
+        .text-zinc-500 {
+          color: var(--color-zinc-500);
+        }
+
+        .text-zinc-600 {
+          color: var(--color-zinc-600);
+        }
+
+        .text-zinc-700 {
+          color: var(--color-zinc-700);
+        }
+
+        .text-zinc-800 {
+          color: var(--color-zinc-800);
+        }
+
+        .text-zinc-900 {
+          color: var(--color-zinc-900);
+        }
+
+        .uppercase {
+          text-transform: uppercase;
+        }
+
+        .underline-offset-4 {
+          text-underline-offset: 4px;
+        }
+
+        .opacity-30 {
+          opacity: 30%;
+        }
+
+        .blur-3xl {
+          --tw-blur: blur(var(--blur-3xl));
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        }
+
+        .backdrop-blur {
+          --tw-backdrop-blur: blur(8px);
+          -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+            var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity)
+            var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        }
+
+        .transition {
+          transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate,
+            filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+          transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+          transition-duration: var(--tw-duration, var(--default-transition-duration));
+        }
+
+        .group-hover\:underline {
+          &:is(:where(.group):hover *) {
+            @media (hover: hover) {
+              text-decoration-line: underline;
+            }
+          }
+        }
+
+        .placeholder\:text-zinc-500 {
+          &::placeholder {
+            color: var(--color-zinc-500);
+          }
+        }
+
+        .hover\:bg-zinc-800 {
+          &:hover {
+            @media (hover: hover) {
+              background-color: var(--color-zinc-800);
+            }
+          }
+        }
+
+        .hover\:bg-zinc-900 {
+          &:hover {
+            @media (hover: hover) {
+              background-color: var(--color-zinc-900);
+            }
+          }
+        }
+
+        .hover\:bg-zinc-900\/60 {
+          &:hover {
+            @media (hover: hover) {
+              background-color: color-mix(in srgb, oklch(21% 0.006 285.885) 60%, transparent);
+
+              @supports (color: color-mix(in lab, red, red)) {
+                background-color: color-mix(in oklab, var(--color-zinc-900) 60%, transparent);
+              }
+            }
+          }
+        }
+
+        .hover\:text-white {
+          &:hover {
+            @media (hover: hover) {
+              color: var(--color-white);
+            }
+          }
+        }
+
+        .hover\:text-zinc-900 {
+          &:hover {
+            @media (hover: hover) {
+              color: var(--color-zinc-900);
+            }
+          }
+        }
+
+        .hover\:underline {
+          &:hover {
+            @media (hover: hover) {
+              text-decoration-line: underline;
+            }
+          }
+        }
+
+        .hover\:shadow-lg {
+          &:hover {
+            @media (hover: hover) {
+              --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+              box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+            }
+          }
+        }
+
+        .focus\:ring-2 {
+          &:focus {
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+            box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+          }
+        }
+
+        .focus\:ring-fuchsia-400 {
+          &:focus {
+            --tw-ring-color: var(--color-fuchsia-400);
+          }
+        }
+
+        .focus\:ring-zinc-900 {
+          &:focus {
+            --tw-ring-color: var(--color-zinc-900);
+          }
+        }
+
+        .focus\:outline-none {
+          &:focus {
+            --tw-outline-style: none;
+            outline-style: none;
+          }
+        }
+
+        .supports-\[backdrop-filter\]\:bg-zinc-950\/60 {
+          @supports (backdrop-filter: var(--tw)) {
+            background-color: color-mix(in srgb, oklch(14.1% 0.005 285.823) 60%, transparent);
+
+            @supports (color: color-mix(in lab, red, red)) {
+              background-color: color-mix(in oklab, var(--color-zinc-950) 60%, transparent);
+            }
+          }
+        }
+
+        .sm\:inline {
+          @media (width >=40rem) {
+            display: inline;
+          }
+        }
+
+        .sm\:inline-flex {
+          @media (width >=40rem) {
+            display: inline-flex;
+          }
+        }
+
+        .sm\:w-80 {
+          @media (width >=40rem) {
+            width: calc(var(--spacing) * 80);
+          }
+        }
+
+        .sm\:w-96 {
+          @media (width >=40rem) {
+            width: calc(var(--spacing) * 96);
+          }
+        }
+
+        .sm\:grid-cols-2 {
+          @media (width >=40rem) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        .sm\:grid-cols-3 {
+          @media (width >=40rem) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
+        .sm\:grid-cols-4 {
+          @media (width >=40rem) {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+          }
+        }
+
+        .sm\:flex-row {
+          @media (width >=40rem) {
+            flex-direction: row;
+          }
+        }
+
+        .sm\:px-6 {
+          @media (width >=40rem) {
+            padding-inline: calc(var(--spacing) * 6);
+          }
+        }
+
+        .sm\:text-3xl {
+          @media (width >=40rem) {
+            font-size: var(--text-3xl);
+            line-height: var(--tw-leading, var(--text-3xl--line-height));
+          }
+        }
+
+        .sm\:text-6xl {
+          @media (width >=40rem) {
+            font-size: var(--text-6xl);
+            line-height: var(--tw-leading, var(--text-6xl--line-height));
+          }
+        }
+
+        .md\:flex {
+          @media (width >=48rem) {
+            display: flex;
+          }
+        }
+
+        .md\:grid-cols-2 {
+          @media (width >=48rem) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        .md\:grid-cols-3 {
+          @media (width >=48rem) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
+        .lg\:col-span-1 {
+          @media (width >=64rem) {
+            grid-column: span 1 / span 1;
+          }
+        }
+
+        .lg\:col-span-2 {
+          @media (width >=64rem) {
+            grid-column: span 2 / span 2;
+          }
+        }
+
+        .lg\:grid-cols-3 {
+          @media (width >=64rem) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+
+        .lg\:grid-cols-4 {
+          @media (width >=64rem) {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+          }
+        }
+
+        .lg\:px-8 {
+          @media (width >=64rem) {
+            padding-inline: calc(var(--spacing) * 8);
+          }
+        }
+      }
+
+      @layer base {
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 222.2 47.4% 11.2%;
+          --muted: 210 40% 96.1%;
+          --muted-foreground: 215.4 16.3% 46.9%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 222.2 47.4% 11.2%;
+          --border: 214.3 31.8% 91.4%;
+          --input: 214.3 31.8% 91.4%;
+          --card: 0 0% 100%;
+          --card-foreground: 222.2 47.4% 11.2%;
+          --primary: 222.2 47.4% 11.2%;
+          --primary-foreground: 210 40% 98%;
+          --secondary: 210 40% 96.1%;
+          --secondary-foreground: 222.2 47.4% 11.2%;
+          --accent: 210 40% 96.1%;
+          --accent-foreground: 222.2 47.4% 11.2%;
+          --destructive: 0 100% 50%;
+          --destructive-foreground: 210 40% 98%;
+          --ring: 215 20.2% 65.1%;
+          --radius: 0.5rem;
+          --chart-1: 12 76% 61%;
+          --chart-2: 173 58% 39%;
+          --chart-3: 197 37% 24%;
+          --chart-4: 43 74% 66%;
+          --chart-5: 27 87% 67%;
+          --sidebar-background: 0 0% 98%;
+          --sidebar-foreground: 240 5.3% 26.1%;
+          --sidebar-primary: 240 5.9% 10%;
+          --sidebar-primary-foreground: 0 0% 98%;
+          --sidebar-accent: 240 4.8% 95.9%;
+          --sidebar-accent-foreground: 240 5.9% 10%;
+          --sidebar-border: 220 13% 91%;
+          --sidebar-ring: 217.2 91.2% 59.8%;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          --background: 224 71% 4%;
+          --foreground: 213 31% 91%;
+          --muted: 223 47% 11%;
+          --muted-foreground: 215.4 16.3% 56.9%;
+          --popover: 224 71% 4%;
+          --popover-foreground: 215 20.2% 65.1%;
+          --border: 216 34% 17%;
+          --input: 216 34% 17%;
+          --card: 224 71% 4%;
+          --card-foreground: 213 31% 91%;
+          --primary: 210 40% 98%;
+          --primary-foreground: 222.2 47.4% 1.2%;
+          --secondary: 222.2 47.4% 11.2%;
+          --secondary-foreground: 210 40% 98%;
+          --accent: 216 34% 17%;
+          --accent-foreground: 210 40% 98%;
+          --destructive: 0 63% 31%;
+          --destructive-foreground: 210 40% 98%;
+          --ring: 216 34% 17%;
+          --radius: 0.5rem;
+          --chart-1: 220 70% 50%;
+          --chart-2: 160 60% 45%;
+          --chart-3: 30 80% 55%;
+          --chart-4: 280 65% 60%;
+          --chart-5: 340 75% 55%;
+          --sidebar-background: 240 5.9% 10%;
+          --sidebar-foreground: 240 4.8% 95.9%;
+          --sidebar-primary: 224.3 76.3% 48%;
+          --sidebar-primary-foreground: 0 0% 100%;
+          --sidebar-accent: 240 3.7% 15.9%;
+          --sidebar-accent-foreground: 240 4.8% 95.9%;
+          --sidebar-border: 240 3.7% 15.9%;
+          --sidebar-ring: 217.2 91.2% 59.8%;
+        }
+
+        *,
+        ::before,
+        ::after {
+          border-color: var(--color-border);
+        }
+      }
+
+      @property --tw-space-y-reverse {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0;
+      }
+
+      @property --tw-border-style {
+        syntax: '*';
+        inherits: false;
+        initial-value: solid;
+      }
+
+      @property --tw-gradient-position {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-gradient-from {
+        syntax: '<color>';
+        inherits: false;
+        initial-value: #0000;
+      }
+
+      @property --tw-gradient-via {
+        syntax: '<color>';
+        inherits: false;
+        initial-value: #0000;
+      }
+
+      @property --tw-gradient-to {
+        syntax: '<color>';
+        inherits: false;
+        initial-value: #0000;
+      }
+
+      @property --tw-gradient-stops {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-gradient-via-stops {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-gradient-from-position {
+        syntax: '<length-percentage>';
+        inherits: false;
+        initial-value: 0%;
+      }
+
+      @property --tw-gradient-via-position {
+        syntax: '<length-percentage>';
+        inherits: false;
+        initial-value: 50%;
+      }
+
+      @property --tw-gradient-to-position {
+        syntax: '<length-percentage>';
+        inherits: false;
+        initial-value: 100%;
+      }
+
+      @property --tw-font-weight {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-tracking {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-blur {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-brightness {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-contrast {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-grayscale {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-hue-rotate {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-invert {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-opacity {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-saturate {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-sepia {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-drop-shadow {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-drop-shadow-color {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-drop-shadow-alpha {
+        syntax: '<percentage>';
+        inherits: false;
+        initial-value: 100%;
+      }
+
+      @property --tw-drop-shadow-size {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-blur {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-brightness {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-contrast {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-grayscale {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-hue-rotate {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-invert {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-opacity {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-saturate {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-backdrop-sepia {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-shadow {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0 0 #0000;
+      }
+
+      @property --tw-shadow-color {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-shadow-alpha {
+        syntax: '<percentage>';
+        inherits: false;
+        initial-value: 100%;
+      }
+
+      @property --tw-inset-shadow {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0 0 #0000;
+      }
+
+      @property --tw-inset-shadow-color {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-inset-shadow-alpha {
+        syntax: '<percentage>';
+        inherits: false;
+        initial-value: 100%;
+      }
+
+      @property --tw-ring-color {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-ring-shadow {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0 0 #0000;
+      }
+
+      @property --tw-inset-ring-color {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-inset-ring-shadow {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0 0 #0000;
+      }
+
+      @property --tw-ring-inset {
+        syntax: '*';
+        inherits: false;
+      }
+
+      @property --tw-ring-offset-width {
+        syntax: '<length>';
+        inherits: false;
+        initial-value: 0px;
+      }
+
+      @property --tw-ring-offset-color {
+        syntax: '*';
+        inherits: false;
+        initial-value: #fff;
+      }
+
+      @property --tw-ring-offset-shadow {
+        syntax: '*';
+        inherits: false;
+        initial-value: 0 0 #0000;
+      }
+
+      @layer properties {
+        @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+          *,
+          ::before,
+          ::after,
+          ::backdrop {
+            --tw-space-y-reverse: 0;
+            --tw-border-style: solid;
+            --tw-gradient-position: initial;
+            --tw-gradient-from: #0000;
+            --tw-gradient-via: #0000;
+            --tw-gradient-to: #0000;
+            --tw-gradient-stops: initial;
+            --tw-gradient-via-stops: initial;
+            --tw-gradient-from-position: 0%;
+            --tw-gradient-via-position: 50%;
+            --tw-gradient-to-position: 100%;
+            --tw-font-weight: initial;
+            --tw-tracking: initial;
+            --tw-blur: initial;
+            --tw-brightness: initial;
+            --tw-contrast: initial;
+            --tw-grayscale: initial;
+            --tw-hue-rotate: initial;
+            --tw-invert: initial;
+            --tw-opacity: initial;
+            --tw-saturate: initial;
+            --tw-sepia: initial;
+            --tw-drop-shadow: initial;
+            --tw-drop-shadow-color: initial;
+            --tw-drop-shadow-alpha: 100%;
+            --tw-drop-shadow-size: initial;
+            --tw-backdrop-blur: initial;
+            --tw-backdrop-brightness: initial;
+            --tw-backdrop-contrast: initial;
+            --tw-backdrop-grayscale: initial;
+            --tw-backdrop-hue-rotate: initial;
+            --tw-backdrop-invert: initial;
+            --tw-backdrop-opacity: initial;
+            --tw-backdrop-saturate: initial;
+            --tw-backdrop-sepia: initial;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-color: initial;
+            --tw-shadow-alpha: 100%;
+            --tw-inset-shadow: 0 0 #0000;
+            --tw-inset-shadow-color: initial;
+            --tw-inset-shadow-alpha: 100%;
+            --tw-ring-color: initial;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-inset-ring-color: initial;
+            --tw-inset-ring-shadow: 0 0 #0000;
+            --tw-ring-inset: initial;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-offset-shadow: 0 0 #0000;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="min-h-screen w-full bg-zinc-950 text-zinc-50">
+        <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-zinc-950/60 bg-zinc-950/80 border-b border-zinc-800">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center gap-2">
+              <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-fuchsia-500 via-violet-500 to-cyan-400"> </div><span class="font-semibold tracking-tight">rzem.ai</span
+              ><span class="hidden sm:inline text-xs text-zinc-400 ml-2">FLUX.1 Learning Hub</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-300"
+              ><a class="hover:text-white transition" href="#">Guides</a><a class="hover:text-white transition" href="#">Prompt Library</a><a class="hover:text-white transition" href="#">Workflows</a
+              ><a class="hover:text-white transition" href="#">Benchmarks</a><a class="hover:text-white transition" href="#">News</a></nav
+            >
+            <div class="flex items-center gap-3"
+              ><button class="px-3 py-1.5 rounded-full text-xs font-medium border bg-white text-zinc-900 border-white">Neon Synth</button
+              ><button class="px-3 py-1.5 rounded-full text-xs font-medium border border-zinc-700 text-zinc-300 hover:text-white">Clean Editorial</button
+              ><button class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-800/60 border border-zinc-700 hover:bg-zinc-800 text-sm"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search h-4 w-4"
+                  aria-hidden="true"
+                  data-source-pos="68:14-68:44"
+                  data-source-name="Search">
+                  <path d="m21 21-4.34-4.34"></path>
+                  <circle cx="11" cy="11" r="8"></circle></svg
+                >Search</button
+              ></div
+            >
+          </div>
+        </header>
+        <main>
+          <section class="relative overflow-hidden border-b border-zinc-800">
+            <div class="absolute inset-0 opacity-30">
+              <div class="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-fuchsia-500 blur-3xl"></div>
+              <div class="absolute -bottom-24 -left-10 h-96 w-96 rounded-full bg-cyan-400 blur-3xl"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 relative">
+              <h1 data-source-name="motion.h1" class="text-4xl sm:text-6xl font-black tracking-tight" style="opacity: 1; transform: none">
+                Master <span class="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-cyan-300 bg-clip-text text-transparent">FLUX.1</span> faster.</h1
+              >
+              <p class="mt-4 text-lg text-zinc-300 max-w-2xl">Hands-on tutorials, prompt recipes, and pro workflows for serious creators. No fluff. Just results.</p>
+              <div class="mt-8 flex flex-col sm:flex-row gap-3"
+                ><a href="#" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-zinc-900 font-semibold"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-rocket h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="117:14-117:44"
+                    data-source-name="Rocket">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
+                  Start Learning</a
+                ><a href="#" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-700 text-zinc-200 hover:bg-zinc-900"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-layers h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="120:14-120:44"
+                    data-source-name="Layers">
+                    <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                  </svg>
+                  Browse Prompt Library</a
+                ></div
+              >
+              <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-zinc-300">
+                <div class="flex items-center gap-2 bg-zinc-900/50 border border-zinc-800 rounded-lg px-3 py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-video h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="125:22-125:51"
+                    data-source-name="Video">
+                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
+                    <rect x="2" y="6" width="14" height="12" rx="2"></rect></svg
+                  ><span>Video Walkthroughs</span>
+                </div>
+                <div class="flex items-center gap-2 bg-zinc-900/50 border border-zinc-800 rounded-lg px-3 py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-book-open h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="126:22-126:54"
+                    data-source-name="BookOpen">
+                    <path d="M12 7v14"></path>
+                    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg
+                  ><span>Step-by-step Guides</span>
+                </div>
+                <div class="flex items-center gap-2 bg-zinc-900/50 border border-zinc-800 rounded-lg px-3 py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-flask-conical h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="127:22-127:58"
+                    data-source-name="FlaskConical">
+                    <path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"></path>
+                    <path d="M6.453 15h11.094"></path>
+                    <path d="M8.5 2h7"></path></svg
+                  ><span>Experiments &amp; Benchmarks</span>
+                </div>
+                <div class="flex items-center gap-2 bg-zinc-900/50 border border-zinc-800 rounded-lg px-3 py-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-palette h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="128:22-128:53"
+                    data-source-name="Palette">
+                    <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path>
+                    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg
+                  ><span>Style Recipes</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+            <div class="flex items-end justify-between gap-4"> <h2 data-source-name="h2" class="text-2xl sm:text-3xl font-bold">Featured this week</h2><a href="#" class="text-sm text-zinc-300 hover:text-white">See all</a> </div>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6"
+              ><a
+                data-source-pos="163:12-183:23"
+                data-source-name="motion.a"
+                href="#"
+                class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-6"
+                style="opacity: 1; transform: none">
+                <div class="flex items-center gap-2 text-xs text-fuchsia-300/90"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sparkles h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="173:16-173:48"
+                    data-source-name="Sparkles">
+                    <path
+                      d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                    <path d="M20 2v4"></path>
+                    <path d="M22 4h-4"></path>
+                    <circle cx="4" cy="20" r="2"></circle>
+                  </svg>
+                  Beginner</div
+                >
+                <h3 data-source-name="h3" class="mt-3 text-xl font-semibold group-hover:underline underline-offset-4">From Zero to First Render</h3>
+                <p class="mt-2 text-zinc-300 text-sm"> Install, set up, and generate your first image with FLUX.1 in 20 minutes.</p>
+                <div class="mt-6 inline-flex items-center text-sm text-cyan-300"
+                  >Read guide
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    data-source-pos="180:27-180:66"
+                    data-source-name="ArrowRight">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path></svg
+                ></div>
+                <div class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-fuchsia-500/20 blur-3xl"> </div> </a
+              ><a
+                data-source-pos="163:12-183:23"
+                data-source-name="motion.a"
+                href="#"
+                class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-6"
+                style="opacity: 1; transform: none">
+                <div class="flex items-center gap-2 text-xs text-fuchsia-300/90"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sparkles h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="173:16-173:48"
+                    data-source-name="Sparkles">
+                    <path
+                      d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                    <path d="M20 2v4"></path>
+                    <path d="M22 4h-4"></path>
+                    <circle cx="4" cy="20" r="2"></circle>
+                  </svg>
+                  Intermediate</div
+                >
+                <h3 data-source-name="h3" class="mt-3 text-xl font-semibold group-hover:underline underline-offset-4">Prompt Engineering: Contrast &amp; Coherence</h3>
+                <p class="mt-2 text-zinc-300 text-sm">A repeatable framework for prompts that survive model quirks.</p>
+                <div class="mt-6 inline-flex items-center text-sm text-cyan-300"
+                  >Read guide
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    data-source-pos="180:27-180:66"
+                    data-source-name="ArrowRight">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path></svg
+                ></div>
+                <div class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-fuchsia-500/20 blur-3xl"> </div> </a
+              ><a
+                data-source-pos="163:12-183:23"
+                data-source-name="motion.a"
+                href="#"
+                class="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-6"
+                style="opacity: 1; transform: none">
+                <div class="flex items-center gap-2 text-xs text-fuchsia-300/90"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sparkles h-4 w-4"
+                    aria-hidden="true"
+                    data-source-pos="173:16-173:48"
+                    data-source-name="Sparkles">
+                    <path
+                      d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
+                    <path d="M20 2v4"></path>
+                    <path d="M22 4h-4"></path>
+                    <circle cx="4" cy="20" r="2"></circle>
+                  </svg>
+                  Advanced</div
+                >
+                <h3 data-source-name="h3" class="mt-3 text-xl font-semibold group-hover:underline underline-offset-4">Node Graphs that Ship</h3>
+                <p class="mt-2 text-zinc-300 text-sm"> Build reliable pipelines in ComfyUI with versioned presets.</p>
+                <div class="mt-6 inline-flex items-center text-sm text-cyan-300"
+                  >Read guide
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                    aria-hidden="true"
+                    data-source-pos="180:27-180:66"
+                    data-source-name="ArrowRight">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path></svg
+                ></div>
+                <div class="absolute -right-10 -bottom-10 h-40 w-40 rounded-full bg-fuchsia-500/20 blur-3xl"> </div> </a
+            ></div>
+          </section>
+          <section class="border-y border-zinc-800/80 bg-zinc-900/30">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+              <div class="flex items-center justify-between gap-4 flex-wrap">
+                <h3 data-source-name="h3" class="text-xl font-semibold"> Prompt Library</h3><a href="#" class="text-sm text-zinc-300 hover:text-white">Browse all prompts</a>
+              </div>
+              <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                ><a href="#" class="block rounded-xl border border-zinc-800 p-4 hover:bg-zinc-900/60">
+                  <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-code h-4 w-4"
+                      aria-hidden="true"
+                      data-source-pos="204:18-204:46"
+                      data-source-name="Code">
+                      <path d="m16 18 6-6-6-6"></path>
+                      <path d="m8 6-6 6 6 6"></path></svg
+                    ><span class="font-medium text-zinc-100">Synthwave City Poster</span></div
+                  >
+                  <p class="mt-1 text-xs text-zinc-400">Tokens: Short, stylized, neon</p> </a
+                ><a href="#" class="block rounded-xl border border-zinc-800 p-4 hover:bg-zinc-900/60">
+                  <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-code h-4 w-4"
+                      aria-hidden="true"
+                      data-source-pos="204:18-204:46"
+                      data-source-name="Code">
+                      <path d="m16 18 6-6-6-6"></path>
+                      <path d="m8 6-6 6 6 6"></path></svg
+                    ><span class="font-medium text-zinc-100">Photoreal Portrait Rig</span></div
+                  >
+                  <p class="mt-1 text-xs text-zinc-400">Tokens: Camera, lens, light</p> </a
+                ><a href="#" class="block rounded-xl border border-zinc-800 p-4 hover:bg-zinc-900/60">
+                  <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-code h-4 w-4"
+                      aria-hidden="true"
+                      data-source-pos="204:18-204:46"
+                      data-source-name="Code">
+                      <path d="m16 18 6-6-6-6"></path>
+                      <path d="m8 6-6 6 6 6"></path></svg
+                    ><span class="font-medium text-zinc-100">Blueprint Diagrammer</span></div
+                  >
+                  <p class="mt-1 text-xs text-zinc-400">Tokens: Line art + HUD</p> </a
+                ><a href="#" class="block rounded-xl border border-zinc-800 p-4 hover:bg-zinc-900/60">
+                  <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-code h-4 w-4"
+                      aria-hidden="true"
+                      data-source-pos="204:18-204:46"
+                      data-source-name="Code">
+                      <path d="m16 18 6-6-6-6"></path>
+                      <path d="m8 6-6 6 6 6"></path></svg
+                    ><span class="font-medium text-zinc-100">Brand Pack Generator</span></div
+                  >
+                  <p class="mt-1 text-xs text-zinc-400">Tokens: Palette + grid</p>
+                </a></div
+              >
+            </div>
+          </section>
+          <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div class="lg:col-span-2">
+                <h3 data-source-name="h3" class="text-2xl font-bold"> Workflows &amp; Toolkit</h3>
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="rounded-xl border border-zinc-800 p-5 bg-zinc-900/30">
+                    <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-cpu h-4 w-4"
+                        aria-hidden="true"
+                        data-source-pos="240:20-240:47"
+                        data-source-name="Cpu">
+                        <path d="M12 20v2"></path>
+                        <path d="M12 2v2"></path>
+                        <path d="M17 20v2"></path>
+                        <path d="M17 2v2"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M2 17h2"></path>
+                        <path d="M2 7h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M20 17h2"></path>
+                        <path d="M20 7h2"></path>
+                        <path d="M7 20v2"></path>
+                        <path d="M7 2v2"></path>
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="8" y="8" width="8" height="8" rx="1"></rect></svg
+                      ><span class="font-semibold text-zinc-100">ComfyUI Node Graphs</span></div
+                    >
+                    <p class="mt-2 text-sm text-zinc-400">Reusable graphs for text→image, img→img, and upscaling pipelines.</p
+                    ><a href="#" class="mt-4 inline-flex items-center text-sm text-cyan-300"
+                      >Open
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                        aria-hidden="true"
+                        data-source-pos="244:99-244:138"
+                        data-source-name="ArrowRight">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                    ></a>
+                  </div>
+                  <div class="rounded-xl border border-zinc-800 p-5 bg-zinc-900/30">
+                    <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-cpu h-4 w-4"
+                        aria-hidden="true"
+                        data-source-pos="240:20-240:47"
+                        data-source-name="Cpu">
+                        <path d="M12 20v2"></path>
+                        <path d="M12 2v2"></path>
+                        <path d="M17 20v2"></path>
+                        <path d="M17 2v2"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M2 17h2"></path>
+                        <path d="M2 7h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M20 17h2"></path>
+                        <path d="M20 7h2"></path>
+                        <path d="M7 20v2"></path>
+                        <path d="M7 2v2"></path>
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="8" y="8" width="8" height="8" rx="1"></rect></svg
+                      ><span class="font-semibold text-zinc-100">Preset Manager</span></div
+                    >
+                    <p class="mt-2 text-sm text-zinc-400">Versioned prompt presets for styles, lighting, and color science.</p
+                    ><a href="#" class="mt-4 inline-flex items-center text-sm text-cyan-300"
+                      >Open
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                        aria-hidden="true"
+                        data-source-pos="244:99-244:138"
+                        data-source-name="ArrowRight">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                    ></a>
+                  </div>
+                  <div class="rounded-xl border border-zinc-800 p-5 bg-zinc-900/30">
+                    <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-cpu h-4 w-4"
+                        aria-hidden="true"
+                        data-source-pos="240:20-240:47"
+                        data-source-name="Cpu">
+                        <path d="M12 20v2"></path>
+                        <path d="M12 2v2"></path>
+                        <path d="M17 20v2"></path>
+                        <path d="M17 2v2"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M2 17h2"></path>
+                        <path d="M2 7h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M20 17h2"></path>
+                        <path d="M20 7h2"></path>
+                        <path d="M7 20v2"></path>
+                        <path d="M7 2v2"></path>
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="8" y="8" width="8" height="8" rx="1"></rect></svg
+                      ><span class="font-semibold text-zinc-100">Quality Benchmarks</span></div
+                    >
+                    <p class="mt-2 text-sm text-zinc-400">A/B suites for prompt stability, sharpness, and color discipline.</p
+                    ><a href="#" class="mt-4 inline-flex items-center text-sm text-cyan-300"
+                      >Open
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                        aria-hidden="true"
+                        data-source-pos="244:99-244:138"
+                        data-source-name="ArrowRight">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                    ></a>
+                  </div>
+                  <div class="rounded-xl border border-zinc-800 p-5 bg-zinc-900/30">
+                    <div class="flex items-center gap-2 text-zinc-300 text-sm"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-cpu h-4 w-4"
+                        aria-hidden="true"
+                        data-source-pos="240:20-240:47"
+                        data-source-name="Cpu">
+                        <path d="M12 20v2"></path>
+                        <path d="M12 2v2"></path>
+                        <path d="M17 20v2"></path>
+                        <path d="M17 2v2"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M2 17h2"></path>
+                        <path d="M2 7h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M20 17h2"></path>
+                        <path d="M20 7h2"></path>
+                        <path d="M7 20v2"></path>
+                        <path d="M7 2v2"></path>
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="8" y="8" width="8" height="8" rx="1"></rect></svg
+                      ><span class="font-semibold text-zinc-100">Server Setup</span></div
+                    >
+                    <p class="mt-2 text-sm text-zinc-400">Self-host FLUX.1 with GPU sizing and cost controls.</p
+                    ><a href="#" class="mt-4 inline-flex items-center text-sm text-cyan-300"
+                      >Open
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right h-4 w-4 ml-1"
+                        aria-hidden="true"
+                        data-source-pos="244:99-244:138"
+                        data-source-name="ArrowRight">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <aside class="lg:col-span-1">
+                <div class="rounded-2xl border border-zinc-800 p-6 bg-gradient-to-b from-zinc-900/60 to-zinc-900/20">
+                  <h4 data-source-name="h4" class="text-lg font-semibold flex items-center gap-2"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-git-branch h-5 w-5"
+                      aria-hidden="true"
+                      data-source-pos="251:76-251:109"
+                      data-source-name="GitBranch">
+                      <line x1="6" x2="6" y1="3" y2="15"></line>
+                      <circle cx="18" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M18 9a9 9 0 0 1-9 9"></path>
+                    </svg>
+                    Latest Changelog</h4
+                  >
+                  <ul class="mt-4 space-y-3 text-sm text-zinc-300">
+                    <li>• New: FLUX.1 style control cheatsheet</li>
+                    <li>• Update: Portrait rig v2 with color LUTs</li>
+                    <li>• Fix: ComfyUI batch export bug notes</li> </ul
+                  ><a href="#" class="mt-5 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-zinc-700 hover:bg-zinc-800 text-sm"
+                    >View all updates
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right h-4 w-4"
+                      aria-hidden="true"
+                      data-source-pos="257:161-257:195"
+                      data-source-name="ArrowRight">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path></svg
+                  ></a>
+                </div>
+              </aside>
+            </div>
+          </section>
+          <section class="py-16 border-t border-zinc-800">
+            <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+              <h3 data-source-name="h3" class="text-2xl sm:text-3xl font-bold">Join 5,000+ creators leveling up with FLUX.1</h3>
+              <p class="mt-3 text-zinc-300">One concise email per week. No spam. New guides, prompts, and tools.</p>
+              <form class="mt-6 flex flex-col sm:flex-row gap-3 justify-center"
+                ><input
+                  data-source-pos="269:12-269:222"
+                  placeholder="you@studio.com"
+                  class="w-full sm:w-80 px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-fuchsia-400" /><button
+                  data-source-pos="270:12-270:108"
+                  class="px-5 py-3 rounded-xl bg-white text-zinc-900 font-semibold"
+                  >Subscribe</button
+                >
+              </form>
+            </div>
+          </section>
+        </main>
+        <footer class="border-t border-zinc-800/80 py-10">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-400 text-sm">
+            <p>© 2025 rzem.ai — FLUX.1 learning resources</p>
+            <div class="flex items-center gap-4"><a href="#" class="hover:text-white">Contact</a><a href="#" class="hover:text-white">RSS</a><a href="#" class="hover:text-white">Privacy</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
